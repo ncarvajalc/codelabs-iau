@@ -3,23 +3,15 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2024-06-12T14:03:18-05:00",
+  "updated": "2024-06-14T07:48:59-05:00",
   "id": "nombre-carpeta-codelab",
-  "duration": 14,
+  "duration": 0,
   "title": "CodeLab de cómo crear un codelab usando markdown",
-  "summary": "Resumen del codelab",
+  "summary": "",
   "source": "markdown/example/example.md",
   "theme": "",
-  "status": [
-    "published"
-  ],
-  "category": [
-    "iau",
-    "codelab"
-  ],
-  "tags": [
-    "web"
-  ],
-  "feedback": "https://github.com/ncarvajalc/codelabs-iau/issues",
+  "status": null,
+  "category": null,
+  "tags": [],
   "url": "nombre-carpeta-codelab"
 }
