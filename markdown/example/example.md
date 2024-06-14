@@ -1,52 +1,51 @@
-author: Su nombre
-summary: Resumen del codelab
+autor: Su nombre
+resumen: Resumen del codelab
 id: nombre-carpeta-codelab
-categories: IAu,codelab
-environments: Web
-status: Published
-feedback link: https://github.com/ncarvajalc/codelabs-iau/issues
+categorías: IAu,codelab
+entornos: Web
+estado: Publicado
+enlace de retroalimentación: https://github.com/ncarvajalc/codelabs-iau/issues
 
 # CodeLab de cómo crear un codelab usando markdown
 
 ## Resumen del codelab
-Duration: 0:02:00
+Duración: 0:02:00
 
-Este tutorial describe cómo crear un codelab usando mar
-kdown. Va a explicar la sintaxis de markdown y cómo usarla para crear un codelab.
+Este tutorial describe cómo crear un codelab usando markdown. Va a explicar la sintaxis de markdown y cómo usarla para crear un codelab.
 
-1. Using a Google Doc
-1. Using a markdown file
+1. Usando un Google Doc
+1. Usando un archivo markdown
 
-In this codelab we are going to use the second option and author our codelab using a markdown file. This gives us the flexibility of using our markdown file for other things and also storing it in our github repo with any code that might be used for a tutorial. 
+En este codelab vamos a usar la segunda opción y autor nuestro codelab usando un archivo markdown. Esto nos da la flexibilidad de usar nuestro archivo markdown para otras cosas y también almacenarlo en nuestro repositorio de github con cualquier código que pueda ser usado para un tutorial.
 
-Here is an example image of another CodeLab that I created:
-![image_caption](img/codelabexample.png)
+Aquí hay una imagen de ejemplo de otro CodeLab que creé:
+!image_caption
 
 
-**Resources:** 
-* This codelab's original home is located here: [Link to Codelab](https://www.marcd.dev/codelab-4-codelab)
-* The markdown for the original codelab is located here: [codelab.md](https://github.com/Mrc0113/codelab-4-codelab/blob/master/codelab.md)
-* [Google CodeLabs Tools Github](https://github.com/googlecodelabs/tools) - The repo that contains the claat tool we'll be using today
-* [Google Group for CodeLab Authors](https://groups.google.com/forum/#!forum/codelab-authors) - great forum for asking questions about codelabs and discussing future functionality
-* [A blog that I used when getting started with Google Codelabs](https://medium.com/@mariopce/tutorial-how-to-make-tutorials-using-google-code-labs-gangdam-style-d62b35476816)
+**Recursos:** 
+* El hogar original de este codelab está ubicado aquí: [Enlace al Codelab](https://www.marcd.dev/codelab-4-codelab)
+* El markdown para el codelab original está ubicado aquí: [codelab.md](https://github.com/Mrc0113/codelab-4-codelab/blob/master/codelab.md)
+* [Google CodeLabs Tools Github](https://github.com/googlecodelabs/tools) - El repositorio que contiene la herramienta claat que usaremos hoy
+* [Google Group for CodeLab Authors](https://groups.google.com/forum/#!forum/codelab-authors) - gran foro para hacer preguntas sobre codelabs y discutir funcionalidades futuras
+* [Un blog que utilicé cuando comencé con Google Codelabs](https://medium.com/@mariopce/tutorial-how-to-make-tutorials-using-google-code-labs-gangdam-style-d62b35476816)
 
-## Environment Setup
-Duration: 0:04:00
+## Configuración del entorno
+Duración: 0:04:00
 
-In order to create a CodeLab you need *Go* and *claat* (the codelabs command line tool) installed.
+Para crear un CodeLab necesitas *Go* y *claat* (la herramienta de línea de comandos de codelabs) instalados.
 
-The instructions below are what worked for me on Mac, but you can also find instructions [here](https://github.com/googlecodelabs/tools/tree/master/claat)
+Las instrucciones a continuación son las que me funcionaron en Mac, pero también puedes encontrar instrucciones [aquí](https://github.com/googlecodelabs/tools/tree/master/claat)
 
-#### Install Go 
+#### Instalar Go 
 
-Install [Go](https://golang.org/dl/) if you don't have it.
-You can use Homebrew if you have it on mac 
+Instala [Go](https://golang.org/dl/) si no lo tienes.
+Puedes usar Homebrew si lo tienes en mac 
 ``` bash
 $ brew install go
 ```
 
-#### Setup Go Environment Variables
-Below is what I set on mac, but instructions are [here](https://golang.org/doc/install) for other OS options
+#### Configurar las variables de entorno de Go
+A continuación se muestra lo que configuré en mac, pero las instrucciones están [aquí](https://golang.org/doc/install) para otras opciones de sistema operativo
 
 ``` bash
 $ export GOPATH=$HOME/Go
@@ -55,166 +54,166 @@ $ export PATH=$PATH:$GOPATH/bin
 $ export PATH=$PATH:$GOROOT/bin
 ```
 
-#### Install claat
-Install claat
+#### Instalar claat
+Instala claat
 ``` bash
 $ go get -u -v -x github.com/googlecodelabs/tools/claat
 ```
 
-You should now have the *claat* command available to you. 
+Ahora deberías tener el comando *claat* disponible. 
 ``` bash
 $ claat
 ```
 
-## Create your initial CodeLab
-Duration: 0:05:00
+## Crea tu primer CodeLab
+Duración: 0:05:00
 
-Now that we have the environment setup let's go ahead and create a markdown file where we'll create the actual codelab. 
+Ahora que tenemos el entorno configurado, vamos a crear un archivo markdown donde crearemos el codelab real.
 
-Negative
-: If you're using Windows make sure to set your text editor to use UNIX line endings! 
+Negativo
+: Si estás usando Windows, asegúrate de configurar tu editor de texto para usar finales de línea UNIX! 
 
 ####
 ``` bash
 $ vim codelab.md
 ```
 
-#### Fill-in the header metadata
-Copy and paste the headers below into your markdown file and change the values appropriately. 
-Guidelines are available below the sample headers. 
+#### Rellena los metadatos del encabezado
+Copia y pega los encabezados de abajo en tu archivo markdown y cambia los valores apropiadamente. 
+Las directrices están disponibles debajo de los encabezados de muestra. 
 
 ``` bash
-author: Author Name
-summary: Summary of your codelab that is human readable
-id: unique-codelab-identifier
-categories: codelab,markdown
-environments: Web
-status: Published
-feedback link: A link where users can go to provide feedback (Maybe the git repo)
-analytics account: Google Analytics ID
+autor: Nombre del autor
+resumen: Resumen de tu codelab que sea legible para humanos
+id: identificador-único-del-codelab
+categorías: codelab,markdown
+entornos: Web
+estado: Publicado
+enlace de retroalimentación: Un enlace donde los usuarios pueden ir para proporcionar retroalimentación (Quizás el repositorio git)
+cuenta de analítica: ID de Google Analytics
 ```
 
-Metadata consists of key-value pairs of the form "key: value". Keys cannot
-contain colons, and separate metadata fields must be separated by blank lines.
-At present, values must all be on one line. All metadata must come before the
-title. Any arbitrary keys and values may be used; however, only the following
-will be understood by the renderer:
+Los metadatos consisten en pares de clave-valor de la forma "clave: valor". Las claves no pueden
+contener dos puntos, y los campos de metadatos separados deben estar separados por líneas en blanco.
+En la actualidad, los valores deben estar todos en una línea. Todos los metadatos deben venir antes del
+título. Se pueden usar cualquier clave y valor arbitrarios; sin embargo, sólo los siguientes
+serán entendidos por el renderizador:
 
-* Summary: A human-readable summary of the codelab. Defaults to blank.
-* Id: An identifier composed of lowercase letters ideally describing the
-  content of the codelab. This field should be unique among
-  codelabs.
-* Categories: A comma-separated list of the topics the codelab covers.
-* Environments: A list of environments the codelab should be discoverable in.
-  Codelabs marked "Web" will be visible at the codelabs index. Codelabs marked
-  "Kiosk" will only be available at codelabs kiosks, which have special
-  equipment attached.
-* Status: The publication status of the codelab. Valid values are:
-  - Draft: Codelab is not finished.
-  - Published: Codelab is finished and visible.
-  - Deprecated: Codelab is considered stale and should not be widely advertised.
-  - Hidden: Codelab is not shown in index.
-* Feedback Link: A link to send users to if they wish to leave feedback on the
-  codelab.
-* Analytics Account: A Google Analytics ID to include with all codelab pages.
+* Resumen: Un resumen legible por humanos del codelab. Por defecto está en blanco.
+* Id: Un identificador compuesto por letras minúsculas que idealmente describe el
+    contenido del codelab. Este campo debe ser único entre
+    los codelabs.
+* Categorías: Una lista separada por comas de los temas que cubre el codelab.
+* Entornos: Una lista de entornos en los que el codelab debería ser descubrible.
+    Los codelabs marcados como "Web" serán visibles en el índice de codelabs. Los codelabs marcados
+    como "Kiosco" sólo estarán disponibles en los kioscos de codelabs, que tienen equipo especial
+    adjunto.
+* Estado: El estado de publicación del codelab. Los valores válidos son:
+    - Borrador: El codelab no está terminado.
+    - Publicado: El codelab está terminado y visible.
+    - Obsoleto: El codelab se considera obsoleto y no debe ser ampliamente publicitado.
+    - Oculto: El codelab no se muestra en el índice.
+* Enlace de retroalimentación: Un enlace para enviar a los usuarios si desean dejar comentarios sobre el
+    codelab.
+* Cuenta de analítica: Un ID de Google Analytics para incluir con todas las páginas del codelab.
 
-#### Add the Title
-Next add your title using a single '#' character
+#### Añade el Título
+A continuación, añade tu título usando un solo carácter '#'
 ```
-# Title of codelab
+# Título del codelab
 ```
 
-#### Add Sections and Durations
-Then for each section use Header 2 or '##' and specify an optional duration beneath for time remaining calculations
-Optional section times will be used to automatically total and remaining tutorial times
-In markdown I've found that the time is formatted hh:mm:ss
+#### Añade Secciones y Duraciones
+Luego, para cada sección, usa Encabezado 2 o '##' y especifica una duración opcional debajo para los cálculos de tiempo restante
+Los tiempos de sección opcionales se utilizarán para totalizar automáticamente los tiempos de tutorial restantes y totales
+En markdown he encontrado que el tiempo se formatea hh:mm:ss
 
-Example
+Ejemplo
 ``` bash
-## Section 1
-Duration: 0:10:00
+## Sección 1
+Duración: 0:10:00
 
-## Section 2
-Duration: 0:05:00
+## Sección 2
+Duración: 0:05:00
 ```
 
-#### Add Section Content
-Now that we have 2 sections to our titled codelab let's go ahead and add some content to each section. 
-Make up your own or copy and paste the example below: 
+#### Añade Contenido a la Sección
+Ahora que tenemos 2 secciones en nuestro codelab titulado, vamos a añadir algún contenido a cada sección. 
+Inventa el tuyo propio o copia y pega el ejemplo de abajo: 
 
-Copy into section 1 (Below Duration and above Section 2):
+Copia en la sección 1 (Debajo de Duración y encima de Sección 2):
 ```
-### Info Boxes
-Plain Text followed by green and yellow info boxes 
+### Cajas de Información
+Texto plano seguido de cajas de información verdes y amarillas 
 
-Negative
-: This will appear in a yellow info box.
+Negativo
+: Esto aparecerá en una caja de información amarilla.
 
-Positive
-: This will appear in a green info box.
+Positivo
+: Esto aparecerá en una caja de información verde.
 
-You created info boxes!
+¡Has creado cajas de información!
 
-### Bullets
-Plain Text followed by bullets
-* Hello
+### Viñetas
+Texto plano seguido de viñetas
+* Hola
 * CodeLab
-* World
+* Mundo
 
-You created bullets!
+¡Has creado viñetas!
 
-### Numbered List
-1. List
-1. Using
-1. Numbers
+### Lista Numerada
+1. Lista
+1. Usando
+1. Números
 
-You created a numbered list!
+¡Has creado una lista numerada!
 
 ```
 
-Copy into section 2 (Below Duration): 
+Copia en la sección 2 (Debajo de Duración): 
 ```
-### Add a Link
-Adding a link!
-[Example of a Link](https://www.google.com)
+### Añadir un Enlace
+¡Añadiendo un enlace!
+[Ejemplo de un Enlace](https://www.google.com)
 
-### Add an Image
-Adding an image!
+### Añadir una Imagen
+¡Añadiendo una imagen!
 ![image_caption](https://googlecloud.tips/img/031/codelabs.png)
 
-### Embed an iframe
+### Insertar un iframe
 ![https://codepen.io/tzoght/embed/yRNZaP](https://en.wikipedia.org/wiki/File:Example.jpg "Try Me Publisher")
 ```
 
-More Markdown Parser examples can be found [here](https://github.com/googlecodelabs/tools/tree/master/claat/parser/md).
+Más ejemplos del Analizador de Markdown se pueden encontrar [aquí](https://github.com/googlecodelabs/tools/tree/master/claat/parser/md).
 
-## Export and Serve
-Duration: 0:02:00
+## Exportar y Servir
+Duración: 0:02:00
 
-Now that you have an initial codelab defined in your markdown file let's go ahead and generate the static site content. 
-We can export and serve the content locally using the `claat` command that we installed earlier. 
+Ahora que tienes un codelab inicial definido en tu archivo markdown, vamos a generar el contenido del sitio estático. 
+Podemos exportar y servir el contenido localmente usando el comando `claat` que instalamos anteriormente. 
 
 ``` bash
 $ claat export codelab.md
 $ claat serve
 ```
 
-* Your browser should have opened (if it doesn't then try going to localhost:9090 in your browser). 
-* Choose the directory that matches your "id" that you put in the headers. 
-* Viola! You should have your first codelab!
+* Tu navegador debería haberse abierto (si no lo hace, entonces intenta ir a localhost:9090 en tu navegador). 
+* Elige el directorio que coincide con tu "id" que pusiste en los encabezados. 
+* ¡Voilà! Deberías tener tu primer codelab!
 
-## Host Your CodeLab
-Duration: 0:01:00
+## Aloja Tu CodeLab
+Duración: 0:01:00
 
-When you ran the `claat export` command you created the static web content needed to host your codelab. 
-It placed static web content in a directory specified by your unique "id" and you can view it locally by opening the index.html page. 
+Cuando ejecutaste el comando `claat export` creaste el contenido web estático necesario para alojar tu codelab. 
+Colocó el contenido web estático en un directorio especificado por tu "id" único y puedes verlo localmente abriendo la página index.html. 
 
-Negative
-: Note that when you view it locally by opening index.html some of the graphics may not show up (such as access_time, Next, Back), but they work once online. 
+Negativo
+: Ten en cuenta que cuando lo ves localmente abriendo index.html, algunos de los gráficos pueden no aparecer (como access_time, Siguiente, Atrás), pero funcionan una vez en línea. 
 
 
-Now that you have the static content you can host it however you want.
-One option is pushing it to github and serving it up from Netlify.  
+Ahora que tienes el contenido estático puedes alojarlo como quieras.
+Una opción es subirlo a github y servirlo desde Netlify.  
 
-If you'd like to create your own landing page for codelabs, [like this one](https://codelabs.developers.google.com), there is a tool to do that as well! 
-Check it out here: [CodeLabs Site](https://github.com/googlecodelabs/tools/blob/master/site/README.md)
+Si te gustaría crear tu propia página de inicio para codelabs, [como esta](https://codelabs.developers.google.com), ¡hay una herramienta para hacer eso también! 
+Míralo aquí: [Sitio de CodeLabs](https://github.com/googlecodelabs/tools/blob/master/site/README.md)
