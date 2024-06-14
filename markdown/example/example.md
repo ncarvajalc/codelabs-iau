@@ -8,7 +8,7 @@ enlace de retroalimentación: https://github.com/ncarvajalc/codelabs-iau/issues
 
 # CodeLab de cómo crear un codelab usando markdown
 
-## Resumen del codelab
+## Resumen del codelab 
 Duración: 0:02:00
 
 Este tutorial describe cómo crear un codelab usando markdown. Va a explicar la sintaxis de markdown y cómo usarla para crear un codelab.
