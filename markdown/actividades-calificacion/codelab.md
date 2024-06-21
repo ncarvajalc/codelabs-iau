@@ -1116,6 +1116,13 @@ A continuación se presenta un ejemplo concreto del prompt para el refinamiento 
 
 Hola, soy un profesor de Historia y necesito tu ayuda para refinar una rúbrica ya creada para la siguiente actividad: Los estudiantes deben realizar una presentación sobre un evento histórico relevante del siglo XX.
 
+| Contexto Socioeconómico | Actividad | Descripción | Pros | Contras |
+|--------------------------|------------|--------------|------|---------|
+| Potencia Industrial | Aumento de Producción Militar | Incrementar la producción de armamento y suministros militares. | - Refuerza la capacidad militar. <br> - Aumenta las posibilidades de victoria. | - Incrementa costos de producción. <br> - Riesgo de agotamiento de recursos. |
+| Nación Ocupada | Resistencia vs Colaboración | Decidir entre resistir activamente a la ocupación o colaborar para minimizar daños. | - Resistencia: Mantiene moral e identidad nacional. <br> - Debilita al ocupante. <br> - Colaboración: Reduce sufrimiento inmediato. <br> - Asegura recursos a corto plazo. | - Resistencia: Riesgo de represalias severas. <br> - Aumento de la represión. <br> - Colaboración: Percepción de traición. <br> - Riesgo de represalias posteriores. |
+| Nación Neutral | Diplomacia y Comercio | Negociar acuerdos diplomáticos o comerciales para mantener la neutralidad y obtener beneficios económicos. | - Evita conflicto directo. <br> - Beneficios económicos de ambos bandos. | - Presión para tomar partido. <br> - Riesgo de invasión. |
+
+
 **2. Problemas Identificados:**
 
 He identificado los siguientes problemas en la rúbrica actual:
