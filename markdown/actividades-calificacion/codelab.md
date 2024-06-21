@@ -6,7 +6,8 @@ entornos: Web
 estado: Publicado
 enlace de retroalimentación: Un enlace donde los usuarios pueden ir para proporcionar retroalimentación (Quizás el repositorio git)
 cuenta de analítica: ID de Google Analytics
-# Codelab to Create a Codelab
+
+# Creación de actividades, rúbricas y retroalimentación de actividades
 
 ## **Introducción**
 
@@ -1014,11 +1015,11 @@ Vamos a organizar toda la información para crear una rúbrica completa y estruc
 
 A continuación, la tabla clara y detallada que organiza toda la información en una rúbrica completa y estructurada:
 
-| Criterio de Evaluación               | Descripción                                                                 | Puntos |
-|--------------------------------------|-----------------------------------------------------------------------------|--------|
-| Uso correcto de conceptos            | Precisión en el uso de términos históricos relevantes y su relación con las cartas. | 40%    |
-| Relación con las cartas              | Coherencia y conexión de las cartas con los contextos socioeconómicos durante la Segunda Guerra Mundial. | 40%    |
-| Ortografía y coherencia textual      | Correcta estructura gramatical y ortográfica de las cartas.                   | 20%    |
+| Criterio de Evaluación          | Descripción                                                                                              | Puntos |
+|---------------------------------|----------------------------------------------------------------------------------------------------------|--------|
+| Uso correcto de conceptos       | Precisión en el uso de términos históricos relevantes y su relación con las cartas.                      | 40%    |
+| Relación con las cartas         | Coherencia y conexión de las cartas con los contextos socioeconómicos durante la Segunda Guerra Mundial. | 40%    |
+| Ortografía y coherencia textual | Correcta estructura gramatical y ortográfica de las cartas.                                              | 20%    |
 
 - **Puntaje Total:** 5 puntos
 
@@ -1144,11 +1145,11 @@ Por favor, organiza esta información en una tabla clara y detallada.
 
 Aquí está la tabla clara y detallada con la rúbrica refinada para la actividad de escribir cartas desde diferentes contextos socioeconómicos durante la Segunda Guerra Mundial:
 
-| Criterio de Evaluación               | Descripción                                                                 | Puntos |
-|--------------------------------------|-----------------------------------------------------------------------------|--------|
-| Uso correcto de conceptos históricos  | Precisión en el uso de términos históricos relevantes y su relación con las cartas. | 40%    |
+| Criterio de Evaluación                       | Descripción                                                                                              | Puntos |
+|----------------------------------------------|----------------------------------------------------------------------------------------------------------|--------|
+| Uso correcto de conceptos históricos         | Precisión en el uso de términos históricos relevantes y su relación con las cartas.                      | 40%    |
 | Coherencia con los contextos socioeconómicos | Coherencia y conexión de las cartas con los contextos socioeconómicos durante la Segunda Guerra Mundial. | 40%    |
-| Ortografía y coherencia textual      | Correcta estructura gramatical y ortográfica de las cartas.                   | 20%    |
+| Ortografía y coherencia textual              | Correcta estructura gramatical y ortográfica de las cartas.                                              | 20%    |
 
 - **Puntaje Total:** 5 puntos
 
