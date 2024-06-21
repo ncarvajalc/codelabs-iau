@@ -1,0 +1,1559 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Codelab to Create a Codelab</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="actividades-calificacion"
+                  title="Codelab to Create a Codelab"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Introducción" duration="0">
+        <p>Esta guía está diseñada para facilitar la <strong><em>&#34;creación de objetivos de aprendizaje, rúbricas personalizadas, mejorar las prácticas de evaluación y proporcionar retroalimentación constructiva</em></strong>&#34;.</p>
+<p>A través de prompts detallados, esta guía ofrece un enfoque paso a paso para definir criterios claros y escalas de puntuación, asegurar la validez y aplicabilidad de las rúbricas, y aplicar estos criterios de manera objetiva en diversas actividades educativas.</p>
+<p>Además, proporciona estrategias para ofrecer retroalimentación efectiva, ayudando a los estudiantes a entender sus fortalezas y áreas de mejora, y a establecer planes de acción para su desarrollo continuo.</p>
+<p>Puedes comenzar desde cualquier sección de este codelab según tus necesidades actuales. Por ejemplo, si ya cuentas con una rúbrica elaborada, no es necesario que inicies desde la sección de creación de rúbricas. Si ya tienes una actividad lista con su enunciado, puedes dirigirte directamente a la sección de retroalimentación.</p>
+<p><strong><em>Para que entiendas mejor cada prompt, verás en cada uno de ellos un ejemplo el cual ya hemos probado para ti, que se basa en &#34;Historia Global&#34;, tomando como tema principal la historia de la Segunda Guerra Mundial.</em></strong></p>
+<p class="image-container"><img alt="Imagen Intro" src="img\\74c3afcb77e723aa.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Creación de Objetivos de aprendizaje" duration="0">
+        <h2 is-upgraded><strong>Descripción</strong></h2>
+<p>En esta sección, aprenderás a definir objetivos de aprendizaje claros y específicos que guiarán el diseño de tus actividades educativas y las rúbricas correspondientes. Estos objetivos te ayudarán a focalizar tus esfuerzos de enseñanza y a proporcionar una dirección clara para los estudiantes.</p>
+<h2 is-upgraded><strong>Prerrequisitos</strong></h2>
+<p>No hay prerrequisitos específicos para esta sección. Puedes iniciar aquí si aún no has definido tus objetivos de aprendizaje.</p>
+<h2 is-upgraded><strong>Descripción del Prompt</strong></h2>
+<p>El prompt &#34;Creación de Objetivos de aprendizaje&#34; está diseñado para guiar a los profesores en la creación de objetivos de aprendizaje claros, específicos y medibles utilizando la Taxonomía de Bloom. Estos objetivos deben ser alcanzables y relevantes para el nivel educativo y materia específica, y deben estar diseñados para fomentar el desarrollo cognitivo de los estudiantes.</p>
+<h2 is-upgraded><strong>Prompt</strong></h2>
+<pre>Nivel educativo de los estudiantes: `[NIVEL EDUCATIVO](Pregrado, Posgrado, educación continua, etc.)`
+
+Materia o tema específico: `[MATERIA TEMA] (Estructuras de datos y algoritmos, física introductoria, etc.)`
+
+Contexto del uso del objetivo: `[CONTEXTO USO] (Discusión de clase, exámenes, proyectos, etc.)`
+
+Preguntas guía para definir los objetivos de aprendizaje (Metodología de Bloom):
+
+1.⁠ ⁠Recordar:
+¿Qué conceptos clave o información deben recordar los estudiantes de esta materia? `[CONCEPTOS CLAVE]`
+
+2.⁠ ⁠Comprender:
+¿Qué deben entender los estudiantes en relación con estos conceptos? ¿Cómo deben ser capaces de explicarlos? `[CONCEPTOS A ENTENDER]`
+
+3.⁠ ⁠Aplicar:
+¿Cómo deberían los estudiantes aplicar estos conceptos en situaciones prácticas o problemas? `[CONCEPTOS A APLICAR]`
+
+4.⁠ ⁠Analizar:
+¿Qué aspectos de la materia deben ser capaces de descomponer y analizar los estudiantes? ¿Cómo deben relacionar estos aspectos? `[ANALIZAR ASPECTOS]`
+
+5.⁠ ⁠Evaluar:
+¿Qué habilidades deben desarrollar los estudiantes para evaluar o juzgar los conceptos o situaciones presentadas en la materia? `[HABILIDADES EVALUACIÓN]`
+
+6.⁠ ⁠Crear:
+¿Qué deberían ser capaces de crear o diseñar los estudiantes utilizando los conceptos aprendidos? `[CREAR O DISEÑAR]`
+
+Objetivo del prompt:
+
+El objetivo es guiar a los profesores en la creación de objetivos de aprendizaje claros, específicos y medibles utilizando la Taxonomía de Bloom. Estos objetivos deben ser alcanzables y relevantes para el nivel educativo y materia específica, y deben estar diseñados para fomentar el desarrollo cognitivo de los estudiantes.
+
+Formato de respuesta:
+
+Proporcionar ejemplos de objetivos de aprendizaje completos que incluyan el nivel de Bloom, la acción a realizar, la habilidad a desarrollar y los criterios de evaluación. Mostrar esta información de manera textual con los detalles y luego en una tabla de resumen con toda la información sintetizada.
+</pre>
+<h2 is-upgraded><strong>Detalle de los parámetros</strong></h2>
+<h3 is-upgraded><strong>1. Nivel Educativo de los Estudiantes:</strong></h3>
+<p>Indica el nivel educativo de los estudiantes para los cuales se crean los objetivos de aprendizaje: &#34;Nivel educativo de los estudiantes: <code>[NIVEL EDUCATIVO]</code>...&#34;</p>
+<ul>
+<li><strong><code>[NIVEL EDUCATIVO]</code></strong>: Especifica el nivel de educación, por ejemplo, Pregrado, Posgrado, educación continua, etc.</li>
+</ul>
+<h3 is-upgraded><strong>2. Materia o Tema Específico:</strong></h3>
+<p>Define la materia o tema específico relacionado con los objetivos de aprendizaje: &#34;Materia o tema específico: <code>[MATERIA TEMA]</code>...&#34;</p>
+<ul>
+<li><strong><code>[MATERIA TEMA]</code></strong>: Detalla la materia o el tema, como Estructuras de datos y algoritmos, física introductoria, etc.</li>
+</ul>
+<h3 is-upgraded><strong>3. Contexto del Uso del Objetivo:</strong></h3>
+<p>Explica el contexto en el que se utilizarán los objetivos de aprendizaje: &#34;Contexto del uso del objetivo: <code>[CONTEXTO USO]</code>...&#34;</p>
+<ul>
+<li><strong><code>[CONTEXTO USO]</code></strong>: Describe el uso de los objetivos, como discusión de clase, exámenes, proyectos, etc.</li>
+</ul>
+<h3 is-upgraded><strong>4. Preguntas Guía para Definir los Objetivos de Aprendizaje (Metodología de Bloom):</strong></h3>
+<p>Utiliza las siguientes preguntas para guiar la definición de los objetivos de aprendizaje según la Taxonomía de Bloom:</p>
+<ol type="1">
+<li><strong>Recordar:</strong> &#34;¿Qué conceptos clave o información deben recordar los estudiantes de esta materia? <code>[CONCEPTOS CLAVE]</code>...&#34; <ul>
+<li><strong><code>[CONCEPTOS CLAVE]</code></strong>: Menciona los conceptos e información que los estudiantes deben recordar.</li>
+</ul>
+</li>
+<li><strong>Comprender:</strong> &#34;¿Qué deben entender los estudiantes en relación con estos conceptos? ¿Cómo deben ser capaces de explicarlos? <code>[CONCEPTOS A ENTENDER]</code>...&#34; <ul>
+<li><strong><code>[CONCEPTOS A ENTENDER]</code></strong>: Indica los conceptos que los estudiantes deben entender y explicar.</li>
+</ul>
+</li>
+<li><strong>Aplicar:</strong> &#34;¿Cómo deberían los estudiantes aplicar estos conceptos en situaciones prácticas o problemas? <code>[CONCEPTOS A APLICAR]</code>...&#34; <ul>
+<li><strong><code>[CONCEPTOS A APLICAR]</code></strong>: Describe cómo los estudiantes deben aplicar los conceptos en situaciones prácticas.</li>
+</ul>
+</li>
+<li><strong>Analizar:</strong> &#34;¿Qué aspectos de la materia deben ser capaces de descomponer y analizar los estudiantes? ¿Cómo deben relacionar estos aspectos? <code>[ASPECTOS A ANALIZAR]</code>...&#34; <ul>
+<li><strong><code>[ASPECTOS A ANALIZAR]</code></strong>: Especifica los aspectos de la materia que deben ser analizados y descompuestos.</li>
+</ul>
+</li>
+<li><strong>Evaluar:</strong> &#34;¿Qué habilidades deben desarrollar los estudiantes para evaluar o juzgar los conceptos o situaciones presentadas en la materia? <code>[HABILIDADES A EVALUAR]</code>...&#34; <ul>
+<li><strong><code>[HABILIDADES A EVALUAR]</code></strong>: Detalla las habilidades de evaluación que los estudiantes deben desarrollar.</li>
+</ul>
+</li>
+<li><strong>Crear:</strong> &#34;¿Qué deberían ser capaces de crear o diseñar los estudiantes utilizando los conceptos aprendidos? <code>[CONCEPTOS A CREAR O DISEÑAR]</code>...&#34; <ul>
+<li><strong><code>[CONCEPTOS A CREAR O DISEÑAR]</code></strong>: Indica qué deberían ser capaces de crear o diseñar utilizando los conceptos aprendidos.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>5. Objetivo del Prompt:</strong></h3>
+<p>Define el objetivo del prompt: &#34;El objetivo es guiar a los profesores en la creación de objetivos de aprendizaje claros, específicos y medibles utilizando la Taxonomía de Bloom. Estos objetivos deben ser alcanzables y relevantes para el nivel educativo y materia específica, y deben estar diseñados para fomentar el desarrollo cognitivo de los estudiantes.&#34;</p>
+<h3 is-upgraded><strong>6. Formato de Respuesta:</strong></h3>
+<p>Explica cómo se debe presentar la información: &#34;Proporcionar ejemplos de objetivos de aprendizaje completos que incluyan el nivel de Bloom, la acción a realizar, la habilidad a desarrollar y los criterios de evaluación. Mostrar esta información de manera textual con los detalles y luego en una tabla de resumen con toda la información sintetizada.&#34;</p>
+<h2 is-upgraded><strong>Ejemplo de Uso del Prompt</strong></h2>
+<p>En este ejemplo, realizamos la prueba con este prompt para el tema de Historia Global, teniendo como tema la Segunda Guerra Mundial</p>
+<p><strong>Nivel educativo de los estudiantes</strong>: Pregrado</p>
+<p><strong>Materia o tema específico</strong>: Historia global</p>
+<p><strong>Contexto del uso del objetivo</strong>: Actividad calificada</p>
+<p><strong>Preguntas guía para definir los objetivos de aprendizaje (Metodología de Bloom):</strong></p>
+<ol type="1">
+<li><strong>Recordar:</strong> ¿Qué conceptos clave o información deben recordar los estudiantes de esta materia? Clases sociales, segunda guerra mundial, causas y consecuencias históricas.</li>
+<li><strong>Comprender:</strong> ¿Qué deben entender los estudiantes en relación con estos conceptos? ¿Cómo deben ser capaces de explicarlos? Las diferencias de clases en el contexto de la segunda guerra mundial y la experiencia dependiendo de esto. Deben poder diferenciar las diferentes condiciones económicas y sociales en esa época.</li>
+<li><strong>Aplicar:</strong> ¿Cómo deberían los estudiantes aplicar estos conceptos en situaciones prácticas o problemas? Deben poder aprender a empatizar en diferentes contextos para saber cómo implementar soluciones diversas dependiendo del contexto.</li>
+<li><strong>Analizar:</strong> ¿Qué aspectos de la materia deben ser capaces de descomponer y analizar los estudiantes? ¿Cómo deben relacionar estos aspectos? El contexto, las diferencias sociales, el privilegio, las oportunidades. Deben relacionarlos con respecto a las condiciones vividas en la segunda guerra mundial.</li>
+<li><strong>Evaluar:</strong> ¿Qué habilidades deben desarrollar los estudiantes para evaluar o juzgar los conceptos o situaciones presentadas en la materia? Análisis, comparación y contraste, explicar.</li>
+<li><strong>Crear:</strong> ¿Qué deberían ser capaces de crear o diseñar los estudiantes utilizando los conceptos aprendidos? Material que dé cuenta de que comprende las diferentes perspectivas dependiendo de las condiciones socioeconómicas de cada quien</li>
+</ol>
+<p><strong>Objetivo del prompt:</strong></p>
+<p>El objetivo es guiar a los profesores en la creación de objetivos de aprendizaje claros, específicos y medibles utilizando la Taxonomía de Bloom. Estos objetivos deben ser alcanzables y relevantes para el nivel educativo y materia específica, y deben estar diseñados para fomentar el desarrollo cognitivo de los estudiantes.</p>
+<p><strong>Formato de respuesta:</strong></p>
+<p>Proporcionar ejemplos de objetivos de aprendizaje completos que incluyan el nivel de Bloom, la acción a realizar, la habilidad a desarrollar y los criterios de evaluación. Mostrar esta información de manera textual con los detalles y luego en una tabla de resumen con toda la información sintetizada.</p>
+<h2 is-upgraded><strong>Resultados de ejemplos de Objetivos de Aprendizaje Utilizando la Taxonomía de Bloom</strong></h2>
+<p>Una vez enviado este prompt, se obtuvo el siguiente resultado, la idea es que usted eliga todos los objetivos de aprendizaje que creas relevantes para tu actividad.</p>
+<p>A continuación se presentan ejemplos de objetivos de aprendizaje para estudiantes de pregrado en el tema de Historia Global, utilizando la Taxonomía de Bloom para guiar el desarrollo cognitivo y la comprensión profunda de los conceptos clave.</p>
+<h3 is-upgraded>1. Recordar</h3>
+<p><strong>Objetivo:</strong> Recuerden las principales causas y consecuencias históricas de la Segunda Guerra Mundial, incluyendo las clases sociales implicadas.</p>
+<ul>
+<li><strong>Nivel de Bloom:</strong> Recordar</li>
+<li><strong>Acción:</strong> Listar, identificar, recordar</li>
+<li><strong>Habilidad a desarrollar:</strong> Recuerdo de hechos y conceptos clave</li>
+<li><strong>Criterios de evaluación:</strong> El estudiante debe ser capaz de enumerar al menos tres causas y tres consecuencias de la Segunda Guerra Mundial, relacionándolas con las clases sociales afectadas.</li>
+</ul>
+<h3 is-upgraded>2. Comprender</h3>
+<p><strong>Objetivo:</strong> Comprender las diferencias en las experiencias durante la Segunda Guerra Mundial basadas en las clases sociales, explicando cómo influenciaron estas diferencias.</p>
+<ul>
+<li><strong>Nivel de Bloom:</strong> Comprender</li>
+<li><strong>Acción:</strong> Explicar, describir, interpretar</li>
+<li><strong>Habilidad a desarrollar:</strong> Comprensión de conceptos y principios</li>
+<li><strong>Criterios de evaluación:</strong> El estudiante debe ser capaz de explicar cómo las diferencias de clase social impactaron las experiencias de las personas durante la Segunda Guerra Mundial, utilizando ejemplos concretos.</li>
+</ul>
+<h3 is-upgraded>3. Aplicar</h3>
+<p><strong>Objetivo:</strong> Aplicar el conocimiento sobre las clases sociales en la Segunda Guerra Mundial para analizar y sugerir soluciones a problemas socioeconómicos contemporáneos.</p>
+<ul>
+<li><strong>Nivel de Bloom:</strong> Aplicar</li>
+<li><strong>Acción:</strong> Aplicar, implementar, usar</li>
+<li><strong>Habilidad a desarrollar:</strong> Aplicación de conocimientos en contextos nuevos</li>
+<li><strong>Criterios de evaluación:</strong> El estudiante debe ser capaz de proponer soluciones basadas en las lecciones históricas sobre clases sociales en situaciones contemporáneas, demostrando entendimiento de las implicaciones históricas.</li>
+</ul>
+<h3 is-upgraded>4. Analizar</h3>
+<p><strong>Objetivo:</strong> Analizar cómo las diferencias socioeconómicas durante la Segunda Guerra Mundial influyeron en el acceso a privilegios y oportunidades, relacionándolas con el contexto histórico.</p>
+<ul>
+<li><strong>Nivel de Bloom:</strong> Analizar</li>
+<li><strong>Acción:</strong> Analizar, diferenciar, descomponer</li>
+<li><strong>Habilidad a desarrollar:</strong> Análisis y síntesis de información</li>
+<li><strong>Criterios de evaluación:</strong> El estudiante debe ser capaz de identificar y discutir cómo las diferencias socioeconómicas afectaron el acceso a privilegios y oportunidades durante la Segunda Guerra Mundial, proporcionando ejemplos detallados.</li>
+</ul>
+<h3 is-upgraded>5. Evaluar</h3>
+<p><strong>Objetivo:</strong> Evaluar críticamente las perspectivas históricas sobre las clases sociales durante la Segunda Guerra Mundial, comparando y contrastando diferentes puntos de vista.</p>
+<ul>
+<li><strong>Nivel de Bloom:</strong> Evaluar</li>
+<li><strong>Acción:</strong> Evaluar, criticar, justificar</li>
+<li><strong>Habilidad a desarrollar:</strong> Evaluación de argumentos y juicio crítico</li>
+<li><strong>Criterios de evaluación:</strong> El estudiante debe ser capaz de comparar y contrastar diferentes interpretaciones históricas sobre las clases sociales durante la Segunda Guerra Mundial, justificando su análisis con evidencia histórica.</li>
+</ul>
+<h3 is-upgraded>6. Crear</h3>
+<p><strong>Objetivo:</strong> Crear un ensayo o presentación que explore las diferentes perspectivas socioeconómicas durante la Segunda Guerra Mundial, demostrando comprensión de las implicaciones históricas y contemporáneas.</p>
+<ul>
+<li><strong>Nivel de Bloom:</strong> Crear</li>
+<li><strong>Acción:</strong> Crear, diseñar, elaborar</li>
+<li><strong>Habilidad a desarrollar:</strong> Creación de nuevos patrones o estructuras</li>
+<li><strong>Criterios de evaluación:</strong> El estudiante debe ser capaz de desarrollar un material (ensayo, presentación) que analice y compare las perspectivas socioeconómicas durante la Segunda Guerra Mundial, integrando múltiples puntos de vista y evidencias.</li>
+</ul>
+<p>Estos objetivos están diseñados para ser claros, específicos y medibles, ayudando a guiar a los profesores en la creación de actividades y evaluaciones que promuevan el aprendizaje efectivo y profundo en el contexto de la historia global.</p>
+<p><a href="https://www.notion.so/Creaci-n-de-objetivos-de-aprendizaje-12ad9acc2d214762bb2fa12f331d4071?pvs=21" target="_blank">Creación de objetivos de aprendizaje</a></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Ideación de actividades" duration="0">
+        <h2 is-upgraded><strong>Descripción</strong></h2>
+<p>En esta sección, generarás ideas para actividades educativas que se pueden evaluar con una rúbrica. Aquí aprenderás a identificar objetivos de aprendizaje y a diseñar actividades que los cumplan.</p>
+<h2 is-upgraded><strong>Prerrequisitos</strong></h2>
+<ul>
+<li>Haber completado la <strong>Creación de Objetivos de aprendizaje</strong>.</li>
+</ul>
+<h2 is-upgraded><strong>Descripción del prompt</strong></h2>
+<p>El prompt de &#34;Ideación de actividades&#34; es una herramienta diseñada para ayudar a los educadores a crear actividades interactivas y dinámicas que aumenten la participación, el interés y la motivación de los estudiantes. Este prompt es útil porque guía al docente a considerar diversos aspectos esenciales para la planificación de una actividad educativa efectiva, tales como el nivel educativo de los estudiantes, la materia específica, el contexto en el que se utilizará la actividad y los objetivos de aprendizaje deseados.</p>
+<p>Además, el prompt incentiva la creación de múltiples alternativas para la actividad, promoviendo la flexibilidad y la adaptación a diferentes situaciones y necesidades educativas. Al desglosar los pros y contras de cada opción, los docentes pueden tomar decisiones informadas sobre qué actividades implementar, optimizando así el proceso de enseñanza-aprendizaje.</p>
+<h2 is-upgraded><strong>Prompt</strong></h2>
+<pre>Nivel educativo de los estudiantes: `[NIVEL EDUCATIVO] (Pregrado, Posgrado, educación continua, etc.)`
+Materia o tema específico: `[MATERIA TEMA] (Estructuras de datos y algoritmos, física introductoria, etc.)`
+
+Contexto del uso del prompt: `[CONTEXTO USO] (Discusión de clase, bonos, actividad calificada, etc.)`
+Objetivos de aprendizaje: `[OBJETIVO DE APRENDIZAJE] (Los estudiantes deben identificar al menos 3 estructuras de datos, los estudiantes deben comprender el concepto de un plano inclinado, etc)`
+
+Objetivo del prompt: El objetivo es aumentar la participación, interés y motivación de los estudiantes a través de dinámicas interactivas que fomenten el pensamiento crítico, la resolución de problemas y el trabajo en equipo.
+
+Formato de respuesta: Generar múltiples opciones y alternativas, desglosando los pros y contras de cada una de las opciones. Incluir una descripción de cada actividad y un ejemplo breve. Mostrar esto de manera textual al inicio con los detalles y luego en una tabla de resumen con toda la información sintetizada.
+</pre>
+<h2 is-upgraded><strong>Detalle de los parámetros</strong></h2>
+<h3 is-upgraded><strong>1. Nivel Educativo de los Estudiantes:</strong></h3>
+<p>Indica el nivel educativo de los estudiantes para los cuales se crean los objetivos de aprendizaje: &#34;Nivel educativo de los estudiantes: <code>[NIVEL EDUCATIVO]</code>...&#34;</p>
+<ul>
+<li><strong><code>[NIVEL EDUCATIVO]</code></strong>: Especifica el nivel de educación, por ejemplo, Pregrado, Posgrado, educación continua, etc.</li>
+</ul>
+<h3 is-upgraded><strong>2. Materia o Tema Específico:</strong></h3>
+<p>Define la materia o tema específico relacionado con los objetivos de aprendizaje: &#34;Materia o tema específico: <code>[MATERIA TEMA]</code>...&#34;</p>
+<ul>
+<li><strong><code>[MATERIA TEMA]</code></strong>: Detalla la materia o el tema, como Estructuras de datos y algoritmos, física introductoria, etc.</li>
+</ul>
+<h3 is-upgraded><strong>3. Contexto del Uso del Prompt:</strong></h3>
+<p>Explica el contexto en el cual se utilizará el prompt: &#34;Contexto del uso del prompt: <code>[CONTEXTO USO]</code>...&#34;</p>
+<ul>
+<li><strong><code>[CONTEXTO USO]</code></strong>: Describe el contexto, por ejemplo, Discusión de clase, bonos, actividad calificada, etc.</li>
+</ul>
+<h3 is-upgraded><strong>4. Objetivos de Aprendizaje:</strong></h3>
+<p>Describe los objetivos de aprendizaje que se espera que los estudiantes logren: &#34;Objetivos de aprendizaje: <code>[OBJETIVO DE APRENDIZAJE]</code>...&#34;</p>
+<ul>
+<li><strong><code>[OBJETIVO DE APRENDIZAJE]</code></strong>: Detalla los objetivos, como Los estudiantes deben identificar al menos 3 estructuras de datos, los estudiantes deben comprender el concepto de un plano inclinado, etc.</li>
+</ul>
+<h3 is-upgraded><strong>5. Objetivo del Prompt:</strong></h3>
+<p>Define el objetivo general del prompt: &#34;Objetivo del prompt: El objetivo es aumentar la participación, interés y motivación de los estudiantes a través de dinámicas interactivas que fomenten el pensamiento crítico, la resolución de problemas y el trabajo en equipo.&#34;</p>
+<h3 is-upgraded><strong>6. Formato de Respuesta:</strong></h3>
+<p>Describe cómo se debe estructurar la respuesta: &#34;Formato de respuesta: Generar múltiples opciones y alternativas, desglosando los pros y contras de cada una de las opciones. Incluir una descripción de cada actividad y un ejemplo breve. Mostrar esto de manera textual al inicio con los detalles y luego en una tabla de resumen con toda la información sintetizada.&#34;</p>
+<h2 is-upgraded><strong>Ejemplo del Prompt</strong></h2>
+<p><strong>Nivel educativo de los estudiantes:</strong> Pregrado</p>
+<p><strong>Materia o tema específico:</strong> Historia mundial: Segunda Guerra Mundial</p>
+<p><strong>Contexto del uso del prompt:</strong> Actividad calificada</p>
+<p><strong>Objetivos de aprendizaje:</strong></p>
+<ul>
+<li><strong>Objetivo:</strong> Los estudiantes podrán aplicar su comprensión de las diferencias socioeconómicas para empatizar y diseñar soluciones adaptadas a diversos contextos históricos.</li>
+<li><strong>Acción:</strong> Aplicar</li>
+<li><strong>Habilidad:</strong> Aplicación</li>
+<li><strong>Criterios de Evaluación:</strong> Los estudiantes participarán en un ejercicio de role-playing donde tendrán que tomar decisiones estratégicas basadas en diferentes contextos socioeconómicos de la Segunda Guerra Mundial.</li>
+</ul>
+<p><strong>Objetivo del prompt:</strong> El objetivo es aumentar la participación, interés y motivación de los estudiantes a través de dinámicas interactivas que fomenten el pensamiento crítico, la resolución de problemas y el trabajo en equipo.</p>
+<p><strong>Formato de respuesta:</strong> Generar múltiples opciones y alternativas, desglosando los pros y contras de cada una de las opciones. Incluir una descripción de cada actividad y un ejemplo breve. Mostrar esto de manera textual al inicio con los detalles y luego en una tabla de resumen con toda la información sintetizada.</p>
+<p>Una vez enviado este prompt, se obtuvo el siguiente resultado, la idea es que eligas la actividad que mas te guste y se acomode a los propositos que tengas en el curso</p>
+<h2 is-upgraded><strong>Respuesta del prompt: opciones de actividades</strong></h2>
+<ol type="1">
+<li><strong>Actividad: Juego de Memoria de Estructuras de Datos</strong><ul>
+<li><strong>Descripción:</strong> Los estudiantes formarán equipos y jugarán un juego de memoria donde tendrán que emparejar tarjetas con nombres y características de diferentes estructuras de datos.</li>
+<li><strong>Pros:</strong> Fomenta el trabajo en equipo y la memoria visual.</li>
+<li><strong>Contras:</strong> Puede ser menos efectivo para estudiantes que prefieren el aprendizaje individual.</li>
+</ul>
+</li>
+<li><strong>Actividad: Debate sobre Eficiencia de Algoritmos</strong><ul>
+<li><strong>Descripción:</strong> Los estudiantes discutirán en grupos sobre la eficiencia de diferentes algoritmos para resolver un problema específico.</li>
+<li><strong>Pros:</strong> Promueve el pensamiento crítico y la capacidad de argumentación.</li>
+<li><strong>Contras:</strong> Algunos estudiantes pueden sentirse incómodos al hablar en público.</li>
+</ul>
+</li>
+<li><strong>Actividad: Resolución de Problemas en Grupo</strong><ul>
+<li><strong>Descripción:</strong> Los estudiantes trabajarán en grupos para resolver problemas de programación utilizando diferentes estructuras de datos.</li>
+<li><strong>Pros:</strong> Desarrolla habilidades de resolución de problemas y colaboración.</li>
+<li><strong>Contras:</strong> Requiere una preparación previa para comprender completamente las estructuras de datos.</li>
+</ul>
+</li>
+</ol>
+<p><a href="https://www.notion.so/Ideaci-n-de-actividades-interactivas-7542a6c9213246588f1ec788d49390bc?pvs=21" target="_blank">Ideación de actividades interactivas</a></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Refinamiento de una actividad" duration="0">
+        <h2 is-upgraded><strong>Descripción</strong></h2>
+<p>Refina y mejora las actividades educativas ideadas previamente. Asegúrate de que sean claras, alcanzables y alineadas con los objetivos de aprendizaje.</p>
+<h2 is-upgraded><strong>Prerrequisitos</strong></h2>
+<ul>
+<li>Haber completado la <strong>Ideación de actividades</strong>.</li>
+</ul>
+<h2 is-upgraded><strong>Descripción del prompt</strong></h2>
+<p>El prompt &#34;Refinamiento de actividades&#34; está diseñado para ayudar a educadores a refinar y detallar actividades educativas previamente seleccionadas, mejorando su claridad, viabilidad y efectividad en el cumplimiento de los objetivos de aprendizaje. Al responder una serie de preguntas sobre la descripción, recursos, duración, instrucciones, evaluación, participación, resultados esperados y adaptaciones, los educadores pueden desarrollar un documento completo y estructurado que integre toda la información necesaria para implementar exitosamente la actividad refinada en el contexto educativo específico.</p>
+<h2 is-upgraded><strong>Prompt</strong></h2>
+<pre>Nivel educativo de los estudiantes: `[NIVEL EDUCATIVO] Pregrado, posgrado, educación continua, etc.`
+
+Materia o tema específico: `[MATERIA TEMA] Historia, física, estructuras de datos`
+
+Contexto del uso del prompt: `[CONTEXTO USO] Discusión de clase, bonos, actividad calificada`
+
+Objetivos de aprendizaje: `[OBJETIVO DE APRENDIZAJE] Los estudiantes deben identificar al menos 3 estructuras de datos, los estudiantes deben comprender el concepto de un plano inclinado, etc.`
+
+Objetivo del prompt: Refinar y detallar una actividad educativa seleccionada previamente para mejorar la claridad, viabilidad y efectividad en el cumplimiento de los objetivos de aprendizaje.
+
+Formato de respuesta: Una vez que se respondan todas las preguntas, generar un documento que integre toda la información en un formato claro y estructurado, proporcionando una visión completa y detallada de la actividad refinada.
+
+1. Descripción de la actividad:
+• ¿Cuál es la actividad seleccionada? `[ACTIVIDAD SELECCIONADA]`
+• ¿Cómo se desarrolla la actividad paso a paso? `[DESARROLLO PASOS]`
+
+2. Recursos necesarios:
+• ¿Qué materiales y recursos se necesitan para la actividad? `[MATERIALES NECESARIOS]`
+• ¿Es necesario algún equipo o software específico? `[EQUIPO SOFTWARE]`
+
+3. Duración de la actividad:
+• ¿Cuánto tiempo se requiere para completar la actividad? `[TIEMPO REQUERIDO]`
+• ¿La actividad se realizará en una sola sesión, en varias o fuera de clase? `[DURACIÓN SESIONES]`
+
+4. Instrucciones para los estudiantes:
+• ¿Cuáles son las instrucciones detalladas para los estudiantes? `[INSTRUCCIONES DETALLADAS]`
+• ¿Qué información previa deben conocer los estudiantes antes de comenzar? `[INFORMACIÓN PREVIA]`
+
+5. Evaluación:
+• ¿Cómo se evaluará el desempeño de los estudiantes en esta actividad? `[EVALUACIÓN]`
+• ¿Se utilizarán rúbricas, cuestionarios, presentaciones, etc.? `[TIPO EVALUACIÓN]`
+6. Participación y roles:
+• ¿Cómo se estructurará la participación de los estudiantes? (individual, parejas, grupos) `[ESTRUCTURA PARTICIPACIÓN]`
+• ¿Qué roles específicos tendrán los estudiantes, si los hay? `[ROLES ESTUDIANTES]`
+
+7. Resultados esperados:
+• ¿Cuáles son los resultados y productos esperados de la actividad? `[RESULTADOS ESPERADOS]`
+• ¿Cómo se alinean estos resultados con los objetivos de aprendizaje? `[ALINEACIÓN OBJETIVOS]`
+
+8. Adaptaciones y consideraciones especiales:
+• ¿Existen adaptaciones para estudiantes con necesidades especiales? `[ADAPTACIONES]`
+• ¿Qué consideraciones adicionales deben tenerse en cuenta para asegurar la inclusión y la equidad? `[CONSIDERACIONES ESPECIALES]`
+</pre>
+<h2 is-upgraded><strong>Detalle de los parámetros</strong></h2>
+<h3 is-upgraded><strong>1. Nivel Educativo de los Estudiantes:</strong></h3>
+<p>Indica el nivel educativo de los estudiantes: &#34;Nivel educativo de los estudiantes: <code>[NIVEL EDUCATIVO]</code>...&#34;</p>
+<ul>
+<li><strong><code>[NIVEL EDUCATIVO]</code></strong>: Pregrado, Posgrado, educación continua, etc.</li>
+</ul>
+<h3 is-upgraded><strong>2. Materia o Tema Específico:</strong></h3>
+<p>Define la materia o tema específico: &#34;Materia o tema específico: <code>[MATERIA TEMA]</code>...&#34;</p>
+<ul>
+<li><strong><code>[MATERIA TEMA]</code></strong>: Historia, Física, Estructuras de datos, etc.</li>
+</ul>
+<h3 is-upgraded><strong>3. Contexto del Uso del Prompt:</strong></h3>
+<p>Explica el contexto del uso del prompt: &#34;Contexto del uso del prompt: <code>[CONTEXTO USO]</code>...&#34;</p>
+<ul>
+<li><strong><code>[CONTEXTO USO]</code></strong>: Discusión de clase, bonos, actividad calificada, etc.</li>
+</ul>
+<h3 is-upgraded><strong>4. Objetivos de Aprendizaje:</strong></h3>
+<p>Detalla los objetivos de aprendizaje: &#34;Objetivos de aprendizaje: <code>[OBJETIVO DE APRENDIZAJE]</code>...&#34;</p>
+<ul>
+<li><strong><code>[OBJETIVO DE APRENDIZAJE]</code></strong>: Los estudiantes deben identificar al menos 3 estructuras de datos, comprender el concepto de un plano inclinado, etc.</li>
+</ul>
+<h3 is-upgraded><strong>5. Descripción de la Actividad:</strong></h3>
+<p>Describe la actividad y sus pasos:</p>
+<ol type="1">
+<li>&#34;¿Cuál es la actividad seleccionada? <code>[ACTIVIDAD SELECCIONADA]</code>...&#34; <ul>
+<li><strong><code>[ACTIVIDAD SELECCIONADA]</code></strong>: Describe brevemente la actividad.</li>
+</ul>
+</li>
+<li>&#34;¿Cómo se desarrolla la actividad paso a paso? <code>[DESARROLLO PASOS]</code>...&#34; <ul>
+<li><strong><code>[DESARROLLO PASOS]</code></strong>: Detalla los pasos específicos.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>6. Recursos Necesarios:</strong></h3>
+<p>Lista los materiales y recursos necesarios:</p>
+<ol type="1">
+<li>&#34;¿Qué materiales y recursos se necesitan? <code>[MATERIALES NECESARIOS]</code>...&#34; <ul>
+<li><strong><code>[MATERIALES NECESARIOS]</code></strong>: Enumera los materiales.</li>
+</ul>
+</li>
+<li>&#34;¿Es necesario algún equipo o software específico? <code>[EQUIPO SOFTWARE]</code>...&#34; <ul>
+<li><strong><code>[EQUIPO SOFTWARE]</code></strong>: Indica si se necesita equipo o software específico.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>7. Duración de la Actividad:</strong></h3>
+<p>Indica el tiempo necesario:</p>
+<ol type="1">
+<li>&#34;¿Cuánto tiempo se requiere? <code>[TIEMPO REQUERIDO]</code>...&#34; <ul>
+<li><strong><code>[TIEMPO REQUERIDO]</code></strong>: Estima el tiempo necesario.</li>
+</ul>
+</li>
+<li>&#34;¿Se realizará en una sola sesión o en varias? <code>[DURACIÓN SESIONES]</code>...&#34; <ul>
+<li><strong><code>[DURACIÓN SESIONES]</code></strong>: Especifica si se realizará en una o varias sesiones.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>8. Instrucciones para los Estudiantes:</strong></h3>
+<p>Proporciona instrucciones detalladas:</p>
+<ol type="1">
+<li>&#34;¿Cuáles son las instrucciones? <code>[INSTRUCCIONES DETALLADAS]</code>...&#34; <ul>
+<li><strong><code>[INSTRUCCIONES DETALLADAS]</code></strong>: Explica las instrucciones paso a paso.</li>
+</ul>
+</li>
+<li>&#34;¿Qué información previa deben conocer? <code>[INFORMACIÓN PREVIA]</code>...&#34; <ul>
+<li><strong><code>[INFORMACIÓN PREVIA]</code></strong>: Describe la información previa necesaria.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>9. Evaluación:</strong></h3>
+<p>Detalla cómo se evaluará:</p>
+<ol type="1">
+<li>&#34;¿Cómo se evaluará? <code>[EVALUACIÓN]</code>...&#34; <ul>
+<li><strong><code>[EVALUACIÓN]</code></strong>: Explica el método de evaluación.</li>
+</ul>
+</li>
+<li>&#34;¿Se utilizarán rúbricas, cuestionarios, presentaciones, etc.? <code>[TIPO EVALUACIÓN]</code>...&#34; <ul>
+<li><strong><code>[TIPO EVALUACIÓN]</code></strong>: Indica los tipos de evaluación.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>10. Participación y Roles:</strong></h3>
+<p>Explica la participación y roles:</p>
+<ol type="1">
+<li>&#34;¿Cómo se estructurará la participación? <code>[ESTRUCTURA PARTICIPACIÓN]</code>...&#34; <ul>
+<li><strong><code>[ESTRUCTURA PARTICIPACIÓN]</code></strong>: Describe la estructura de participación.</li>
+</ul>
+</li>
+<li>&#34;¿Qué roles tendrán los estudiantes? <code>[ROLES ESTUDIANTES]</code>...&#34; <ul>
+<li><strong><code>[ROLES ESTUDIANTES]</code></strong>: Indica los roles específicos.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>11. Resultados Esperados:</strong></h3>
+<p>Define los resultados esperados:</p>
+<ol type="1">
+<li>&#34;¿Cuáles son los resultados esperados? <code>[RESULTADOS ESPERADOS]</code>...&#34; <ul>
+<li><strong><code>[RESULTADOS ESPERADOS]</code></strong>: Describe los resultados esperados.</li>
+</ul>
+</li>
+<li>&#34;¿Cómo se alinean estos resultados con los objetivos de aprendizaje? <code>[ALINEACIÓN OBJETIVOS]</code>...&#34; <ul>
+<li><strong><code>[ALINEACIÓN OBJETIVOS]</code></strong>: Explica la alineación con los objetivos.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>12. Adaptaciones y Consideraciones Especiales:</strong></h3>
+<p>Detalla adaptaciones y consideraciones especiales:</p>
+<ol type="1">
+<li>&#34;¿Existen adaptaciones para estudiantes con necesidades especiales? <code>[ADAPTACIONES]</code>...&#34; <ul>
+<li><strong><code>[ADAPTACIONES]</code></strong>: Menciona las adaptaciones necesarias.</li>
+</ul>
+</li>
+<li>&#34;¿Qué consideraciones adicionales deben tenerse en cuenta? <code>[CONSIDERACIONES ESPECIALES]</code>...&#34; <ul>
+<li><strong><code>[CONSIDERACIONES ESPECIALES]</code></strong>: Describe las consideraciones adicionales.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>Ejemplo de Uso del Prompt</strong></h3>
+<p><strong>Nivel educativo de los estudiantes:</strong> Pregrado</p>
+<p><strong>Materia o tema específico:</strong> Historia Mundial: Segunda guerra mundial</p>
+<p><strong>Contexto del uso del prompt:</strong> Actividad calificada</p>
+<p><strong>Objetivos de aprendizaje:</strong></p>
+<p>Objetivo: Los estudiantes podrán aplicar su comprensión de las diferencias socioeconómicas para empatizar y diseñar soluciones adaptadas a diversos contextos históricos.</p>
+<p><strong>Acción:</strong> Aplicar</p>
+<p><strong>Habilidad:</strong> Aplicación</p>
+<p><strong>Criterios de Evaluación:</strong> Los estudiantes participarán en un ejercicio de role-playing donde tendrán que tomar decisiones estratégicas basadas en diferentes contextos socioeconómicos de la Segunda Guerra Mundial.</p>
+<p><strong>Objetivo del prompt:</strong> Refinar y detallar una actividad educativa seleccionada previamente para mejorar la claridad, viabilidad y efectividad en el cumplimiento de los objetivos de aprendizaje.</p>
+<p><strong>Formato de respuesta:</strong> Una vez que se respondan todas las preguntas, generar un documento que integre toda la información en un formato claro y estructurado, proporcionando una visión completa y detallada de la actividad refinada.</p>
+<ol type="1">
+<li><strong>Descripción de la actividad:</strong></li>
+</ol>
+<ul>
+<li>¿Cuál es la actividad seleccionada? Los estudiantes escriben una serie de cartas entre un soldado en el frente y su familia en casa, reflejando diferentes contextos socioeconómicos.</li>
+<li>¿Cómo se desarrolla la actividad paso a paso? Los estudiantes deben desarrollar en grupos de 3 cartas entre un soldado y su familia, pero deben hacerlo desde la perspectiva de una persona de clase alta, media y baja de la época. Deben escribir las cartas durante clase y mostrar avances, y luego entregarlo una semana después</li>
+</ul>
+<ol type="1" start="2">
+<li><strong>Recursos necesarios:</strong></li>
+</ol>
+<ul>
+<li>¿Qué materiales y recursos se necesitan para la actividad? Pueden usar computador o pueden hacerlo en papel, lo que prefieran</li>
+<li>¿Es necesario algún equipo o software específico? Algún editor de texto si deciden utilizar computador</li>
+</ul>
+<ol type="1" start="3">
+<li><strong>Duración de la actividad:</strong></li>
+</ol>
+<ul>
+<li>¿Cuánto tiempo se requiere para completar la actividad? 1 semana</li>
+<li>¿La actividad se realizará en una sola sesión, en varias o fuera de clase? Inician en clase para poder resolver cualquier duda y tienen una semana para entregar desde el inicio de la actividad</li>
+</ul>
+<ol type="1" start="4">
+<li><strong>Instrucciones para los estudiantes:</strong></li>
+</ol>
+<ul>
+<li>¿Cuáles son las instrucciones detalladas para los estudiantes? Deben organizarse en grupos de 3 estudiantes. Cada estudiante debe seleccionar representar cada clase socioeconómica seleccionada (alta, media, baja) y empezar a redactar la carta con el rol que le corresponda. Entre ellos deciden quién va a representar a quien</li>
+<li>¿Qué información previa deben conocer los estudiantes antes de comenzar? Las causas de la segunda guerra mundial, cómo vivía una persona en europa en ese tiempo, cuales eran las diferentes condiciones socioeconómicas dependiendo de el país y clase social de los individuos, las consecuencias de la guerra</li>
+</ul>
+<ol type="1" start="5">
+<li><strong>Evaluación:</strong></li>
+</ol>
+<ul>
+<li>¿Cómo se evaluará el desempeño de los estudiantes en esta actividad? Que las cartas reflejen el entendimiento de los conceptos explicados en clase de Las causas de la segunda guerra mundial, cómo vivía una persona en europa en ese tiempo, cuales eran las diferentes condiciones socioeconómicas dependiendo de el país y clase social de los individuos, las consecuencias de la guerra y que tengan una buena ortografía</li>
+<li>¿Se utilizarán rúbricas, cuestionarios, presentaciones, etc.? Rubrica de evaluación</li>
+</ul>
+<ol type="1" start="6">
+<li><strong>Participación y roles:</strong></li>
+</ol>
+<ul>
+<li>¿Cómo se estructurará la participación de los estudiantes? (individual, parejas, grupos) En grupos de 3, cada uno debe hacer una carta desde una perspectiva diferente</li>
+<li>¿Qué roles específicos tendrán los estudiantes, si los hay? Uno por cada clase social</li>
+</ul>
+<ol type="1" start="7">
+<li><strong>Resultados esperados:</strong></li>
+</ol>
+<ul>
+<li>¿Cuáles son los resultados y productos esperados de la actividad? Las 3 cartas terminadas desde las diferentes perspectivas</li>
+<li>¿Cómo se alinean estos resultados con los objetivos de aprendizaje? Deben reflejar el entendimiento de los estudiantes de las diferencias entre las clases sociales y poder aplicar esto en soluciones a distintos contextos históricos</li>
+</ul>
+<ol type="1" start="8">
+<li><strong>Adaptaciones y consideraciones especiales:</strong></li>
+</ol>
+<ul>
+<li>¿Existen adaptaciones para estudiantes con necesidades especiales? No</li>
+<li>¿Qué consideraciones adicionales deben tenerse en cuenta para asegurar la inclusión y la equidad? Ninguna</li>
+</ul>
+<p>Una vez implementado el prompt, se dio como resultado la siguiente actividad con sus caracteristicas, sientete libre de modificar caracteristicas o resultados de la actividad refinada</p>
+<h3 is-upgraded>Actividad Educativa Refinada: Cartas desde Diferentes Contextos Socioeconómicos durante la Segunda Guerra Mundial</h3>
+<h3 is-upgraded>1. Descripción de la Actividad:</h3>
+<ul>
+<li><strong>Actividad Seleccionada:</strong> Los estudiantes escriben una serie de cartas entre un soldado en el frente y su familia en casa, reflejando diferentes contextos socioeconómicos.</li>
+<li><strong>Desarrollo Paso a Paso:</strong> Los estudiantes se organizan en grupos de tres. Cada estudiante asume el rol de representar una clase socioeconómica diferente (alta, media, baja) durante la Segunda Guerra Mundial. Deben redactar tres cartas en total: una desde la perspectiva de cada clase social, reflejando cómo vivían, las preocupaciones y las condiciones durante la guerra. La actividad inicia en clase para discutir y resolver dudas, y los estudiantes tienen una semana para completar y entregar las cartas finalizadas.</li>
+</ul>
+<h3 is-upgraded>2. Recursos Necesarios:</h3>
+<ul>
+<li><strong>Materiales y Recursos:</strong> Papel y bolígrafos o computadoras con acceso a un editor de texto.</li>
+<li><strong>Equipo o Software Específico:</strong> Opcionalmente, un editor de texto si se decide usar computadoras.</li>
+</ul>
+<h3 is-upgraded>3. Duración de la Actividad:</h3>
+<ul>
+<li><strong>Tiempo Requerido:</strong> La actividad se extiende a lo largo de una semana.</li>
+<li><strong>Estructura de Sesiones:</strong> Inicio en clase para la discusión inicial y resolución de dudas, con la entrega final una semana después.</li>
+</ul>
+<h3 is-upgraded>4. Instrucciones para los Estudiantes:</h3>
+<ul>
+<li><strong>Instrucciones Detalladas:</strong><ul>
+<li>Formen grupos de tres estudiantes.</li>
+<li>Cada estudiante elige representar una clase social (alta, media, baja).</li>
+<li>Escriban una carta desde la perspectiva de cada clase social, reflejando cómo la guerra afectó a cada uno.</li>
+<li>Inicien la redacción en clase y organicen el trabajo para la entrega final.</li>
+</ul>
+</li>
+<li><strong>Conocimientos Previos Requeridos:</strong><ul>
+<li>Causas de la Segunda Guerra Mundial.</li>
+<li>Condiciones de vida en Europa durante el conflicto.</li>
+<li>Diferencias socioeconómicas entre países y clases sociales.</li>
+<li>Consecuencias de la guerra.</li>
+</ul>
+</li>
+</ul>
+<h3 is-upgraded>5. Evaluación:</h3>
+<ul>
+<li><strong>Criterios de Evaluación:</strong><ul>
+<li>Las cartas deben reflejar comprensión de las condiciones socioeconómicas durante la Segunda Guerra Mundial.</li>
+<li>Uso adecuado de la ortografía y gramática.</li>
+</ul>
+</li>
+<li><strong>Instrumentos de Evaluación:</strong> Se utilizará una rúbrica detallada para evaluar las cartas.</li>
+</ul>
+<h3 is-upgraded>6. Participación y Roles:</h3>
+<ul>
+<li><strong>Estructura de Participación:</strong> Trabajo en grupos de tres estudiantes.</li>
+<li><strong>Roles Específicos:</strong> Cada estudiante representa una clase social diferente (alta, media, baja).</li>
+</ul>
+<h3 is-upgraded>7. Resultados Esperados:</h3>
+<ul>
+<li><strong>Productos de la Actividad:</strong> Tres cartas finalizadas, una desde cada perspectiva socioeconómica.</li>
+<li><strong>Alineación con los Objetivos de Aprendizaje:</strong> Las cartas demostrarán la comprensión de las diferencias entre las clases sociales y la capacidad de aplicar este entendimiento a contextos históricos específicos.</li>
+</ul>
+<h3 is-upgraded>8. Adaptaciones y Consideraciones Especiales:</h3>
+<ul>
+<li><strong>Adaptaciones para Necesidades Especiales:</strong> No se requieren adaptaciones específicas para esta actividad.</li>
+<li><strong>Consideraciones de Inclusión y Equidad:</strong> Asegurar que todos los estudiantes tengan acceso equitativo a los recursos necesarios para completar la actividad.</li>
+</ul>
+<p>Esta actividad está diseñada para permitir a los estudiantes explorar y comprender las diferentes realidades socioeconómicas durante la Segunda Guerra Mundial a través de un ejercicio de escritura creativa, promoviendo el pensamiento crítico y la empatía histórica.</p>
+<p><a href="https://www.notion.so/Refinamiento-de-actividades-2be8319cc31846f3886698dfe21646c2?pvs=21" target="_blank">Refinamiento de actividades</a></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Creación de una rúbrica" duration="0">
+        <h2 is-upgraded><strong>Descripción</strong></h2>
+<p>Aprenderás a crear una rúbrica efectiva, definiendo criterios claros y escalas de puntuación para evaluar actividades educativas.</p>
+<h2 is-upgraded><strong>Prerrequisitos</strong></h2>
+<ul>
+<li>Haber completado el <strong>Refinamiento de una actividad</strong>.</li>
+</ul>
+<h2 is-upgraded><strong>Descripción del prompt</strong></h2>
+<p>El siguiente prompt está diseñado para ayudar a los profesores a crear rúbricas a partir de actividades previamente diseñadas por el prompt de creación de actividades, o previamente diseñadas por el profesor utilizando herramientas de inteligencia artificial generativa.</p>
+<h2 is-upgraded><strong>Prompt</strong></h2>
+<pre>Prompt: Crear una rúbrica para una actividad educativa
+
+Nivel educativo de los estudiantes: `[NIVEL EDUCATIVO]` (Pregrado, posgrado, educación continua, etc.)
+
+Materia o tema específico: `[MATERIA/TEMA]` (Historia, física, estructuras de datos)
+
+Contexto del uso del prompt: `[CONTEXTO USO]` (Discusión de clase, bonos, actividad calificada)
+
+Objetivos de aprendizaje: `[OBJETIVO DE APRENDIZAJE]` (Los estudiantes deben identificar al menos 3 estructuras de datos, los estudiantes deben comprender el concepto de un plano inclinado, etc.)
+
+Objetivo del prompt: Crear una rúbrica detallada y estructurada para evaluar una actividad educativa específica, asegurando que cubra todos los aspectos necesarios para una evaluación clara y justa de los estudiantes.
+
+Formato de respuesta: Generar una rúbrica completa con criterios de evaluación, intervalos de calificación, puntaje total, distribución porcentual de los puntos, y comentarios específicos para cada nivel de desempeño.
+
+Quiero que me preguntes por cada una de estas preguntas, una por una, y una vez tengas toda la información me des la respuesta final:
+
+1. Descripción de la actividad:
+• ¿Cuál es la actividad seleccionada? `[ACTIVIDAD SELECCIONADA]`
+• ¿Cómo se alinea esta actividad con los objetivos de aprendizaje? `[ALINEACIÓN CON OBJETIVOS]`
+
+2. Objetivos de aprendizaje:
+• ¿Cuáles son los objetivos de aprendizaje específicos que esta actividad debe cumplir? `[OBJETIVOS ESPECÍFICOS]`
+• ¿Qué habilidades o conocimientos específicos se espera que los estudiantes demuestren a través de esta actividad? `[HABILIDADES Y CONOCIMIENTOS]`
+
+3. Criterios de evaluación:
+• ¿Qué aspectos específicos de la actividad deben evaluarse para asegurar que se cumplan los objetivos de aprendizaje? `[ASPECTOS A EVALUAR]`
+• ¿Cómo se pueden desglosar estos aspectos en criterios claros y medibles? `[CRITERIOS CLAROS Y MEDIBLES]`
+
+4. Intervalo de calificación:
+• ¿Cuál debería ser el rango de puntos para cada criterio de evaluación (punto mínimo y máximo)? `[RANGO DE PUNTOS]`
+• ¿Cómo se puede estructurar este intervalo para reflejar diferentes niveles de dominio (perfecto, bueno, medio, bajo)? `[ESTRUCTURA DEL INTERVALO]`
+
+5. Puntaje total:
+• ¿Cuál es el puntaje total posible para la rúbrica? `[PUNTAJE TOTAL]`
+• ¿Cómo podemos distribuir los puntos de manera justa para reflejar la importancia de cada criterio? `[DISTRIBUCIÓN JUSTA]`
+
+6. Distribución porcentual:
+• ¿Cómo se deben distribuir los puntos en los criterios de evaluación?
+    ◦ Criterio 1: `[10%]`
+    ◦ Criterio 2: `[20%]`
+    ◦ ... `[DISTRIBUCIÓN PERCENTUAL]`
+
+7. Comentarios por nivel de desempeño:
+• ¿Cuáles son los comentarios específicos para cada posible cantidad de puntos asignada en cada criterio? `[COMENTARIOS ESPECÍFICOS]`
+• ¿Cómo describiríamos el desempeño perfecto, bueno, medio y bajo para cada criterio, de manera que sea claro para los estudiantes? `[DESCRIPCIÓN DE DESEMPEÑO]`
+
+8. Evaluación global:
+• ¿Cómo se evaluará el desempeño global de los estudiantes en esta actividad? `[EVALUACIÓN GLOBAL]`
+• ¿Qué otros métodos de evaluación (además de la rúbrica) podrían complementarse para tener una visión completa del rendimiento del estudiante? `[MÉTODOS COMPLEMENTARIOS]`
+
+9. Formato de respuesta:
+• Una vez que se respondan todas las preguntas, generar una tabla clara y detallada que organice toda la información, proporcionando una rúbrica completa y estructurada para la actividad seleccionada. 
+</pre>
+<h2 is-upgraded><strong>Detalle de los parámetros</strong></h2>
+<h3 is-upgraded><strong>1. Nivel Educativo de los Estudiantes:</strong></h3>
+<p>Indica el nivel educativo de los estudiantes: &#34;Nivel educativo de los estudiantes: <code>[NIVEL EDUCATIVO]</code>...&#34;</p>
+<ul>
+<li><strong><code>[NIVEL EDUCATIVO]</code></strong>: Pregrado, Posgrado, educación continua, etc.</li>
+</ul>
+<h3 is-upgraded><strong>2. Materia o Tema Específico:</strong></h3>
+<p>Define la materia o tema específico: &#34;Materia o tema específico: <code>[MATERIA/TEMA]</code>...&#34;</p>
+<ul>
+<li><strong><code>[MATERIA/TEMA]</code></strong>: Historia, Física, Estructuras de datos, etc.</li>
+</ul>
+<h3 is-upgraded><strong>3. Contexto del Uso del Prompt:</strong></h3>
+<p>Explica el contexto del uso del prompt: &#34;Contexto del uso del prompt: <code>[CONTEXTO USO]</code>...&#34;</p>
+<ul>
+<li><strong><code>[CONTEXTO USO]</code></strong>: Discusión de clase, bonos, actividad calificada, etc.</li>
+</ul>
+<h3 is-upgraded><strong>4. Objetivos de Aprendizaje:</strong></h3>
+<p>Detalla los objetivos de aprendizaje: &#34;Objetivos de aprendizaje: <code>[OBJETIVO DE APRENDIZAJE]</code>...&#34;</p>
+<ul>
+<li><strong><code>[OBJETIVO DE APRENDIZAJE]</code></strong>: Los estudiantes deben identificar al menos 3 estructuras de datos, comprender el concepto de un plano inclinado, etc.</li>
+</ul>
+<h3 is-upgraded><strong>5. Descripción de la Actividad:</strong></h3>
+<p>Describe la actividad y su alineación con los objetivos:</p>
+<ol type="1">
+<li>&#34;¿Cuál es la actividad seleccionada? <code>[ACTIVIDAD SELECCIONADA]</code>...&#34; <ul>
+<li><strong><code>[ACTIVIDAD SELECCIONADA]</code></strong>: Describe brevemente la actividad.</li>
+</ul>
+</li>
+<li>&#34;¿Cómo se alinea esta actividad con los objetivos de aprendizaje? <code>[ALINEACIÓN CON OBJETIVOS]</code>...&#34; <ul>
+<li><strong><code>[ALINEACIÓN CON OBJETIVOS]</code></strong>: Explica la alineación con los objetivos.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>6. Objetivos de Aprendizaje Específicos:</strong></h3>
+<p>Define los objetivos de aprendizaje específicos y habilidades:</p>
+<ol type="1">
+<li>&#34;¿Cuáles son los objetivos de aprendizaje específicos que esta actividad debe cumplir? <code>[OBJETIVOS ESPECÍFICOS]</code>...&#34; <ul>
+<li><strong><code>[OBJETIVOS ESPECÍFICOS]</code></strong>: Lista los objetivos específicos.</li>
+</ul>
+</li>
+<li>&#34;¿Qué habilidades o conocimientos específicos se espera que los estudiantes demuestren? <code>[HABILIDADES Y CONOCIMIENTOS]</code>...&#34; <ul>
+<li><strong><code>[HABILIDADES Y CONOCIMIENTOS]</code></strong>: Indica las habilidades y conocimientos esperados.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>7. Criterios de Evaluación:</strong></h3>
+<p>Establece los aspectos y criterios de evaluación:</p>
+<ol type="1">
+<li>&#34;¿Qué aspectos específicos de la actividad deben evaluarse? <code>[ASPECTOS A EVALUAR]</code>...&#34; <ul>
+<li><strong><code>[ASPECTOS A EVALUAR]</code></strong>: Detalla los aspectos a evaluar.</li>
+</ul>
+</li>
+<li>&#34;¿Cómo se pueden desglosar estos aspectos en criterios claros y medibles? <code>[CRITERIOS CLAROS Y MEDIBLES]</code>...&#34; <ul>
+<li><strong><code>[CRITERIOS CLAROS Y MEDIBLES]</code></strong>: Explica cómo desglosar los aspectos en criterios medibles.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>8. Intervalo de Calificación:</strong></h3>
+<p>Define el rango de puntos y estructura del intervalo:</p>
+<ol type="1">
+<li>&#34;¿Cuál debería ser el rango de puntos para cada criterio de evaluación? <code>[RANGO DE PUNTOS]</code>...&#34; <ul>
+<li><strong><code>[RANGO DE PUNTOS]</code></strong>: Establece el rango de puntos.</li>
+</ul>
+</li>
+<li>&#34;¿Cómo se puede estructurar este intervalo para reflejar diferentes niveles de dominio? <code>[ESTRUCTURA DEL INTERVALO]</code>...&#34; <ul>
+<li><strong><code>[ESTRUCTURA DEL INTERVALO]</code></strong>: Explica la estructura del intervalo.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>9. Puntaje Total:</strong></h3>
+<p>Determina el puntaje total y su distribución:</p>
+<ol type="1">
+<li>&#34;¿Cuál es el puntaje total posible para la rúbrica? <code>[PUNTAJE TOTAL]</code>...&#34; <ul>
+<li><strong><code>[PUNTAJE TOTAL]</code></strong>: Indica el puntaje total.</li>
+</ul>
+</li>
+<li>&#34;¿Cómo podemos distribuir los puntos de manera justa para reflejar la importancia de cada criterio? <code>[DISTRIBUCIÓN JUSTA]</code>...&#34; <ul>
+<li><strong><code>[DISTRIBUCIÓN JUSTA]</code></strong>: Explica la distribución justa de puntos.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>10. Distribución Porcentual:</strong></h3>
+<p>Distribuye los puntos porcentualmente:</p>
+<ol type="1">
+<li>&#34;¿Cómo se deben distribuir los puntos en los criterios de evaluación? <code>[DISTRIBUCIÓN PERCENTUAL]</code>...&#34; <ul>
+<li><strong><code>[DISTRIBUCIÓN PERCENTUAL]</code></strong>: Indica la distribución porcentual de cada criterio.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>11. Comentarios por Nivel de Desempeño:</strong></h3>
+<p>Proporciona comentarios para cada nivel de desempeño:</p>
+<ol type="1">
+<li>&#34;¿Cuáles son los comentarios específicos para cada posible cantidad de puntos asignada en cada criterio? <code>[COMENTARIOS ESPECÍFICOS]</code>...&#34; <ul>
+<li><strong><code>[COMENTARIOS ESPECÍFICOS]</code></strong>: Describe los comentarios específicos.</li>
+</ul>
+</li>
+<li>&#34;¿Cómo describiríamos el desempeño perfecto, bueno, medio y bajo para cada criterio? <code>[DESCRIPCIÓN DE DESEMPEÑO]</code>...&#34; <ul>
+<li><strong><code>[DESCRIPCIÓN DE DESEMPEÑO]</code></strong>: Explica la descripción del desempeño.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>12. Evaluación Global:</strong></h3>
+<p>Establece la evaluación global y métodos complementarios:</p>
+<ol type="1">
+<li>&#34;¿Cómo se evaluará el desempeño global de los estudiantes en esta actividad? <code>[EVALUACIÓN GLOBAL]</code>...&#34; <ul>
+<li><strong><code>[EVALUACIÓN GLOBAL]</code></strong>: Describe la evaluación global.</li>
+</ul>
+</li>
+<li>&#34;¿Qué otros métodos de evaluación podrían complementarse para una visión completa del rendimiento del estudiante? <code>[MÉTODOS COMPLEMENTARIOS]</code>...&#34; <ul>
+<li><strong><code>[MÉTODOS COMPLEMENTARIOS]</code></strong>: Indica los métodos complementarios.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>13. Formato de Respuesta:</strong></h3>
+<p>Explica cómo se debe presentar la información: &#34;Una vez que se respondan todas las preguntas, generar una tabla clara y detallada que organice toda la información, proporcionando una rúbrica completa y estructurada para la actividad seleccionada.&#34;</p>
+<h2 is-upgraded><strong>Ejemplo de uso del prompt</strong></h2>
+<p><strong>Rúbrica de evaluación</strong></p>
+<p><strong>Nivel educativo de los estudiantes:</strong> Pregrado</p>
+<p><strong>Materia o tema específico: Historia mundial:</strong> Segunda guerra mundial</p>
+<p><strong>Contexto del uso del prompt:</strong> Actividad calificada</p>
+<p><strong>Objetivos de aprendizaje:</strong></p>
+<p>Objetivo: Los estudiantes podrán aplicar su comprensión de las diferencias socioeconómicas para empatizar y diseñar soluciones adaptadas a diversos contextos históricos.</p>
+<p><strong>Acción:</strong> Aplicar</p>
+<p><strong>Habilidad:</strong> Aplicación</p>
+<p><strong>Criterios de Evaluación:</strong> Los estudiantes participarán en un ejercicio de role-playing donde tendrán que tomar decisiones estratégicas basadas en diferentes contextos socioeconómicos de la Segunda Guerra Mundial.</p>
+<p><strong>Objetivo del prompt:</strong></p>
+<p>Crear una rúbrica detallada y estructurada para evaluar una actividad educativa específica, asegurando que cubra todos los aspectos necesarios para una evaluación clara y justa de los estudiantes.</p>
+<p><strong>Formato de respuesta:</strong></p>
+<p>Generar una rúbrica completa con criterios de evaluación, intervalos de calificación, puntaje total, distribución porcentual de los puntos, y comentarios específicos para cada nivel de desempeño.</p>
+<p>Quiero que me preguntes por cada una de estas preguntas, una por una, y una vez tengas toda la información me des la respuesta final:</p>
+<ol type="1">
+<li><strong>Descripción de la actividad:</strong></li>
+</ol>
+<ul>
+<li>¿Cuál es la actividad seleccionada? Los estudiantes escribirán una serie de cartas entre un soldado en el frente y su familia en casa, reflejando diferentes contextos socioeconómicos. Se organizarán en grupos de 3 y cada estudiante representará una clase socioeconómica diferente (alta, media, baja). Redactarán 3 cartas: una desde la perspectiva del soldado y dos desde la perspectiva de su familia en casa. Las cartas se escribirán durante la clase para resolver dudas y se entregarán una semana después.</li>
+<li>¿Cómo se alinea esta actividad con los objetivos de aprendizaje? Deben reflejar el entendimiento de los estudiantes de las diferencias entre las clases sociales y poder aplicar esto en soluciones a distintos contextos históricos</li>
+</ul>
+<ol type="1" start="2">
+<li><strong>Objetivos de aprendizaje:</strong></li>
+</ol>
+<ul>
+<li>¿Cuáles son los objetivos de aprendizaje específicos que esta actividad debe cumplir? Los estudiantes podrán aplicar su comprensión de las diferencias socioeconómicas para empatizar y diseñar soluciones adaptadas a diversos contextos históricos.</li>
+<li>¿Qué habilidades o conocimientos específicos se espera que los estudiantes demuestren a través de esta actividad? Que sean capaces de analizar e interpretar los diferentes roles que existieron durante la guerra y contrastar y comparar entre ellos</li>
+</ul>
+<ol type="1" start="3">
+<li><strong>Criterios de evaluación:</strong></li>
+</ol>
+<ul>
+<li>¿Qué aspectos específicos de la actividad deben evaluarse para asegurar que se cumplan los objetivos de aprendizaje? Ortografía, uso correcto de conceptos, veracidad con los eventos ocurridos</li>
+<li>¿Cómo se pueden desglosar estos aspectos en criterios claros y medibles? Uso correcto de ortografía y coherencia textual, uso correcto de conceptos y relación con las cartas</li>
+</ul>
+<ol type="1" start="4">
+<li><strong>Intervalo de calificación:</strong></li>
+</ol>
+<ul>
+<li>¿Cuál debería ser el rango de puntos para cada criterio de evaluación (punto mínimo y máximo)? Mínimo 2.5, máximo 5</li>
+<li>¿Cómo se puede estructurar este intervalo para reflejar diferentes niveles de dominio (perfecto, bueno, medio, bajo)? Una correspondencia numérica donde 2.5 es deficiente, 3.5 es suficiente, 4.5 es sobresaliente y 5 excelente</li>
+</ul>
+<ol type="1" start="5">
+<li><strong>Puntaje total:</strong></li>
+</ol>
+<ul>
+<li>¿Cuál es el puntaje total posible para la rúbrica? 5</li>
+<li>¿Cómo podemos distribuir los puntos de manera justa para reflejar la importancia de cada criterio? Dar mayor importancia al uso correcto de conceptos y relación con las cartas y un porcentaje menor a ortografía y coherencia</li>
+</ul>
+<ol type="1" start="6">
+<li><strong>Distribución porcentual:</strong></li>
+</ol>
+<ul>
+<li>¿Cómo se deben distribuir los puntos en los criterios de evaluación?</li>
+<li>uso correcto de conceptos (40%)</li>
+<li>relación con las cartas (40%)</li>
+<li>Uso correcto de ortografía y coherencia textual (20%)</li>
+</ul>
+<ol type="1" start="7">
+<li><strong>Comentarios por nivel de desempeño:</strong></li>
+</ol>
+<ul>
+<li>¿Cuáles son los comentarios específicos para cada posible cantidad de puntos asignada en cada criterio? Ayúdame a generarlos</li>
+<li>¿Cómo describiríamos el desempeño perfecto, bueno, medio y bajo para cada criterio, de manera que sea claro para los estudiantes? Ayúdame a generar la descripción</li>
+</ul>
+<ol type="1" start="8">
+<li><strong>Evaluación global:</strong></li>
+</ol>
+<ul>
+<li>¿Cómo se evaluará el desempeño global de los estudiantes en esta actividad? A partir de la rúbrica y el nivel de desempeño en cada criterio</li>
+<li>¿Qué otros métodos de evaluación (además de la rúbrica) podrían complementarse para tener una visión completa del rendimiento del estudiante? Ninguno</li>
+</ul>
+<ol type="1" start="9">
+<li><strong>Formato de respuesta:</strong></li>
+</ol>
+<ul>
+<li>Una vez que se respondan todas las preguntas, generar una tabla clara y detallada que organice toda la información, proporcionando una rúbrica completa y estructurada para la actividad seleccionada.</li>
+</ul>
+<h2 is-upgraded><strong>Resultados del prompt</strong></h2>
+<p>A continuación, se ve el resultado del prompt anterior, donde se ve la rubrica, la cual puede pasar por el proceso de refinamiento en el siguiente prompt</p>
+<p>Vamos a organizar toda la información para crear una rúbrica completa y estructurada para la actividad de escribir cartas desde diferentes contextos socioeconómicos durante la Segunda Guerra Mundial.</p>
+<h3 is-upgraded>1. Descripción de la actividad:</h3>
+<ul>
+<li><strong>Actividad Seleccionada:</strong> Los estudiantes escribirán una serie de cartas entre un soldado en el frente y su familia en casa, reflejando diferentes contextos socioeconómicos. Se organizarán en grupos de 3 y cada estudiante representará una clase socioeconómica diferente (alta, media, baja). Redactarán 3 cartas: una desde la perspectiva del soldado y dos desde la perspectiva de su familia en casa. Las cartas se escribirán durante la clase para resolver dudas y se entregarán una semana después.</li>
+<li><strong>Cómo se alinea esta actividad con los objetivos de aprendizaje:</strong> La actividad busca que los estudiantes apliquen su comprensión de las diferencias socioeconómicas para empatizar y diseñar soluciones adaptadas a diversos contextos históricos.</li>
+</ul>
+<h3 is-upgraded>2. Objetivos de aprendizaje:</h3>
+<ul>
+<li><strong>Objetivos de aprendizaje específicos:</strong> Los estudiantes podrán aplicar su comprensión de las diferencias socioeconómicas para empatizar y diseñar soluciones adaptadas a diversos contextos históricos.</li>
+<li><strong>Habilidades o conocimientos específicos:</strong> Se espera que los estudiantes demuestren habilidades analíticas e interpretativas al contrastar y comparar los roles socioeconómicos durante la Segunda Guerra Mundial.</li>
+</ul>
+<h3 is-upgraded>3. Criterios de evaluación:</h3>
+<ul>
+<li><strong>Aspectos específicos a evaluar:</strong><ul>
+<li>Ortografía y coherencia textual.</li>
+<li>Uso correcto de conceptos históricos relevantes.</li>
+<li>Relación con los eventos históricos y contextos socioeconómicos.</li>
+</ul>
+</li>
+<li><strong>Desglose de criterios claros y medibles:</strong><ul>
+<li>Ortografía y coherencia: Evaluar la precisión y la estructura gramatical de las cartas.</li>
+<li>Uso correcto de conceptos: Verificar si los términos históricos son utilizados correctamente.</li>
+<li>Relación con los contextos: Evaluar la precisión y la cohesión de las cartas con respecto a los eventos y contextos socioeconómicos.</li>
+</ul>
+</li>
+</ul>
+<h3 is-upgraded>4. Intervalo de calificación:</h3>
+<ul>
+<li><strong>Rango de puntos:</strong> De 2.5 a 5.</li>
+<li><strong>Estructura del intervalo:</strong><ul>
+<li>2.5: Deficiente.</li>
+<li>3.5: Suficiente.</li>
+<li>4.5: Sobresaliente.</li>
+<li>5: Excelente.</li>
+</ul>
+</li>
+</ul>
+<h3 is-upgraded>5. Puntaje total:</h3>
+<ul>
+<li><strong>Puntaje total posible:</strong> 5 puntos.</li>
+<li><strong>Distribución de puntos:</strong><ul>
+<li>Uso correcto de conceptos y relación con las cartas: 80% del puntaje.</li>
+<li>Ortografía y coherencia textual: 20% del puntaje.</li>
+</ul>
+</li>
+</ul>
+<h3 is-upgraded>6. Distribución porcentual:</h3>
+<ul>
+<li><strong>Uso correcto de conceptos:</strong> 40%</li>
+<li><strong>Relación con las cartas:</strong> 40%</li>
+<li><strong>Uso correcto de ortografía y coherencia textual:</strong> 20%</li>
+</ul>
+<h3 is-upgraded>7. Comentarios por nivel de desempeño:</h3>
+<ul>
+<li><strong>Desempeño perfecto (5):</strong> Las cartas reflejan un entendimiento profundo de las diferencias socioeconómicas durante la Segunda Guerra Mundial, utilizando términos históricos de manera precisa y relacionándolos coherentemente con los contextos socioeconómicos.</li>
+<li><strong>Desempeño bueno (4.5):</strong> Las cartas muestran un excelente manejo de los conceptos históricos y una buena conexión con los contextos, con mínimos errores gramaticales.</li>
+<li><strong>Desempeño medio (3.5):</strong> Las cartas demuestran comprensión de los conceptos básicos, aunque con algunos errores en la precisión histórica y la cohesión textual.</li>
+<li><strong>Desempeño bajo (2.5):</strong> Las cartas tienen múltiples errores en el uso de conceptos históricos y falta de conexión con los contextos socioeconómicos.</li>
+</ul>
+<h3 is-upgraded>8. Evaluación global:</h3>
+<ul>
+<li>El desempeño global de los estudiantes será evaluado sumando los puntos asignados en cada criterio de la rúbrica.</li>
+</ul>
+<h3 is-upgraded>9. Formato de respuesta:</h3>
+<p>A continuación, la tabla clara y detallada que organiza toda la información en una rúbrica completa y estructurada:</p>
+<table>
+<tr><td colspan="1" rowspan="1"><p>Criterio de Evaluación</p>
+</td><td colspan="1" rowspan="1"><p>Descripción</p>
+</td><td colspan="1" rowspan="1"><p>Puntos</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Uso correcto de conceptos</p>
+</td><td colspan="1" rowspan="1"><p>Precisión en el uso de términos históricos relevantes y su relación con las cartas.</p>
+</td><td colspan="1" rowspan="1"><p>40%</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Relación con las cartas</p>
+</td><td colspan="1" rowspan="1"><p>Coherencia y conexión de las cartas con los contextos socioeconómicos durante la Segunda Guerra Mundial.</p>
+</td><td colspan="1" rowspan="1"><p>40%</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Ortografía y coherencia textual</p>
+</td><td colspan="1" rowspan="1"><p>Correcta estructura gramatical y ortográfica de las cartas.</p>
+</td><td colspan="1" rowspan="1"><p>20%</p>
+</td></tr>
+</table>
+<ul>
+<li><strong>Puntaje Total:</strong> 5 puntos</li>
+</ul>
+<p>Esta rúbrica asegura que la evaluación de la actividad sea clara y justa, alineada con los objetivos de aprendizaje establecidos y proporcionando retroalimentación específica para cada nivel de desempeño.</p>
+<p><a href="https://www.notion.so/Creaci-n-de-R-bricas-a7fd72f57f0e4c7b94de5d93fb30d11f?pvs=21" target="_blank">Creación de Rúbricas</a></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Refinamiento de la rúbrica" duration="0">
+        <h2 is-upgraded><strong>Descripción</strong></h2>
+<p>Mejora y ajusta la rúbrica creada para asegurar que sea válida, fiable y aplicable a la actividad educativa.</p>
+<h2 is-upgraded><strong>Prerrequisitos</strong></h2>
+<ul>
+<li>Haber completado la <strong>Creación de una rúbrica</strong>.</li>
+</ul>
+<h2 is-upgraded><strong>Descripción del Prompt</strong></h2>
+<p>Este prompt está diseñado para ayudar a los profesores a refinar una rúbrica a partir de una actividad previamente desarrollada y su respectiva rúbrica, ya sea por el prompt de actividades o por el docente utilizando herramientas de inteligencia artificial generativa.</p>
+<h2 is-upgraded><strong>Prompt</strong></h2>
+<pre>Hola, soy un profesor de[materia] y necesito tu ayuda para refinar una rúbrica [Rúbrica realizada con el prompt de creación de rúbricas] ya creada para la siguiente actividad: [Actividad realizada previamente con el promt de actividades].
+
+Quisiera que la rúbrica refinada tenga las siguientes características:
+
+Problemas identificados: He identificado los siguientes problemas en la rúbrica actual:
+- [Problema 1]
+- [Problema 2]
+- [Problema 3]
+- ...
+
+Criterios de evaluación: Quisiera refinar o añadir los siguientes criterios de evaluación:
+- [Criterio de evaluación 1]
+- [Criterio de evaluación 2]
+- [Criterio de evaluación 3]
+- ...
+
+Además, necesito que se haga una corrección en [Corrección puntual/específica que se quiera hacer a la rúbrica]
+
+Por favor, organiza esta información en una tabla clara y detallada.
+</pre>
+<h2 is-upgraded><strong>Detalle de los parámetros</strong></h2>
+<h3 is-upgraded><strong>1. Introducción:</strong></h3>
+<p>Comienza el prompt con una breve presentación: &#34;Hola, soy un profesor de <code>[materia]</code> y necesito tu ayuda para refinar una rúbrica ya creada para la siguiente actividad: <code>[Actividad]</code>.&#34;</p>
+<ul>
+<li><strong><code>[materia]</code></strong>: Sustituye esta sección con la materia que enseñas, por ejemplo, Matemáticas, Historia, Programación, etc. Sé detallado e incluye, de ser posible, el tema específico que estás tratando en tu materia.</li>
+<li><strong><code>[Rúbrica]</code></strong>: Adjunta la rúbrica que se quiere refinar</li>
+<li><strong><code>[Actividad]</code></strong>: Adjunta la actividad que se usa para esta rúbrica</li>
+</ul>
+<h3 is-upgraded><strong>2. Problemas identificados:</strong></h3>
+<p>Indica los problemas o áreas que necesitan refinamiento en la rúbrica actual: &#34;He identificado los siguientes problemas en la rúbrica actual:</p>
+<ul>
+<li>[Problema 1]</li>
+<li>[Problema 2]</li>
+<li>[Problema 3]</li>
+<li>...&#34;</li>
+<li><strong><code>[Problema 1]</code></strong><strong>, </strong><strong><code>[Problema 2]</code></strong><strong>, </strong><strong><code>[Problema 3]</code></strong>: Enumera los problemas específicos que has encontrado en la rúbrica actual que necesitan ser corregidos o mejorados.</li>
+</ul>
+<h3 is-upgraded><strong>3. Criterios de Evaluación:</strong></h3>
+<p>Detalla los criterios de evaluación que deseas refinar o añadir: &#34;Quisiera refinar o añadir los siguientes criterios de evaluación:</p>
+<ul>
+<li>[Criterio de evaluación 1]</li>
+<li>[Criterio de evaluación 2]</li>
+<li>[Criterio de evaluación 3]</li>
+<li>...&#34;</li>
+<li><strong><code>[Criterio de evaluación 1]</code></strong><strong>, </strong><strong><code>[Criterio de evaluación 2]</code></strong><strong>, </strong><strong><code>[Criterio de evaluación 3]</code></strong>: Especifica los criterios de evaluación que necesitas ajustar o incorporar en la rúbrica para mejorar la evaluación de los estudiantes.</li>
+</ul>
+<h3 is-upgraded><strong>4. Corrección Puntual:</strong></h3>
+<p>Solicita una corrección específica o puntual que deseas hacer en la rúbrica: &#34;Además, necesito que se haga una corrección en <code>[Corrección puntual/específica que se quiera hacer a la rúbrica]</code>.&#34;</p>
+<ul>
+<li><strong><code>[Corrección puntual/específica que se quiera hacer a la rúbrica]</code></strong>: Describe detalladamente la corrección o ajuste específico que deseas implementar en la rúbrica existente, acá puede libremente escribir algo puntual que no se haya detallado en los puntos anteriores a corregir.</li>
+</ul>
+<h3 is-upgraded><strong>5. Formato de Visualización:</strong></h3>
+<p>Elige cómo deseas que se presente la rúbrica: &#34;...Por favor, organiza esta información en una tabla clara y detallada.&#34;</p>
+<h2 is-upgraded><strong>Ejemplo Completo:</strong></h2>
+<p>A continuación se presenta un ejemplo concreto del prompt para el refinamiento de rúbricas:</p>
+<p><strong>1. Introducción:</strong></p>
+<p>Hola, soy un profesor de Historia y necesito tu ayuda para refinar una rúbrica ya creada para la siguiente actividad: Los estudiantes deben realizar una presentación sobre un evento histórico relevante del siglo XX.</p>
+<p><strong>2. Problemas Identificados:</strong></p>
+<p>He identificado los siguientes problemas en la rúbrica actual:</p>
+<ul>
+<li>El criterio de originalidad no está claramente definido.</li>
+<li>La distribución de puntos entre los criterios no es equitativa.</li>
+<li>Falta un criterio para evaluar la coherencia del argumento histórico.</li>
+</ul>
+<p><strong>3. Criterios de Evaluación:</strong></p>
+<p>Quisiera refinar o añadir los siguientes criterios de evaluación:</p>
+<ul>
+<li>Añadir un criterio para evaluar la coherencia del argumento histórico presentado.</li>
+<li>Modificar el criterio de originalidad para incluir ejemplos específicos.</li>
+<li>Revisar la distribución de puntos para asegurar una evaluación más equilibrada.</li>
+</ul>
+<p><strong>4. Corrección Puntual:</strong></p>
+<p>Además, necesito que se haga una corrección en la ponderación de los puntos asignados a cada criterio para reflejar mejor su importancia relativa en la evaluación final.</p>
+<p><strong>5. Formato de Visualización:</strong></p>
+<h2 is-upgraded><strong>RESPUESTA DEL PROMPT</strong></h2>
+<p>Por favor, organiza esta información en una tabla clara y detallada.</p>
+<p>Aquí está la tabla clara y detallada con la rúbrica refinada para la actividad de escribir cartas desde diferentes contextos socioeconómicos durante la Segunda Guerra Mundial:</p>
+<table>
+<tr><td colspan="1" rowspan="1"><p>Criterio de Evaluación</p>
+</td><td colspan="1" rowspan="1"><p>Descripción</p>
+</td><td colspan="1" rowspan="1"><p>Puntos</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Uso correcto de conceptos históricos</p>
+</td><td colspan="1" rowspan="1"><p>Precisión en el uso de términos históricos relevantes y su relación con las cartas.</p>
+</td><td colspan="1" rowspan="1"><p>40%</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Coherencia con los contextos socioeconómicos</p>
+</td><td colspan="1" rowspan="1"><p>Coherencia y conexión de las cartas con los contextos socioeconómicos durante la Segunda Guerra Mundial.</p>
+</td><td colspan="1" rowspan="1"><p>40%</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Ortografía y coherencia textual</p>
+</td><td colspan="1" rowspan="1"><p>Correcta estructura gramatical y ortográfica de las cartas.</p>
+</td><td colspan="1" rowspan="1"><p>20%</p>
+</td></tr>
+</table>
+<ul>
+<li><strong>Puntaje Total:</strong> 5 puntos</li>
+</ul>
+<p>Esta rúbrica asegura que la evaluación de la actividad sea clara y justa, alineada con los objetivos de aprendizaje establecidos y proporcionando retroalimentación específica para cada nivel de desempeño.</p>
+<p><a href="https://www.notion.so/Refinamiento-de-R-bricas-49b04c804018416e83b3569fc87112b3?pvs=21" target="_blank">Refinamiento de Rúbricas</a></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Creación de enunciado con base en una rúbrica" duration="0">
+        <h2 is-upgraded><strong>Descripción</strong></h2>
+<p>Genera enunciados claros y detallados para las actividades, utilizando la rúbrica refinada como base para asegurar que los criterios de evaluación sean transparentes.</p>
+<h2 is-upgraded><strong>Prerrequisitos</strong></h2>
+<ul>
+<li>Haber completado la <strong>Creación de una rúbrica</strong>.</li>
+<li>Haber completado el <strong>Refinamiento de la rúbrica</strong>.</li>
+</ul>
+<h2 is-upgraded><strong>Descripción del prompt</strong></h2>
+<p>Este prompt esta diseñado para crear un enunciado basado en una actividad y su rúbrica correspondiente, para ayudar al profesor a crear el contexto del problema de una forma clara para sus estudiantes, tal que incluya todos los requerimientos y sus valores en la nota.</p>
+<h2 is-upgraded><strong>Prompt</strong></h2>
+<pre>Nivel educativo de los estudiantes: [NIVEL EDUCATIVO] (Pregrado, posgrado, educación continua, etc.)
+
+Materia o tema específico: [MATERIA/TEMA] (Historia, física, estructuras de datos)
+
+Contexto del uso del prompt: [CONTEXTO USO] (Discusión de clase, bonos, actividad calificada)
+
+Objetivos de aprendizaje: [OBJETIVO DE APRENDIZAJE] (Los estudiantes deben identificar al menos 3 estructuras de datos, los estudiantes deben comprender el concepto de un plano inclinado, etc.)
+
+Objetivo del prompt:
+Refinar y detallar una actividad educativa seleccionada previamente para mejorar la claridad, viabilidad y efectividad en el cumplimiento de los objetivos de aprendizaje.
+
+Formato de respuesta:
+Generar una descripción detallada de la actividad seleccionada, incluyendo todos los aspectos necesarios para su implementación exitosa.
+
+Quiero que me preguntes por cada una de estas preguntas, una por una, y una vez tengas toda la información me des la respuesta final:
+
+1. Descripción de la actividad:
+
+¿Cuál es la actividad seleccionada?
+¿Cómo se desarrolla la actividad paso a paso?
+2. Recursos necesarios:
+
+¿Qué materiales y recursos se necesitan para la actividad?
+¿Es necesario algún equipo o software específico?
+3. Duración de la actividad:
+
+¿Cuánto tiempo se requiere para completar la actividad?
+¿La actividad se realizará en una sola sesión, en varias o fuera de clase?
+4. Instrucciones para los estudiantes:
+
+¿Cuáles son las instrucciones detalladas para los estudiantes?
+¿Qué información previa deben conocer los estudiantes antes de comenzar?
+5. Evaluación:
+
+¿Cómo se evaluará el desempeño de los estudiantes en esta actividad?
+¿Se utilizarán rúbricas, cuestionarios, presentaciones, etc.?
+6. Participación y roles:
+
+¿Cómo se estructurará la participación de los estudiantes? (individual, parejas, grupos)
+¿Qué roles específicos tendrán los estudiantes, si los hay?
+7. Resultados esperados:
+
+¿Cuáles son los resultados y productos esperados de la actividad?
+¿Cómo se alinean estos resultados con los objetivos de aprendizaje?
+8. Adaptaciones y consideraciones especiales:
+
+¿Existen adaptaciones para estudiantes con necesidades especiales?
+¿Qué consideraciones adicionales deben tenerse en cuenta para asegurar la inclusión y la equidad?
+Formato de respuesta:
+Una vez que se respondan todas las preguntas, generar un documento que integre toda la información en un formato claro y estructurado, proporcionando una visión completa y detallada de la actividad refinada.
+
+</pre>
+<h2 is-upgraded><strong>Detalle de los parámetros</strong></h2>
+<h3 is-upgraded><strong>1. Nivel Educativo de los Estudiantes:</strong></h3>
+<p>Indica el nivel educativo de los estudiantes: &#34;Nivel educativo de los estudiantes: <code>[NIVEL EDUCATIVO]</code>...&#34;</p>
+<ul>
+<li><strong><code>[NIVEL EDUCATIVO]</code></strong>: Pregrado, Posgrado, educación continua, etc.</li>
+</ul>
+<h3 is-upgraded><strong>2. Materia o Tema Específico:</strong></h3>
+<p>Define la materia o tema específico: &#34;Materia o tema específico: <code>[MATERIA/TEMA]</code>...&#34;</p>
+<ul>
+<li><strong><code>[MATERIA/TEMA]</code></strong>: Historia, Física, Estructuras de datos, etc.</li>
+</ul>
+<h3 is-upgraded><strong>3. Contexto del Uso del Prompt:</strong></h3>
+<p>Explica el contexto del uso del prompt: &#34;Contexto del uso del prompt: <code>[CONTEXTO USO]</code>...&#34;</p>
+<ul>
+<li><strong><code>[CONTEXTO USO]</code></strong>: Discusión de clase, bonos, actividad calificada, etc.</li>
+</ul>
+<h3 is-upgraded><strong>4. Objetivos de Aprendizaje:</strong></h3>
+<p>Detalla los objetivos de aprendizaje: &#34;Objetivos de aprendizaje: <code>[OBJETIVO DE APRENDIZAJE]</code>...&#34;</p>
+<ul>
+<li><strong><code>[OBJETIVO DE APRENDIZAJE]</code></strong>: Los estudiantes deben identificar al menos 3 estructuras de datos, comprender el concepto de un plano inclinado, etc.</li>
+</ul>
+<h3 is-upgraded><strong>5. Descripción de la Actividad:</strong></h3>
+<p>Describe la actividad y su desarrollo paso a paso:</p>
+<ol type="1">
+<li>&#34;¿Cuál es la actividad seleccionada? <code>[ACTIVIDAD SELECCIONADA]</code>...&#34; <ul>
+<li><strong><code>[ACTIVIDAD SELECCIONADA]</code></strong>: Describe brevemente la actividad.</li>
+</ul>
+</li>
+<li>&#34;¿Cómo se desarrolla la actividad paso a paso? <code>[DESARROLLO PASO A PASO]</code>...&#34; <ul>
+<li><strong><code>[DESARROLLO PASO A PASO]</code></strong>: Detalla los pasos específicos.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>6. Recursos Necesarios:</strong></h3>
+<p>Lista los materiales y recursos necesarios:</p>
+<ol type="1">
+<li>&#34;¿Qué materiales y recursos se necesitan para la actividad? <code>[MATERIALES Y RECURSOS]</code>...&#34; <ul>
+<li><strong><code>[MATERIALES Y RECURSOS]</code></strong>: Enumera los materiales requeridos.</li>
+</ul>
+</li>
+<li>&#34;¿Es necesario algún equipo o software específico? <code>[EQUIPO O SOFTWARE]</code>...&#34; <ul>
+<li><strong><code>[EQUIPO O SOFTWARE]</code></strong>: Indica si se necesita equipo o software específico.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>7. Duración de la Actividad:</strong></h3>
+<p>Indica el tiempo necesario:</p>
+<ol type="1">
+<li>&#34;¿Cuánto tiempo se requiere para completar la actividad? <code>[DURACIÓN]</code>...&#34; <ul>
+<li><strong><code>[DURACIÓN]</code></strong>: Estima el tiempo necesario.</li>
+</ul>
+</li>
+<li>&#34;¿La actividad se realizará en una sola sesión, en varias o fuera de clase? <code>[SESIONES]</code>...&#34; <ul>
+<li><strong><code>[SESIONES]</code></strong>: Especifica si se realizará en una o varias sesiones.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>8. Instrucciones para los Estudiantes:</strong></h3>
+<p>Proporciona instrucciones detalladas:</p>
+<ol type="1">
+<li>&#34;¿Cuáles son las instrucciones detalladas para los estudiantes? <code>[INSTRUCCIONES DETALLADAS]</code>...&#34; <ul>
+<li><strong><code>[INSTRUCCIONES DETALLADAS]</code></strong>: Explica las instrucciones paso a paso.</li>
+</ul>
+</li>
+<li>&#34;¿Qué información previa deben conocer los estudiantes antes de comenzar? <code>[INFORMACIÓN PREVIA]</code>...&#34; <ul>
+<li><strong><code>[INFORMACIÓN PREVIA]</code></strong>: Describe la información previa necesaria.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>9. Evaluación:</strong></h3>
+<p>Detalla cómo se evaluará:</p>
+<ol type="1">
+<li>&#34;¿Cómo se evaluará el desempeño de los estudiantes en esta actividad? <code>[EVALUACIÓN DESEMPEÑO]</code>...&#34; <ul>
+<li><strong><code>[EVALUACIÓN DESEMPEÑO]</code></strong>: Explica el método de evaluación.</li>
+</ul>
+</li>
+<li>&#34;¿Se utilizarán rúbricas, cuestionarios, presentaciones, etc.? <code>[MÉTODOS DE EVALUACIÓN]</code>...&#34; <ul>
+<li><strong><code>[MÉTODOS DE EVALUACIÓN]</code></strong>: Indica los tipos de evaluación.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>10. Participación y Roles:</strong></h3>
+<p>Explica la participación y roles:</p>
+<ol type="1">
+<li>&#34;¿Cómo se estructurará la participación de los estudiantes? <code>[PARTICIPACIÓN ESTRUCTURA]</code>...&#34; <ul>
+<li><strong><code>[PARTICIPACIÓN ESTRUCTURA]</code></strong>: Describe la estructura de participación.</li>
+</ul>
+</li>
+<li>&#34;¿Qué roles específicos tendrán los estudiantes, si los hay? <code>[ROLES ESTUDIANTES]</code>...&#34; <ul>
+<li><strong><code>[ROLES ESTUDIANTES]</code></strong>: Indica los roles específicos.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>11. Resultados Esperados:</strong></h3>
+<p>Define los resultados esperados:</p>
+<ol type="1">
+<li>&#34;¿Cuáles son los resultados y productos esperados de la actividad? <code>[RESULTADOS Y PRODUCTOS]</code>...&#34; <ul>
+<li><strong><code>[RESULTADOS Y PRODUCTOS]</code></strong>: Describe los resultados esperados.</li>
+</ul>
+</li>
+<li>&#34;¿Cómo se alinean estos resultados con los objetivos de aprendizaje? <code>[ALINEACIÓN CON OBJETIVOS]</code>...&#34; <ul>
+<li><strong><code>[ALINEACIÓN CON OBJETIVOS]</code></strong>: Explica la alineación con los objetivos.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>12. Adaptaciones y Consideraciones Especiales:</strong></h3>
+<p>Detalla adaptaciones y consideraciones especiales:</p>
+<ol type="1">
+<li>&#34;¿Existen adaptaciones para estudiantes con necesidades especiales? <code>[ADAPTACIONES]</code>...&#34; <ul>
+<li><strong><code>[ADAPTACIONES]</code></strong>: Menciona las adaptaciones necesarias.</li>
+</ul>
+</li>
+<li>&#34;¿Qué consideraciones adicionales deben tenerse en cuenta para asegurar la inclusión y la equidad? <code>[CONSIDERACIONES ADICIONALES]</code>...&#34; <ul>
+<li><strong><code>[CONSIDERACIONES ADICIONALES]</code></strong>: Describe las consideraciones adicionales.</li>
+</ul>
+</li>
+</ol>
+<h3 is-upgraded><strong>13. Formato de Respuesta:</strong></h3>
+<p>Explica cómo se debe presentar la información: &#34;Una vez que se respondan todas las preguntas, generar un documento que integre toda la información en un formato claro y estructurado, proporcionando una visión completa y detallada de la actividad refinada.&#34;</p>
+<h2 is-upgraded><strong>Ejemplo del Prompt</strong></h2>
+<p><strong>Nivel educativo de los estudiantes:</strong> Pregrado</p>
+<p><strong>Materia o tema específico:</strong> Historia Mundial: Segunda Guerra Mundial</p>
+<p><strong>Contexto del uso del prompt:</strong> Actividad calificada</p>
+<p><strong>Objetivos de aprendizaje:</strong> Los estudiantes podrán aplicar su comprensión de las diferencias socioeconómicas para empatizar y diseñar soluciones adaptadas a diversos contextos históricos.</p>
+<p><strong>Objetivo del prompt:</strong> Refinar y detallar una actividad educativa seleccionada previamente para mejorar la claridad, viabilidad y efectividad en el cumplimiento de los objetivos de aprendizaje.</p>
+<p><strong>Formato de respuesta:</strong></p>
+<ol type="1">
+<li><strong>Descripción de la actividad:</strong><ul>
+<li><strong>¿Cuál es la actividad seleccionada?</strong> Los estudiantes escribirán una serie de cartas entre un soldado en el frente y su familia en casa, reflejando diferentes contextos socioeconómicos durante la Segunda Guerra Mundial. Se organizarán en grupos de 3 y cada estudiante representará una clase socioeconómica diferente (alta, media, baja).</li>
+<li><strong>¿Cómo se desarrolla la actividad paso a paso?</strong> Los estudiantes deberán redactar 3 cartas en total: una desde la perspectiva del soldado y dos desde la perspectiva de su familia en casa, reflejando las condiciones económicas y sociales respectivas. Las cartas se escribirán durante la clase para resolver dudas y se entregarán una semana después.</li>
+</ul>
+</li>
+<li><strong>Recursos necesarios:</strong><ul>
+<li><strong>¿Qué materiales y recursos se necesitan para la actividad?</strong> Papel, bolígrafos o acceso a computadoras para redactar las cartas.</li>
+<li><strong>¿Es necesario algún equipo o software específico?</strong> Se puede utilizar un editor de texto si se decide escribir las cartas en computadora.</li>
+</ul>
+</li>
+<li><strong>Duración de la actividad:</strong><ul>
+<li><strong>¿Cuánto tiempo se requiere para completar la actividad?</strong> La actividad se desarrollará durante una semana, comenzando en clase para iniciar la redacción y resolver dudas.</li>
+<li><strong>¿La actividad se realizará en una sola sesión, en varias o fuera de clase?</strong> Comienza en clase y se completa fuera de ella, con una semana de plazo para la entrega final.</li>
+</ul>
+</li>
+<li><strong>Instrucciones para los estudiantes:</strong><ul>
+<li><strong>¿Cuáles son las instrucciones detalladas para los estudiantes?</strong> Organizarse en grupos de 3 estudiantes. Cada estudiante selecciona representar una clase socioeconómica (alta, media, baja) y debe redactar las cartas correspondientes desde esa perspectiva.</li>
+<li><strong>¿Qué información previa deben conocer los estudiantes antes de comenzar?</strong> Deben tener conocimientos sobre las condiciones socioeconómicas durante la Segunda Guerra Mundial y cómo estas afectaron a diferentes grupos sociales.</li>
+</ul>
+</li>
+<li><strong>Evaluación:</strong><ul>
+<li><strong>¿Cómo se evaluará el desempeño de los estudiantes en esta actividad?</strong> Se utilizará una rúbrica que evalúe el uso correcto de conceptos históricos, la coherencia con los contextos socioeconómicos y la calidad de la redacción.</li>
+<li><strong>¿Se utilizarán rúbricas, cuestionarios, presentaciones, etc.?</strong> Sí, se utilizará una rúbrica específica para evaluar las cartas escritas.</li>
+</ul>
+</li>
+<li><strong>Participación y roles:</strong><ul>
+<li><strong>¿Cómo se estructurará la participación de los estudiantes?</strong> En grupos de 3 estudiantes, cada uno con un rol específico representando una clase socioeconómica.</li>
+<li><strong>¿Qué roles específicos tendrán los estudiantes, si los hay?</strong> Uno representando a un soldado y los otros dos representando diferentes miembros de la familia (padre, madre, hermano/a, etc.).</li>
+</ul>
+</li>
+<li><strong>Resultados esperados:</strong><ul>
+<li><strong>¿Cuáles son los resultados y productos esperados de la actividad?</strong> Se espera la entrega de 3 cartas completas que reflejen adecuadamente las diferencias socioeconómicas y su impacto durante la Segunda Guerra Mundial.</li>
+<li><strong>¿Cómo se alinean estos resultados con los objetivos de aprendizaje?</strong> Los resultados deben demostrar la capacidad de los estudiantes para aplicar sus conocimientos sobre diferencias socioeconómicas en un contexto histórico específico.</li>
+</ul>
+</li>
+<li><strong>Adaptaciones y consideraciones especiales:</strong><ul>
+<li><strong>¿Existen adaptaciones para estudiantes con necesidades especiales?</strong> No se especifican adaptaciones particulares en este caso.</li>
+<li><strong>¿Qué consideraciones adicionales deben tenerse en cuenta para asegurar la inclusión y la equidad?</strong> Asegurarse de que los grupos sean equitativos y que todos los estudiantes tengan acceso a los recursos necesarios para completar la actividad.</li>
+</ul>
+</li>
+</ol>
+<h2 is-upgraded><strong>Resultados del prompt</strong></h2>
+<h3 is-upgraded><strong>Descripción de la actividad:</strong></h3>
+<p><strong>¿Cuál es la actividad seleccionada?</strong> Los estudiantes escribirán una serie de cartas entre un soldado en el frente y su familia en casa, reflejando diferentes contextos socioeconómicos durante la Segunda Guerra Mundial. Se organizarán en grupos de 3 y cada estudiante representará una clase socioeconómica diferente (alta, media, baja).</p>
+<p><strong>¿Cómo se desarrolla la actividad paso a paso?</strong></p>
+<ol type="1">
+<li><strong>Formación de grupos:</strong> Los estudiantes se organizan en grupos de 3.</li>
+<li><strong>Asignación de roles:</strong> Cada estudiante selecciona una clase socioeconómica para representar: alta, media o baja.</li>
+<li><strong>Investigación preliminar:</strong> Los estudiantes investigan sobre las condiciones socioeconómicas de las clases asignadas durante la Segunda Guerra Mundial.</li>
+<li><strong>Redacción inicial:</strong> En clase, cada estudiante escribe una carta inicial desde la perspectiva del soldado en el frente.</li>
+<li><strong>Redacción en casa:</strong> Fuera de clase, los estudiantes escriben dos cartas adicionales desde la perspectiva de la familia en casa.</li>
+<li><strong>Revisión y corrección:</strong> Durante la semana, los estudiantes revisan y corrigen sus cartas con la ayuda de sus compañeros y el profesor.</li>
+<li><strong>Entrega final:</strong> Las cartas se entregan al final de la semana para su evaluación.</li>
+</ol>
+<h3 is-upgraded><strong>Recursos necesarios:</strong></h3>
+<p><strong>¿Qué materiales y recursos se necesitan para la actividad?</strong></p>
+<ul>
+<li>Papel y bolígrafos o acceso a computadoras.</li>
+<li>Material de referencia sobre la Segunda Guerra Mundial y las condiciones socioeconómicas de la época.</li>
+</ul>
+<p><strong>¿Es necesario algún equipo o software específico?</strong></p>
+<ul>
+<li>Un editor de texto si se decide escribir las cartas en computadora.</li>
+</ul>
+<h3 is-upgraded><strong>Duración de la actividad:</strong></h3>
+<p><strong>¿Cuánto tiempo se requiere para completar la actividad?</strong></p>
+<ul>
+<li>La actividad se desarrollará durante una semana.</li>
+</ul>
+<p><strong>¿La actividad se realizará en una sola sesión, en varias o fuera de clase?</strong></p>
+<ul>
+<li>Comienza en clase y se completa fuera de ella, con una semana de plazo para la entrega final.</li>
+</ul>
+<h3 is-upgraded><strong>Instrucciones para los estudiantes:</strong></h3>
+<p><strong>¿Cuáles son las instrucciones detalladas para los estudiantes?</strong></p>
+<ol type="1">
+<li><strong>Organización:</strong> Formar grupos de 3 estudiantes.</li>
+<li><strong>Asignación:</strong> Cada estudiante elige representar una clase socioeconómica: alta, media o baja.</li>
+<li><strong>Redacción:</strong> Escribir 3 cartas en total, una desde la perspectiva del soldado y dos desde la perspectiva de la familia en casa.</li>
+<li><strong>Contexto:</strong> Asegurarse de que las cartas reflejen las condiciones económicas y sociales de la clase socioeconómica seleccionada.</li>
+<li><strong>Entrega:</strong> Completar y entregar las cartas una semana después de la sesión inicial en clase.</li>
+</ol>
+<p><strong>¿Qué información previa deben conocer los estudiantes antes de comenzar?</strong></p>
+<ul>
+<li>Conocimientos sobre las condiciones socioeconómicas durante la Segunda Guerra Mundial y cómo estas afectaron a diferentes grupos sociales.</li>
+</ul>
+<h3 is-upgraded><strong>Evaluación:</strong></h3>
+<p><strong>¿Cómo se evaluará el desempeño de los estudiantes en esta actividad?</strong></p>
+<ul>
+<li>Se utilizará una rúbrica que evalúe: <ul>
+<li>Uso correcto de conceptos históricos.</li>
+<li>Coherencia con los contextos socioeconómicos.</li>
+<li>Calidad de la redacción.</li>
+</ul>
+</li>
+</ul>
+<p><strong>¿Se utilizarán rúbricas, cuestionarios, presentaciones, etc.?</strong></p>
+<ul>
+<li>Sí, se utilizará una rúbrica específica para evaluar las cartas escritas.</li>
+</ul>
+<h3 is-upgraded><strong>Participación y roles:</strong></h3>
+<p><strong>¿Cómo se estructurará la participación de los estudiantes?</strong></p>
+<ul>
+<li>En grupos de 3 estudiantes, cada uno con un rol específico representando una clase socioeconómica.</li>
+</ul>
+<p><strong>¿Qué roles específicos tendrán los estudiantes, si los hay?</strong></p>
+<ul>
+<li>Uno representando a un soldado y los otros dos representando diferentes miembros de la familia (padre, madre, hermano/a, etc.).</li>
+</ul>
+<h3 is-upgraded><strong>Resultados esperados:</strong></h3>
+<p><strong>¿Cuáles son los resultados y productos esperados de la actividad?</strong></p>
+<ul>
+<li>La entrega de 3 cartas completas que reflejen adecuadamente las diferencias socioeconómicas y su impacto durante la Segunda Guerra Mundial.</li>
+</ul>
+<p><strong>¿Cómo se alinean estos resultados con los objetivos de aprendizaje?</strong></p>
+<ul>
+<li>Los resultados deben demostrar la capacidad de los estudiantes para aplicar sus conocimientos sobre diferencias socioeconómicas en un contexto histórico específico.</li>
+</ul>
+<h3 is-upgraded><strong>Adaptaciones y consideraciones especiales:</strong></h3>
+<p><strong>¿Existen adaptaciones para estudiantes con necesidades especiales?</strong></p>
+<ul>
+<li>No se especifican adaptaciones particulares en este caso.</li>
+</ul>
+<p><strong>¿Qué consideraciones adicionales deben tenerse en cuenta para asegurar la inclusión y la equidad?</strong></p>
+<ul>
+<li>Asegurarse de que los grupos sean equitativos y que todos los estudiantes tengan acceso a los recursos necesarios para completar la actividad.</li>
+</ul>
+<p><a href="https://www.notion.so/Creaci-n-de-enunciado-con-base-en-una-actividad-y-una-r-brica-af0acd1dfd334e9ebae21495c485eceb?pvs=21" target="_blank">Creación de enunciado con base en una actividad y una rúbrica</a></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Retroalimentación de una actividad con base en una rúbrica" duration="0">
+        <h2 is-upgraded><strong>Descripción</strong></h2>
+<p>Proporciona retroalimentación constructiva a los estudiantes basada en los criterios y escalas de la rúbrica, ayudándoles a entender sus fortalezas y áreas de mejora.</p>
+<h2 is-upgraded><strong>Prerrequisitos</strong></h2>
+<ul>
+<li>Haber recibido la actividad realizada por los estudiantes</li>
+</ul>
+<h2 is-upgraded><strong>Descripción del prompt</strong></h2>
+<p>Este prompt ayuda al docente a generar una retroalimentación completa sobre la entrega de una actividad específica, donde se entrega al prompt la actividad realizada, el enunciado y la rúbrica, para que el docente pueda complementar la calificación y retroalimentación de la actividad del estudiante.</p>
+<h2 is-upgraded><strong>Prompt</strong></h2>
+<pre>Hola, soy un profesor de [materia], y quiero que me ayudes a crear una retroalimentación de [Tipo trabajo] que desarrolló un estudiante. 
+Donde quiero analizar los siguientes puntos [puntos a evaluar/analizar], además, quiero que la retroalimentación tenga un nivel de detalle [general/especifico/puntual]. 
+Por último, quiero que desarrolles un comentario constructivo acerca del trabajo desarrollado por el estudiante, mencionando puntualmente qué partes cumplen con lo que se quiere evaluar.
+En que aspectos se puede mejorar, y qué se debe corregir. Quiero que la retroalimentación se visualize en [formato].
+</pre>
+<h2 is-upgraded><strong>Detalle de los parámetros</strong></h2>
+<h3 is-upgraded><strong>1. Introducción:</strong></h3>
+<p>Comienza el prompt con una breve presentación: &#34;Hola, soy un profesor de <code>[materia]</code>...&#34;</p>
+<ul>
+<li><strong><code>[materia]</code></strong>: Sustituye esta sección con la materia que enseñas, por ejemplo, Matemáticas, Historia, Programación, etc. Sé detallado e incluye, de ser posible, el tema en específico que estás tratando en tu materia.</li>
+</ul>
+<h3 is-upgraded><strong>2. Tipo de Trabajo:</strong></h3>
+<p>Indica el tipo de trabajo que necesitas retroalimentar: &#34;...quiero que me ayudes a crear una retroalimentación de <code>[Tipo trabajo (texto, código, etc)]</code>...&#34;</p>
+<ul>
+<li><strong><code>[Tipo trabajo]</code></strong>: Especifica el tipo de trabajo del estudiante. Ejemplos: ensayo, proyecto de código, presentación, etc.</li>
+</ul>
+<h3 is-upgraded><strong>3. Puntos a Evaluar:</strong></h3>
+<p>Detalla los aspectos que deseas analizar: &#34;...donde quiero analizar los siguientes puntos <code>[puntos a evaluar/analizar]</code>...&#34;</p>
+<ul>
+<li><strong><code>[puntos a evaluar/analizar]</code></strong>: Lista los aspectos específicos que quieres que se aborden. Ejemplos: claridad, precisión, creatividad, cumplimiento de los requisitos, etc.</li>
+</ul>
+<h3 is-upgraded><strong>4. Nivel de Detalle:</strong></h3>
+<p>Define el nivel de detalle deseado en la retroalimentación: &#34;...quiero que la retroalimentación tenga un nivel de detalle [general/específico/puntual]...&#34;</p>
+<ul>
+<li><strong><code>[general/específico/puntual]</code></strong>: Selecciona el nivel de profundidad que deseas. General para una visión amplia, específico para detalles precisos, o puntual para comentarios muy detallados sobre partes concretas.</li>
+</ul>
+<h3 is-upgraded><strong>5. Comentario Constructivo:</strong></h3>
+<p>Solicita un comentario constructivo que aborde las fortalezas y áreas de mejora: &#34;...quiero que desarrolles un comentario constructivo acerca del trabajo desarrollado por el estudiante, mencionando puntualmente qué partes cumplen con lo que se quiere evaluar, en qué aspectos se puede mejorar, y qué se debe corregir.&#34;</p>
+<h3 is-upgraded><strong>6. Formato de Visualización:</strong></h3>
+<p>Elige cómo deseas que se presente la retroalimentación: &#34;...Quiero que la retroalimentación se visualice <code>[Usando Bullet Points (Viñetas) / En forma de Tabla / Desarrollado en párrafos / Otro, especifique en qué formato]</code>...&#34;</p>
+<ul>
+<li><strong><code>[Usando Bullet Points (Viñetas) / En forma de Tabla / Desarrollado en párrafos / Otro]</code></strong>: Selecciona el formato que prefieres para la retroalimentación. Si eliges &#34;Otro&#34;, especifica claramente el formato deseado.</li>
+</ul>
+<h2 is-upgraded><strong>Ejemplo del Prompt:</strong></h2>
+<p>A continuación se presenta un ejemplo concreto del prompt para retroalimentación de actividades:</p>
+<p><strong><em>&#34;Hola, soy un profesor de Historia, y quiero que me ayudes a crear una retroalimentación de un ensayo que desarrolló un estudiante. Donde quiero analizar los siguientes puntos: claridad en la argumentación, uso de fuentes, y originalidad. Además, quiero que la retroalimentación tenga un nivel de detalle específico. Por último, quiero que desarrolles un comentario constructivo acerca del trabajo desarrollado por el estudiante, mencionando puntualmente qué partes cumplen con lo que se quiere evaluar, en qué aspectos se puede mejorar, y qué se debe corregir. Quiero que la retroalimentación se visualice usando Bullet Points.&#34;</em></strong></p>
+<h2 is-upgraded><em>Cartas desde el Frente: Voces de la Segunda Guerra Mundial</em></h2>
+<h3 is-upgraded><strong>Carta del Soldado (Clase Baja)</strong></h3>
+<p><strong>Fecha: 15 de junio de 1943</strong></p>
+<p>Querida Familia,</p>
+<p>Espero que esta carta los encuentre bien. Los días aquí en el frente son largos y duros. La vida en las trincheras es algo que nunca imaginé. Nos falta de todo, especialmente comida y abrigo. A menudo, me encuentro soñando con un simple plato de comida caliente.</p>
+<p>He hecho algunos amigos aquí, pero todos compartimos la misma desesperación y el anhelo de volver a casa. Las cartas que recibo de ustedes son lo único que me da fuerza. Espero que puedan mantener la granja funcionando y que todos estén bien.</p>
+<p>Los extraño mucho y pienso en ustedes todos los días. Prometo que haré todo lo posible para regresar sano y salvo. Cuídense mucho.</p>
+<p>Con cariño, José</p>
+<h3 is-upgraded><strong>Carta del Padre (Clase Baja)</strong></h3>
+<p><strong>Fecha: 22 de junio de 1943</strong></p>
+<p>Querido José,</p>
+<p>Recibimos tu carta y nos alegró saber de ti. Aquí en casa las cosas siguen difíciles, pero nos mantenemos fuertes. La cosecha no ha sido buena este año y estamos luchando para tener suficiente para comer. A veces, vendemos lo poco que tenemos en el mercado para comprar otras cosas necesarias.</p>
+<p>Tu madre y tus hermanos te extrañan mucho. Intentamos mantener el ánimo, pero no es fácil. Cada día rezo para que regreses sano y salvo. Recuerda que eres nuestro orgullo y te queremos mucho.</p>
+<p>Sigue siendo fuerte y cuídate.</p>
+<p>Con amor, Papá</p>
+<h3 is-upgraded><strong>Carta del Hermano (Clase Baja)</strong></h3>
+<p><strong>Fecha: 22 de junio de 1943</strong></p>
+<p>Hola, José,</p>
+<p>Soy Juan. Papá me dejó escribirte una parte de la carta. Te extraño mucho y espero que estés bien. La escuela es difícil sin ti aquí para ayudarme con las tareas. Mamá siempre habla de ti y llora a veces por la noche.</p>
+<p>Hemos tenido que trabajar mucho en la granja. Los días son largos y a veces no tenemos suficiente comida, pero seguimos adelante. Quiero que sepas que estoy cuidando de todos lo mejor que puedo.</p>
+<p>Espero que regreses pronto. Te extraño mucho.</p>
+<p>Con cariño, Juan</p>
+<h3 is-upgraded><strong>Carta del Soldado (Clase Media)</strong></h3>
+<p><strong>Fecha: 15 de junio de 1943</strong></p>
+<p>Querida Familia,</p>
+<p>Les escribo desde algún lugar de Francia. La vida en el frente es dura, pero nos las arreglamos. Las condiciones no son las mejores, pero tenemos suficiente para mantenernos. A veces, el frío y la lluvia hacen que todo sea más difícil, pero seguimos adelante.</p>
+<p>Pienso mucho en ustedes y en nuestra casa. Me pregunto cómo estarán las cosas en el barrio. Espero que sigan bien y que puedan manejar todo sin mí. Sus cartas son mi único consuelo en estos tiempos difíciles.</p>
+<p>Los extraño mucho. Espero poder regresar pronto.</p>
+<p>Con amor, Carlos</p>
+<h3 is-upgraded><strong>Carta de la Madre (Clase Media)</strong></h3>
+<p><strong>Fecha: 22 de junio de 1943</strong></p>
+<p>Querido Carlos,</p>
+<p>Nos alegró mucho recibir tu carta. Estamos bien aquí en casa, aunque te extrañamos muchísimo. La vida sigue su curso, aunque con algunas dificultades. Tu padre ha tenido que trabajar más horas en la fábrica para compensar tu ausencia, pero nos las arreglamos.</p>
+<p>Tu hermana acaba de terminar el colegio con muy buenas notas. Está pensando en seguir estudiando, pero la situación económica lo hace difícil. Mantenemos la esperanza de que la guerra termine pronto y puedas volver con nosotros.</p>
+<p>Cuídate mucho y no dejes de escribir.</p>
+<p>Con todo mi cariño, Mamá</p>
+<h3 is-upgraded><strong>Carta de la Hermana (Clase Media)</strong></h3>
+<p><strong>Fecha: 22 de junio de 1943</strong></p>
+<p>Hola, Carlos,</p>
+<p>Espero que estés bien. Mamá y papá recibieron tu carta y estamos muy contentos de saber de ti. La vida aquí sigue, pero no es lo mismo sin ti. Estoy terminando el colegio y considerando mis opciones para el futuro. Extraño nuestros paseos y charlas.</p>
+<p>Papá trabaja mucho y mamá hace todo lo posible para mantenernos unidos y optimistas. A veces, la preocupación por ti es abrumadora, pero intentamos mantenernos fuertes por ti.</p>
+<p>Te extraño y espero verte pronto.</p>
+<p>Con amor, María</p>
+<h3 is-upgraded><strong>Carta del Soldado (Clase Alta)</strong></h3>
+<p><strong>Fecha: 15 de junio de 1943</strong></p>
+<p>Querida Familia,</p>
+<p>Les escribo desde el frente, donde las cosas son difíciles, pero estoy bien. Las condiciones son duras, pero recibimos buenos suministros y el equipo es de calidad. A pesar de todo, la guerra es un monstruo que nunca imaginé enfrentar.</p>
+<p>Pienso en ustedes constantemente y en nuestra casa. Espero que estén manejando bien la situación y que no falte nada. Sus cartas son un bálsamo para mi espíritu y me mantienen enfocado.</p>
+<p>Espero poder regresar pronto y retomar nuestras vidas. Los extraño mucho.</p>
+<p>Con cariño, Alejandro</p>
+<h3 is-upgraded><strong>Carta del Padre (Clase Alta)</strong></h3>
+<p><strong>Fecha: 22 de junio de 1943</strong></p>
+<p>Querido Alejandro,</p>
+<p>Nos alegró mucho recibir tu carta. Aquí en casa estamos bien, aunque nos preocupamos por ti todo el tiempo. La empresa sigue funcionando bien, y hemos contratado a más personas para cubrir tus responsabilidades. Tu madre y tus hermanas están bien, aunque te extrañan mucho.</p>
+<p>La situación en la ciudad es estable, aunque hay algunas restricciones debido a la guerra. Mantenemos la esperanza de que todo termine pronto y puedas volver a casa sano y salvo.</p>
+<p>Cuídate mucho y mantente fuerte.</p>
+<p>Con afecto, Papá</p>
+<h3 is-upgraded><strong>Carta de la Madre (Clase Alta)</strong></h3>
+<p><strong>Fecha: 22 de junio de 1943</strong></p>
+<p>Querido Alejandro,</p>
+<p>Nos llenó de alegría recibir tu carta. Todos aquí estamos bien, aunque la preocupación por ti es constante. Hacemos lo posible por mantenernos ocupados y optimistas. Tus hermanas están estudiando en casa y yo paso mucho tiempo en obras de caridad para apoyar a las familias necesitadas.</p>
+<p>La casa se siente vacía sin ti, pero sabemos que estás haciendo lo correcto. Rezamos todos los días por tu seguridad y por tu pronto regreso.</p>
+<p>Con todo mi amor, Mamá</p>
+<h2 is-upgraded><strong>Resultados de la Retroalimentacion</strong></h2>
+<p>La idea es que te apoyes como profesor en la retroalimentacion de las actividades, tal que sea una herramienta para profundizar y dar una mejor retroalimentacion a los estudiantes.</p>
+<h2 is-upgraded><strong>Retroalimentación de la Actividad: Cartas desde el Frente</strong></h2>
+<h3 is-upgraded>Descripción de la Actividad:</h3>
+<p><strong>Evaluación General:</strong> La actividad de escribir cartas desde la perspectiva de diferentes contextos socioeconómicos durante la Segunda Guerra Mundial fue ejecutada de manera efectiva. Los estudiantes demostraron una comprensión sólida de las diferencias socioeconómicas y cómo estas afectaron a las personas durante el conflicto.</p>
+<h3 is-upgraded><strong>Evaluación Detallada:</strong></h3>
+<p><strong>Uso Correcto de Conceptos Históricos:</strong></p>
+<ul>
+<li><strong>Cartas del Soldado (Clase Baja, Media, Alta):</strong> Las cartas reflejan adecuadamente las condiciones de vida en el frente, incluyendo la escasez de suministros y las duras condiciones climáticas. Los detalles sobre la vida en las trincheras y el impacto emocional de la guerra están bien logrados.</li>
+<li><strong>Cartas de la Familia (Clase Baja, Media, Alta):</strong> Las cartas muestran una comprensión clara de las condiciones socioeconómicas en el hogar, incluyendo dificultades económicas, trabajos adicionales y preocupaciones diarias. Se mencionan aspectos relevantes como la agricultura en la clase baja, la educación en la clase media, y la estabilidad económica en la clase alta.</li>
+</ul>
+<p><strong>Coherencia con los Contextos Socioeconómicos:</strong></p>
+<ul>
+<li><strong>Clase Baja:</strong> Las cartas reflejan con precisión las dificultades económicas extremas y la lucha por la supervivencia diaria. Se destacan los esfuerzos adicionales para mantener la granja y las carencias en la alimentación.</li>
+<li><strong>Clase Media:</strong> Las cartas muestran una situación económica estable pero con desafíos, como la necesidad de trabajar más horas y la preocupación por el futuro educativo de los hijos.</li>
+<li><strong>Clase Alta:</strong> Las cartas demuestran una mayor estabilidad económica, con menciones a la continuidad de la empresa familiar y las actividades caritativas, reflejando un contexto de privilegio y responsabilidad social.</li>
+</ul>
+<p><strong>Calidad de la Redacción:</strong></p>
+<ul>
+<li><strong>Claridad y Coherencia:</strong> Todas las cartas están bien estructuradas, con una narrativa clara y coherente. Los estudiantes lograron transmitir emociones y situaciones de manera efectiva.</li>
+<li><strong>Detalles y Precisión:</strong> Los detalles específicos sobre la vida en el frente y en el hogar enriquecen las cartas, mostrando una investigación adecuada y una buena comprensión del contexto histórico.</li>
+</ul>
+<h3 is-upgraded><strong>Participación y Roles:</strong></h3>
+<p><strong>Trabajo en Grupo:</strong></p>
+<ul>
+<li>Los estudiantes trabajaron bien en grupos, asignando roles específicos y colaborando para reflejar diferentes perspectivas socioeconómicas.</li>
+<li>La distribución de tareas y la integración de diferentes puntos de vista en las cartas fueron efectivas.</li>
+</ul>
+<p><strong>Roles Específicos:</strong></p>
+<ul>
+<li>Cada estudiante representó adecuadamente su rol, ya sea como soldado o como miembro de la familia, con una atención cuidadosa a las diferencias de clase.</li>
+</ul>
+<h3 is-upgraded><strong>Resultados y Productos Esperados:</strong></h3>
+<p><strong>Resultados Obtenidos:</strong></p>
+<ul>
+<li>Las cartas entregadas cumplen con los objetivos de aprendizaje al demostrar la capacidad de aplicar conocimientos sobre diferencias socioeconómicas en un contexto histórico específico.</li>
+<li>Los productos finales son cartas bien escritas que reflejan adecuadamente las experiencias de diferentes clases socioeconómicas durante la Segunda Guerra Mundial.</li>
+</ul>
+<p><strong>Alineación con los Objetivos de Aprendizaje:</strong></p>
+<ul>
+<li>Los estudiantes lograron empatizar con las diferentes realidades socioeconómicas y diseñar narrativas que muestran una comprensión profunda de cómo estas diferencias afectaron a las personas durante la guerra.</li>
+</ul>
+<h3 is-upgraded><strong>Adaptaciones y Consideraciones Especiales:</strong></h3>
+<p><strong>Inclusión y Equidad:</strong></p>
+<ul>
+<li>Asegurarse de que todos los estudiantes tuvieran acceso a los recursos necesarios fue fundamental para el éxito de la actividad.</li>
+<li>La equidad en la formación de grupos y la distribución de roles contribuyó a una experiencia de aprendizaje inclusiva.</li>
+</ul>
+<h3 is-upgraded><strong>Recomendaciones para Futuras Actividades:</strong></h3>
+<ol type="1">
+<li><strong>Ampliar la Investigación:</strong> Incluir más recursos multimedia (videos, documentales) para enriquecer la comprensión del contexto histórico.</li>
+<li><strong>Interacción entre Grupos:</strong> Fomentar más la interacción entre grupos para que compartan sus perspectivas y aprendizajes, promoviendo una mayor colaboración y discusión.</li>
+<li><strong>Rúbrica de Evaluación:</strong> Asegurar que todos los estudiantes comprendan claramente la rúbrica de evaluación desde el inicio para orientar mejor su trabajo.</li>
+</ol>
+<h3 is-upgraded><strong>Conclusión:</strong></h3>
+<p>La actividad fue exitosa en lograr sus objetivos de aprendizaje, con los estudiantes demostrando una comprensión sólida de las diferencias socioeconómicas y cómo estas impactaron a las personas durante la Segunda Guerra Mundial. Las cartas entregadas fueron bien escritas, coherentes y reflejan un esfuerzo significativo por parte de los estudiantes.</p>
+<p>Usa este formato para obtener retroalimentaciones claras y detalladas que puedan ayudar a tus estudiantes a mejorar y alcanzar sus objetivos académicos.</p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

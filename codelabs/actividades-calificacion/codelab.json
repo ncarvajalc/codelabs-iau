@@ -1,0 +1,17 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2024-06-21T07:47:58-05:00",
+  "id": "actividades-calificacion",
+  "duration": 0,
+  "title": "Codelab to Create a Codelab",
+  "summary": "",
+  "source": ".\\markdown\\actividades-calificacion\\codelab.md",
+  "theme": "",
+  "status": null,
+  "category": null,
+  "tags": [],
+  "url": "actividades-calificacion"
+}
