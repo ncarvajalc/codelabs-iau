@@ -1,0 +1,26 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2024-06-20T21:18:12-05:00",
+  "id": "example-markdown",
+  "duration": 43,
+  "title": "Codelab de cómo crear un codelab usando Markdown",
+  "authors": "Nombre(s) autor(es)",
+  "summary": "Resumen del codelab",
+  "source": "markdown/example/example.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "iau",
+    "codelab"
+  ],
+  "tags": [
+    "web"
+  ],
+  "feedback": "https://github.com/ncarvajalc/codelabs-iau/issues",
+  "url": "example-markdown"
+}

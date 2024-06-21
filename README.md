@@ -113,3 +113,17 @@ claat\bin\claat-windows-x86.exe export -o codelabs <ID-GOOGLE-DOCS>
 ```
 
 Donde `<ID-GOOGLE-DOCS>` es el ID del documento de Google Docs que contiene el codelab. Por ejemplo si el enlace del documento es `https://docs.google.com/document/d/1a2b3c4d5e6f7g8h9i0j/edit`, el ID del documento es `1a2b3c4d5e6f7g8h9i0j`.
+
+## Mostrar codelabs localmente
+
+Para mostrar los codelabs localmente, desde la carpeta raíz del proyecto ejecute el siguiente comando:
+
+```bash
+claat/bin/claat-mac serve
+```
+
+Donde `claat-mac` es el binario de `claat` para Mac. Si está utilizando Linux o Windows, reemplace `claat-mac` por `claat-linux-x86` o `claat-windows-x86.exe` respectivamente.
+
+Desde su navegador, puede acceder al codelab en la siguiente dirección: `http://localhost:9090/codelabs/nombre-url-codelab`.
+
+Próximamente habrá una extensión de Visual Studio Code para visualizar los codelabs localmente.

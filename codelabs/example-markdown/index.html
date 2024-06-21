@@ -1,0 +1,384 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Codelab de cómo crear un codelab usando Markdown</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="example-markdown"
+                  title="Codelab de cómo crear un codelab usando Markdown"
+                  environment="web"
+                  feedback-link="https://github.com/ncarvajalc/codelabs-iau/issues">
+    
+      <google-codelab-step label="Introducción" duration="1">
+        <p>Este tutorial describe cómo crear un codelab usando Markdown. Va a explicar la sintaxis de Markdown y cómo usarla para crear un codelab.</p>
+<p>Un codelab puede crearse de varias maneras:</p>
+<ol type="1">
+<li>Usando un Google Docs</li>
+<li>Usando un archivo Markdown</li>
+</ol>
+<p>En este codelab vamos a usar la segunda opción y crear nuestro codelab usando un archivo Markdown. Esto nos da la flexibilidad de usar nuestro archivo Markdown para otras cosas y también almacenarlo en nuestro repositorio de GitHub con cualquier código que pueda ser usado para un tutorial.</p>
+<p><strong>Recursos:</strong></p>
+<ul>
+<li>Este codelab está basado en el siguiente codelab: <a href="https://www.marcd.dev/codelab-4-codelab" target="_blank">Enlace al Codelab</a></li>
+<li>El Markdown para el codelab original está ubicado aquí: <a href="https://github.com/ncarvajalc/codelabs-iau/blob/main/markdown/example/example.md" target="_blank">codelab.md</a></li>
+<li><a href="https://github.com/googlecodelabs/tools" target="_blank">Google CodeLabs Tools Github</a> - El repositorio que contiene la herramienta claat que se usa para crear codelabs</li>
+<li><a href="https://groups.google.com/forum/#!forum/codelab-authors" target="_blank">Google Group for codelab Authors</a> - foro para hacer preguntas sobre codelabs y discutir funcionalidades futuras</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Configuración del entorno de trabajo" duration="10">
+        <p>Para la iniciativa de IAu, vamos a usar la herramienta <strong>claat</strong> de Google para crear codelabs. Esta se obtendrá a partir del repositorio donde vamos a alojar todos los codelabs. Puede acceder al repositorio <a href="https://github.com/ncarvajalc/codelabs-iau/" target="_blank">aquí</a>.</p>
+<h2 is-upgraded>Pre-requisitos</h2>
+<ul>
+<li>Tener una cuenta de GitHub</li>
+<li>Tener git instalado en tu máquina</li>
+<li>Conocimientos básicos de git</li>
+<li>Git Bash (para Windows)</li>
+</ul>
+<h2 is-upgraded>Pasos</h2>
+<ol type="1">
+<li>Clona el repositorio de codelabs en tu máquina local<pre>git clone https://github.com/ncarvajalc/codelabs-iau/
+</pre>
+</li>
+<li>Abre una terminal y navega a la carpeta raíz del repositorio<pre>cd codelabs-iau
+</pre>
+</li>
+<li>Verifica que la herramienta <strong>claat</strong> está funcionando.</li>
+</ol>
+<h3 is-upgraded>Configuración en Mac</h3>
+<pre>claat/bin/claat-mac help
+</pre>
+<h3 is-upgraded>Configuración en Linux</h3>
+<pre>claat/bin/claat-linux-x86 help
+</pre>
+<h3 is-upgraded>Configuración en Windows</h3>
+<pre>claat\bin\claat-windows-x86.exe help
+</pre>
+<p>Una vez que hayas verificado que la herramienta <strong>claat</strong> está funcionando, puedes continuar con el siguiente paso.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Creación de un nuevo codelab" duration="5">
+        <p>Para crear un nuevo codelab, necesitas crear una carpeta con un archivo Markdown en la carpeta <code>markdown</code> del repositorio. Puedes copiar uno de las carpetas existentes y modificarlo para tu codelab. La carpeta debe tener un nombre único que describa el contenido del codelab y debe coincidir con el <code>id</code> en los metadatos del codelab. Por ejemplo, si el <code>id</code> de tu codelab es <code>nombre-url-codelab</code>, entonces la carpeta debe llamarse <code>nombre-url-codelab</code>.</p>
+<p>En caso de que uses imágenes en tu codelab, debes colocarlas en la carpeta <code>img</code> dentro de la carpeta de tu codelab. Por ejemplo, si tu codelab se llama <code>nombre-url-codelab</code>, entonces las imágenes deben estar en la carpeta <code>nombre-url-codelab/img</code>.</p>
+<p>Una vez que hayas creado tu codelab, puedes empezar a utilizar Markdown para escribir el contenido del codelab como se describe a continuación.</p>
+<p>Para generar el codelab, debes ejecutar el siguiente comando:</p>
+<h2 is-upgraded>Generación de codelabs con markdown</h2>
+<h3 is-upgraded>Generación en Mac</h3>
+<pre>claat/bin/claat-mac export -o codelabs &lt;ruta_markdown&gt;.md
+</pre>
+<h3 is-upgraded>Generación en Linux</h3>
+<pre>claat/bin/claat-linux-x86 export -o codelabs &lt;ruta_markdown&gt;.md
+</pre>
+<h3 is-upgraded>Generación en Windows</h3>
+<pre>claat\bin\claat-windows-x86.exe export -o codelabs &lt;ruta_markdown&gt;.md
+</pre>
+<p>Donde <code>ruta_markdown</code> es la ruta del codelab en formato markdown.</p>
+<h2 is-upgraded>Probar el codelab</h2>
+<p>Una vez que hayas generado el codelab, puedes probarlo haciendo uso del siguiente comando:</p>
+<h3 is-upgraded>Probar en Mac</h3>
+<pre>claat/bin/claat-mac serve
+</pre>
+<h3 is-upgraded>Probar en Linux</h3>
+<pre>claat/bin/claat-linux-x86 serve
+</pre>
+<h3 is-upgraded>Probar en Windows</h3>
+<pre>claat\bin\claat-windows-x86.exe serve
+</pre>
+<p>Desde tu navegador, puedes acceder al codelab en la siguiente dirección: <code>http://localhost:9090/codelabs/nombre-url-codelab</code>.</p>
+<p>Donde <code>nombre-url-codelab</code> es el nombre de la carpeta de tu codelab.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Metadatos del codelab" duration="1">
+        <p>Antes de empezar a escribir tu codelab, es importante añadir metadatos al principio de tu archivo Markdown. Estos metadatos son necesarios para que la herramienta <strong>claat</strong> pueda generar el codelab correctamente.</p>
+<h2 is-upgraded>Metadatos</h2>
+<p>Copia y pega los metadatos de abajo en tu archivo Markdown y cambia los valores apropiadamente. Las directrices están disponibles debajo de los metadatos de muestra.</p>
+<pre>summary: Resumen del codelab
+id: nombre-url-codelab
+categories: IAu,codelab
+environments: Web
+status: Published
+feedback link: https://github.com/ncarvajalc/codelabs-iau/issues
+authors: Nombre(s) autor(es)
+</pre>
+<ul>
+<li><strong>summary</strong>: Un resumen de lo que trata el codelab.</li>
+<li><strong>id</strong>: Un identificador único para el codelab. Debe ser un nombre que describa el contenido del codelab y será el nombre de la URL donde se alojará el codelab.</li>
+<li><strong>categories</strong>: Una lista separada por comas de las categorías a las que pertenece el codelab.</li>
+<li><strong>environments</strong>: Una lista de entornos en los que el codelab debería ser descubierto. Los codelabs marcados como &#34;Web&#34; serán visibles en el índice de codelabs. Los codelabs marcados como &#34;Kiosco&#34; sólo estarán disponibles en los kioscos de codelabs, que tienen equipo especial adjunto. En nuestro caso, usaremos &#34;Web&#34; la mayoría de las veces.</li>
+<li><strong>status</strong>: El estado de publicación del codelab. En nuestro caso, usaremos &#34;Published&#34;.</li>
+<li><strong>feedback link</strong>: Un enlace donde los usuarios pueden ir para proporcionar retroalimentación sobre el codelab. En nuestro caso, usaremos el enlace al repositorio de GitHub.</li>
+<li><strong>authors</strong>: El nombre del autor o autores del codelab.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Tabla de contenidos" duration="1">
+        <p>Todo codelab cuenta con una tabla de contenidos que permite a los usuarios navegar por el contenido del codelab. La tabla de contenidos se genera automáticamente a partir de los encabezados de nivel 2 en tu archivo Markdown.</p>
+<p>Por ejemplo, si tienes los siguientes encabezados en tu archivo Markdown:</p>
+<pre>## Sección 1
+## Sección 2
+## Sección 3
+</pre>
+<p>Entonces tu tabla de contenidos se verá así:</p>
+<p class="image-container"><img alt="Secciones" src="img/96e48c8f5c8361b.jpg"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Encabezados" duration="2">
+        <p>Los encabezados en Markdown se crean usando el símbolo <code>#</code>. El número de <code>#</code> indica el nivel del encabezado. Por ejemplo, un encabezado de nivel 1 se crea con un solo <code>#</code>, un encabezado de nivel 2 se crea con dos <code>#</code>, y así sucesivamente.</p>
+<p>En el caso de los codelabs, los encabezados de nivel 1 se usan para el título del codelab, los encabezados de nivel 2 se usan para las secciones del codelab y los encabezados de nivel 3 para arriba se usan para las sub-secciones.</p>
+<p>Por ejemplo, si tienes la siguiente estructura de encabezados en tu archivo Markdown:</p>
+<pre># Título del codelab
+## Sección 1
+### Sub-sección 1.1
+### Sub-sección 1.2
+#### Sub-sub-sección 1.2.1
+##### Sub-sub-sub-sección
+###### Sub-sub-sub-sub-sección
+</pre>
+<p>Entonces tu codelab se verá así:</p>
+<p class="image-container"><img alt="Encabezados" src="img/3b72467240cf6a5d.jpg"></p>
+<p>Para los encabezados de nivel 2, tienes la opción de añadir una duración al final del encabezado. Esto se hace añadiendo <code>Duration: hh:mm:ss</code> o <code>Duration: mm:ss</code> al final del encabezado. Esto le dice a los usuarios cuánto tiempo se tarda en completar esa sección del codelab. Por ejemplo:</p>
+<pre>## Sección 1
+Duration: 10:00
+</pre>
+<p>Así se verá en el codelab cuando se esté en la sección 1:</p>
+<p class="image-container"><img alt="Duración" src="img/c4bc1f4588038972.jpg"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Estilos de texto" duration="3">
+        <p>Markdown soporta varios estilos de texto que puedes usar para dar formato a tu codelab. Algunos de los estilos de texto más comunes son:</p>
+<ul>
+<li><strong>Negrita</strong>: Se crea poniendo el texto entre dos asteriscos <code>**</code> o dos guiones bajos <code>__</code>. Por ejemplo, <code>**negrita**</code> o <code>__negrita__</code>.</li>
+<li><em>Cursiva</em>: Se crea poniendo el texto entre un asterisco <code>*</code> o un guion bajo <code>_</code>. Por ejemplo, <code>*cursiva*</code> o <code>_cursiva_</code>.</li>
+<li><code>Código in-line</code>: Se crea poniendo el texto entre dos acentos graves <code>`</code>. Por ejemplo, <code>`código`</code>.</li>
+</ul>
+<p>Por ejemplo, si tienes el siguiente texto en tu archivo Markdown:</p>
+<pre>**Este texto está en negrita**
+
+*Este texto está en cursiva*
+
+`Este texto es código`
+</pre>
+<p>Entonces tu codelab se verá así:</p>
+<p class="image-container"><img alt="Estilos de texto" src="img/93febf1594ba3b67.jpg"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Listas" duration="3">
+        <p>Markdown soporta varios tipos de listas que puedes usar para organizar tu contenido. Algunos de los tipos de listas más comunes son:</p>
+<ul>
+<li><strong>Listas ordenadas</strong>: Se crean poniendo un número seguido de un punto. Por ejemplo, <code>1. Elemento 1</code>, <code>2. Elemento 2</code>, etc.</li>
+<li><strong>Listas no ordenadas</strong>: Se crean poniendo un guion <code>-</code>, o un asterisco <code>*</code> . Por ejemplo, <code>- Elemento 1</code>, <code>* Elemento 2</code>.</li>
+<li><strong>Listas anidadas</strong>: Puedes anidar listas poniendo cuatro espacios antes del guion, asterisco o signo más. Por ejemplo:</li>
+</ul>
+<pre>- Elemento 1
+  - Elemento 1.1
+  - Elemento 1.2
+- Elemento 2
+  - Elemento 2.1
+  - Elemento 2.2
+</pre>
+<p>Por ejemplo, si tienes el siguiente texto en tu archivo Markdown:</p>
+<pre>1. Elemento 1
+2. Elemento 2
+3. Elemento 3
+
+- Elemento 1
+  - Elemento 1.1
+  - Elemento 1.2
+- Elemento 2
+  - Elemento 2.1
+  - Elemento 2.2
+- Elemento 3
+  - Elemento 3.1
+  - Elemento 3.2
+</pre>
+<p>Entonces tu codelab se verá así:</p>
+<p class="image-container"><img alt="Listas" src="img/5b5a500751d9cb9c.jpg"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Imágenes" duration="3">
+        <p>Puedes añadir imágenes a tu codelab usando la siguiente sintaxis:</p>
+<pre>![Texto alternativo](img/nombre-imagen.extension)
+</pre>
+<p>Todas las imágenes que utilizas deben colocarse</p>
+<p>Por ejemplo, si tienes el siguiente texto en tu archivo Markdown y la imagen <code>gato.jpg</code> en la carpeta <code>img</code> de tu codelab:</p>
+<pre>![Gato adorable](img/gato.jpg)
+</pre>
+<p>Entonces se insertará la siguiente imagen en tu codelab:</p>
+<p class="image-container"><img alt="Gato adorable" src="img/e6fb2fdfcb81cf83.jpg"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Videos de YouTube" duration="3">
+        <p>Puedes añadir videos de YouTube a tu codelab usando la siguiente sintaxis:</p>
+<pre><code language="language-html" class="language-html">&lt;video id=&#34;ID_VIDEO&#34;&gt;&lt;/video&gt;
+</code></pre>
+<p>Donde <code>ID_VIDEO</code> es el ID del video de YouTube que quieres insertar. Por ejemplo, si el enlace al video de YouTube es <code>https://www.youtube.com/watch?v=dQw4w9WgXcQ</code>, entonces el ID del video es <code>dQw4w9WgXcQ</code>.</p>
+<p>Por ejemplo, si tienes el siguiente texto en tu archivo Markdown:</p>
+<pre><code language="language-html" class="language-html">&lt;video id=&#34;dQw4w9WgXcQ&#34;&gt;&lt;/video&gt;
+</code></pre>
+<p>Entonces se insertará el siguiente video en tu codelab:</p>
+<iframe class="youtube-video" src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Enlaces externos" duration="2">
+        <p>Puedes añadir enlaces a tu codelab usando la siguiente sintaxis:</p>
+<pre>[Texto del enlace](URL)
+</pre>
+<p>Por ejemplo, si tienes el siguiente texto en tu archivo Markdown:</p>
+<pre>[Google](https://www.google.com)
+</pre>
+<p>Entonces se insertará el siguiente enlace en tu codelab: <a href="https://www.google.com" target="_blank">Google</a></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Fragmentos de línea de comandos" duration="3">
+        <aside class="warning"><p> Tenga presente que los acentos graves no se ven bien en el codelab, por lo que se han reemplazado por `｀`. En su caso, debe hacer uso de los acentos graves o backticks para que el comando se vea correctamente. </p>
+</aside>
+<p>Puedes añadir fragmentos de línea de comandos a tu codelab usando la siguiente sintaxis:</p>
+<pre>｀｀｀console
+comando
+｀｀｀
+</pre>
+<p>Por ejemplo, si tienes el siguiente texto en tu archivo Markdown:</p>
+<pre>｀｀｀console
+Ejemplo de fragmento de línea de comandos
+｀｀｀
+</pre>
+<p>Entonces se insertará el siguiente fragmento de línea de comandos en tu codelab:</p>
+<pre>Ejemplo de fragmento de línea de comandos
+</pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Fragmento de código" duration="3">
+        <aside class="warning"><p> Tenga presente que los acentos graves no se ven bien en el codelab, por lo que se han reemplazado por `｀`. En su caso, debe hacer uso de los acentos graves o backticks para que el comando se vea correctamente. </p>
+</aside>
+<p>Puedes añadir fragmentos de código a tu codelab usando la siguiente sintaxis:</p>
+<pre>｀｀｀lenguaje
+código
+｀｀｀
+</pre>
+<p>Por ejemplo, si tienes el siguiente texto en tu archivo Markdown:</p>
+<pre>｀｀｀python
+def hola_mundo():
+    print(&#34;Hola, mundo!&#34;)
+｀｀｀
+</pre>
+<p>Entonces se insertará el siguiente fragmento de código en tu codelab:</p>
+<pre><code language="language-python" class="language-python">def hola_mundo():
+    print(&#34;Hola, mundo!&#34;)
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Cuadros de información" duration="2">
+        <p>Puedes añadir cuadros de información a tu codelab usando la siguiente sintaxis:</p>
+<pre><code language="language-xml" class="language-xml">&lt;aside class=&#34;positive&#34;&gt;
+Texto del cuadro de información
+&lt;/aside&gt;
+</code></pre>
+<p>Existen 2 tipos de cuadros de información:</p>
+<ul>
+<li><strong>positive</strong>: Se usa para resaltar información importante o positiva.</li>
+<li><strong>negative</strong>: Se usa para resaltar información importante o negativa.</li>
+</ul>
+<p>Por ejemplo, si tienes el siguiente texto en tu archivo Markdown:</p>
+<pre><code language="language-xml" class="language-xml">&lt;aside class=&#34;positive&#34;&gt;
+Este es un cuadro de información positiva
+&lt;/aside&gt;
+
+&lt;aside class=&#34;negative&#34;&gt;
+Este es un cuadro de información negativa
+&lt;/aside&gt;
+</code></pre>
+<p>Entonces se insertarán los siguientes cuadros de información en tu codelab:</p>
+<aside class="special"><p> Este es un cuadro de información positiva </p>
+</aside>
+<aside class="warning"><p> Este es un cuadro de información negativa </p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Botón de descarga" duration="1">
+        <p>Puedes añadir un botón de descarga a tu codelab usando la siguiente sintaxis:</p>
+<pre><code language="language-xml" class="language-xml">&lt;button&gt;[Texto del botón](URL)&lt;/button&gt;
+</code></pre>
+<p>Por ejemplo, si tienes el siguiente texto en tu archivo Markdown:</p>
+<pre><code language="language-xml" class="language-xml">&lt;button&gt;[Código fuente repositorio](https://github.com/ncarvajalc/codelabs-iau)&lt;/button&gt;
+</code></pre>
+<p>Entonces se insertará el siguiente botón de descarga en tu codelab:</p>
+<p><a href="https://github.com/ncarvajalc/codelabs-iau" target="_blank"><paper-button class="colored" raised>Código fuente repositorio</paper-button></a></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Publicar el codelab" duration="0">
+        <p>Una vez que hayas terminado de escribir tu codelab, puedes publicarlo en la web para que otros puedan acceder a él. Para hacer esto, debes subir el codelab a un servidor web o a un repositorio de GitHub y compartir el enlace con otros.</p>
+<p>En el caso de IAu vamos a hacer uso de GitHub Pages, que nos permite alojar sitios web estáticos de forma gratuita.</p>
+<p>El repositorio se configuró para que cada vez que se haga un push a la rama <code>main</code>, se actualice el sitio web de GitHub Pages. Es importante que el codelab esté en la carpeta <code>codelabs</code> del repositorio para que se genere correctamente.</p>
+<p>Una vez que hayas subido tu codelab a GitHub, puedes compartir el enlace con otros para que puedan acceder a él.</p>
+<h2 is-upgraded>Pull request</h2>
+<p>Para poder publicar tu codelab, debes hacer un pull request al repositorio <code>ncarvajalc/codelabs-iau</code> con los cambios que has hecho. Una vez que el pull request sea aprobado y se haya fusionado con la rama <code>main</code>, tu codelab estará disponible en la web.</p>
+<aside class="special"><p> El enlace al codelab se generará automáticamente a partir del `id` del codelab. Por ejemplo, si el `id` de tu codelab es `nombre-url-codelab`, entonces el enlace al codelab será `https://ncarvajalc.github.io/codelabs-iau/codelabs/nombre-url-codelab`. </p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Felicitaciones" duration="0">
+        <p>¡Felicidades! Has aprendido cómo crear un codelab usando Markdown. Ahora puedes empezar a escribir tu propio codelab y compartirlo con otros.</p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

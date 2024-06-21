@@ -1,0 +1,254 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Codelab de cómo crear un codelab usando Google Docs</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="example-drive"
+                  title="Codelab de cómo crear un codelab usando Google Docs"
+                  environment="web"
+                  feedback-link="https://github.com/ncarvajalc/codelabs-iau/issues">
+    
+      <google-codelab-step label="Introducción" duration="1">
+        <p class="image-container"><img style="width: 624.00px" src="img/ceb277996aaf5bcc.png"></p>
+<p>Este tutorial describe cómo crear un codelab usando Google Docs. Va a explicar los estilos de texto en Google Docs y cómo usarlos para crear un codelab.</p>
+<p>Un codelab puede crearse de varias maneras:</p>
+<ol type="1" start="1">
+<li>Usando un Google Docs</li>
+<li>⁠Usando un archivo Markdown</li>
+</ol>
+<p>En este codelab vamos a usar la primera opción y crear nuestro codelab usando un archivo de Google Docs. Esto nos permite crear un codelab sin necesidad de aprender Markdown y nos permite almacenarlo en Google Drive para que pueda ser usado para un tutorial.</p>
+<h2 is-upgraded><strong>Recursos</strong></h2>
+<ul>
+<li>⁠Este codelab está basado en el siguiente codelab: <a href="https://www.marcd.dev/codelab-4-codelab" target="_blank">Enlace al Codelab</a></li>
+<li>⁠El Markdown para el codelab original está ubicado aquí: <a href="https://github.com/ncarvajalc/codelabs-iau/blob/main/markdown/example/example.md" target="_blank">codelab.md</a> </li>
+<li>El repositorio que contiene la herramienta claat que se usa para crear codelabs: <a href="https://github.com/googlecodelabs/tools" target="_blank">Google CodeLabs Tools Github</a></li>
+<li>Foro para hacer preguntas sobre codelabs y discutir funcionalidades futuras: <a href="https://groups.google.com/forum/#!forum/codelab-authors" target="_blank">Google Group for CodeLab Authors</a></li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Configuración del entorno de trabajo" duration="5">
+        <h2 is-upgraded><strong>Crea un archivo de Google Docs</strong></h2>
+<p>Puedes crear un archivo en blanco o puedes crear una copia de <a href="https://docs.google.com/document/d/10Ih4_YUu2lLuFEfntH6GrzKLPP8_ktrA6fyfh6xIiME/edit?usp=sharing" target="_blank">este documento de plantilla </a>como punto de partida y luego modificar iterativamente los metadatos y el contenido a tu gusto, siguiendo las reglas de formato que se describirán a continuación.</p>
+<h2 is-upgraded><strong>Descarga la extensión Preview Codelab Chrome extension</strong></h2>
+<p>Para la iniciativa IAu, vamos a utilizar la extensión <a href="https://chrome.google.com/webstore/detail/preview-codelab/lhojjnijnkiglhkggagbapfonpdlinji" target="_blank">Preview Codelab Chrome Extension</a> en tu navegador. Esta es una configuración que solo debes hacer una vez y te servirá para todos los codelabs que crees en el futuro. </p>
+<p>Para hacer preview de un codelab debes:</p>
+<ol type="1" start="1">
+<li>Descargar la extensión en tu navegador</li>
+<li>Dar click en el botón de extensiones de Google Chrome y activar la extensión cuando estés en la pestaña del archivo de Google Docs</li>
+</ol>
+<p>En los siguientes pasos, encontrarás la Referencia de Formato para crear tu primer codelab</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Metadatos del Codelab" duration="2">
+        <p>Hay algunos metadatos adicionales que son necesarios para publicar correctamente un codelab. Estos metadatos deben agregarse como una tabla de dos columnas en cualquier lugar antes del primer paso del codelab. Por ejemplo:</p>
+<p class="image-container"><img style="width: 624.00px" src="img/eaf151072a1ee8ee.png"></p>
+<p>Tienes la libertad de agregar tus propios metadatos aquí si lo deseas, pero ciertos pares clave/valor están reservados para características específicas de publicación del codelab. La lista actual de términos de metadatos reservados es:</p>
+<ul>
+<li><strong>Summary</strong>: Un breve resumen del codelab que se mostrará en la interfaz de usuario del navegador de codelabs.</li>
+<li><strong>URL</strong>: El sufijo de la URL donde se publicará este codelab, es decir, la ruta después de la URL raíz a una colección de codelabs. Por ejemplo, el sitio de Google Codelabs usa codelabs.developers.google.com/codelabs/ como raíz y este valor se añade a esa base para formar la URL única de un codelab determinado.</li>
+<li><strong>Category</strong>: Una categoría única de nivel superior que se utilizará para agrupar codelabs por plataforma. Las categorías suelen ser curadas por una organización (por ejemplo, tenemos un conjunto que usamos para el sitio de Google Codelabs), pero cada editor es libre de usar este valor a su discreción.</li>
+<li><strong>Environment</strong>: Una etiqueta que permite usar algunos codelabs para un entorno específico. Todos los codelabs se predeterminan al entorno &#34;Web&#34;, pero dadas algunas restricciones de hardware, podríamos querer generarlos solo para un entorno &#34;Kiosk&#34; donde sabemos que las personas tendrán el hardware adecuado.</li>
+<li><strong>Status</strong>: Uno o más de (Draft, Published, Deprecated, Hidden) para indicar el progreso y si el codelab está listo para ser publicado. &#34;Oculto&#34; implica que el codelab es para uso restringido, debe estar disponible solo por URL directa y no debe aparecer en la página de índice principal.</li>
+<li><strong>Author:</strong>: Esto te permite especificar el nombre completo del/los creador(es) del codelab</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Tabla de contenidos" duration="1">
+        <p>Cada documento de codelab debe usar el estilo de párrafo de Heading 1 para delinear los pasos del codelab. A su vez, estos encabezados se usarán para crear automáticamente una Tabla de Contenidos que muestra al estudiante exactamente dónde se encuentra en el codelab y le permite saltar a cualquier paso.</p>
+<p>La tabla de contenidos desaparece para navegadores más pequeños, pero sigue estando disponible desde el menú de hamburguesa.</p>
+<p>Por ejemplo, si en tu Google Docs escribiste tres títulos con estilo Heading 1:</p>
+<p><strong>Sección 1</strong></p>
+<p><strong>Sección 2</strong></p>
+<p><strong>Seccion 3</strong></p>
+<p>Tu <strong>tabla de contenidos</strong> se debería ver así:</p>
+<p class="image-container"><img style="width: 433.00px" src="img/b9f17a1cece128f3.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Encabezados" duration="1">
+        <p>Dentro de los pasos de tu codelab, debes usar los estilos de párrafo Heading 2, Heading 3 y Heading 4 para organizar tu contenido. Además, si deseas incluir alguna información administrativa adicional al principio de tu codelab, puedes usar libremente los estilos de párrafo Heading 2, Heading 3 y Heading 4 y no aparecerán en el codelab siempre que aparezcan antes del primer Heading 1. Los respectivos estilos se ven así:</p>
+<p class="image-container"><img style="width: 122.32px" src="img/1b514d8063ef8f9f.png"></p>
+<p>Muchos participantes no están completamente comprometidos a completar un codelab cuando lo comienzan. Una de las formas en que podemos mantenerlos en nuestro codelab es dando estimaciones precisas sobre cuánto esfuerzo adicional se requiere para completar el codelab en cada paso.</p>
+<p>Para agregar esta función a tu codelab, simplemente anota cada paso en tu documento de codelab con una Duration que use el estilo dark grey 1. Por ejemplo:</p>
+<p class="image-container"><img style="width: 135.50px" src="img/ac433dbf01f18787.png"></p>
+<p>Eso es todo. El marco del codelab hará todo lo demás por ti. Si olvidas anotar un paso con una duración, el valor predeterminado es 1:00. Además, si el último paso de tu codelab es solo una página de felicitaciones, debes establecer la duración de ese paso en 0.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Estilos de texto" duration="1">
+        <p>En su mayor parte, no importa qué fuentes uses en tu archivo de Google Docs; todo se formateará usando Roboto en el codelab final. </p>
+<p>Hay algunas formas simples de agregar énfasis a ciertas partes del texto. Algunas de ellas son:</p>
+<ul>
+<li>Texto en <strong>negrita </strong></li>
+<li>Texto en <em>cursiva </em></li>
+<li>Pasajes de texto formateados con la fuente <code>Courier New</code></li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Listas" duration="1">
+        <p>Las listas en tu codelab aparecerán siempre que insertes una viñeta  o empieces a numerar una lista en tu archivo de Google Docs. Por ejemplo en una lista numerada:</p>
+<ol type="1" start="1">
+<li>Primer elemento</li>
+<li>Segundo elemento</li>
+<li>Tercer elemento</li>
+</ol>
+<p>O en una lista con viñetas:</p>
+<ul>
+<li>Primer elemento</li>
+<li>Segundo elemento</li>
+<li>Tercer elemento</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Imágenes" duration="1">
+        <p>Las imágenes en tu codelab deberían funcionar sin problemas al pegarlas en tu documento. Puedes redimensionarlas en tu documento de codelab y ese ancho se aplicará como un ancho máximo en la imagen en el marcado del codelab para que las imágenes tengan el mismo tamaño relativo al texto, pero también se adapten adecuadamente a navegadores más pequeños. Por ejemplo:<br><br><img style="width: 600.00px" src="img/4d30e77051a0ccba.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Videos" duration="1">
+        <p>Los videos de Youtube se pueden incrustar de esta forma:</p>
+<ol type="1" start="1">
+<li>Agrega una imagen en el documento. La imagen puede ser una captura de pantalla del video, por ejemplo, pero no importa realmente ya que no se mostrará sino que será reemplazada por el video incrustado.</li>
+<li>Agrega un &#34;Texto Alternativo&#34; a la imagen haciendo Cmd+Opt+Y o clic derecho &gt; &#34;Texto Alternativo...&#34;</li>
+<li>Pon un enlace de video de Youtube en el campo Descripción del Texto Alternativo en el formato https://www.youtube.com/watch?v=[video_ID].</li>
+</ol>
+<iframe class="youtube-video" src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Enlaces" duration="1">
+        <p>Para insertar un enlace a una URL externa solo debes crear un hipervínculo en tu documento de Google Docs. Esto se hace seleccionando el texto que quieres que se convierta en el enlace, dando click derecho, seleccionando la opción &#34;Insert Link&#34; y pegando el link.  Por ejemplo:</p>
+<p class="image-container"><img style="width: 237.50px" src="img/54b65f21779b5694.png"></p>
+<p>Que se ve así en el codelab:</p>
+<p><a href="https://docs.google.com/document/u/2/d/1YIfLIlAOSlXbuiEQx2bKnW_56zCoyQhRUdtx41M4p-w/edit" target="_blank">Enlace</a></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Fragmentos de Línea de Comandos" duration="1">
+        <p>A menudo sucede que tendrás instrucciones de línea de comandos o mensajes de registro que están formateados con una fuente monoespaciada y tienen espacios en blanco predefinidos. Puedes agregar estas secciones a tu codelab creando una tabla de una sola celda y asegurándote de que todo el texto esté formateado usando la fuente Consolas. Por ejemplo:<br></p>
+<pre>Ejemplo de un fragmento de línea de comandos</pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Fragmentos de código" duration="0">
+        <p>Los fragmentos de código con resaltado de sintaxis se pueden agregar creando una tabla de una sola celda y asegurándote de que todo el texto esté formateado usando la fuente Courier New.</p>
+<p>Cualquier estilo adicional aplicado al código será anulado por el resaltado de sintaxis. Esto significa que eres libre de usar complementos de resaltado de código en tu documento de codelab, pero no tendrán efecto en cómo se resalta el código en el codelab final.</p>
+<p>También se recomienda encarecidamente que proporciones un encabezado de Heading 3 directamente sobre tu fragmento de código con el nombre del archivo. Esto ayuda a los usuarios a seguir el origen del código. El marco del codelab también usa la extensión del archivo del encabezado anterior como una pista para cómo resaltar el código.</p>
+<p>También se recomienda encarecidamente que hagas que tu encabezado de Heading 3 sea un hipervínculo al archivo real si está disponible en GitHub. En tales casos, se añadirá automáticamente un icono de GitHub al encabezado. Por ejemplo:</p>
+<h3 is-upgraded><strong>nombre_archivo.py</strong></h3>
+<pre><code>def print_hola_mundo():
+    print(&#34;Hola Mundo&#34;)</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Cuadros de Información" duration="1">
+        <p>Para información adicional que te gustaría resaltar especialmente en tu codelab, hay dos estilos de cuadros de información:</p>
+<aside class="special"><p>La información positiva, como las mejores prácticas y los consejos para ahorrar tiempo, debe formatearse como una tabla de una sola celda con un fondo light green 3</p>
+</aside>
+<aside class="warning"><p>La información negativa, como advertencias y restricciones de uso de la API, debe formatearse como una tabla de una sola celda con un fondo light orange 3.</p>
+</aside>
+<p>Se recomienda que mantengas tus cuadros de información limpios, concisos y enfocados en un solo tema. </p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Botón de Descarga" duration="1">
+        <p>Puedes facilitar las descargas al incluir botones en tu codelab. Para agregar un botón a tu codelab, simplemente agrega un hipervínculo y asegúrate de que esté resaltado con un fondo dark green 1. </p>
+<p><a href="https://github.com/ncarvajalc/codelabs-iau" target="_blank"><paper-button class="colored" raised>Descargar código</paper-button></a> </p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Configuración de claat" duration="5">
+        <p>Para generar tu Codelab creado con Google Docs se utiliza la herramienta <a href="https://github.com/googlecodelabs/tools/releases/tag/v2.2.6" target="_blank">claat</a>. En la carpeta <code>claat/bin</code> se encuentran los binarios de <code>claat</code> para los sistemas operativos Windows, Linux y MacOS. Si su sistema operativo no es compatible con estos binarios, puede instalar claat desde el siguiente <a href="https://github.com/googlecodelabs/tools/tree/main/claat" target="_blank">enlace</a> y seguir las instrucciones de instalación.</p>
+<p>Para utilizar la herramienta <code>claat</code>, desde la carpeta raíz del proyecto ejecute el siguiente comando:</p>
+<h3 is-upgraded><strong>Configuración en mac</strong></h3>
+<pre>claat/bin/claat-mac help</pre>
+<h3 is-upgraded><strong>Configuración en Linux</strong></h3>
+<pre>claat/bin/claat-linux-x86 help</pre>
+<h3 is-upgraded><strong>Configuración en Windows</strong></h3>
+<pre>claat\bin\claat-windows-x86.exe help</pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Generación de codelabs con Google Docs" duration="5">
+        <p>Para generar un codelab, desde la carpeta raíz del proyecto ejecute el siguiente comando:</p>
+<h3 is-upgraded><strong>Generación en mac</strong></h3>
+<pre>claat/bin/claat-mac export -o codelabs &lt;ID-GOOGLE-DOCS&gt;</pre>
+<h3 is-upgraded><strong>Generación en Linux</strong></h3>
+<pre>claat/bin/claat-linux-x86 export -o codelabs &lt;ID-GOOGLE-DOCS&gt;</pre>
+<h3 is-upgraded><strong>Generación en Windows</strong></h3>
+<pre>claat\bin\claat-windows-x86.exe export -o codelabs &lt;ID-GOOGLE-DOCS&gt;</pre>
+<p>Donde <code><ID-GOOGLE-DOCS></code> es el ID del documento de Google Docs que contiene el codelab. Por ejemplo si el enlace del documento es https://docs.google.com/document/d/1a2b3c4d5e6f7g8h9i0j/edit, el ID del documento es <code>1a2b3c4d5e6f7g8h9i0j</code></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Publicación del codelab" duration="5">
+        <p>Para generar tu Codelab creado con Google Docs se utiliza la herramienta <a href="https://github.com/googlecodelabs/tools/releases/tag/v2.2.6" target="_blank">claat</a>. En la carpeta <code>claat/bin</code> se encuentran los binarios de <code>claat</code> para los sistemas operativos Windows, Linux y MacOS. Si tu sistema operativo no es compatible con estos binarios, puedes instalar <code>claat</code> desde el siguiente <a href="https://github.com/googlecodelabs/tools/tree/main/claat" target="_blank">enlace</a> y seguir las instrucciones de instalación.</p>
+<p>Una vez que hayas terminado de escribir tu codelab, puedes publicarlo en la web para que otros puedan acceder a él. Para hacer esto, debes subir el codelab a un servidor web o a un repositorio de GitHub y compartir el enlace con otros.</p>
+<p>En el caso de IAu vamos a hacer uso de GitHub Pages, que nos permite alojar sitios web estáticos de forma gratuita.</p>
+<p>El repositorio se configuró para que cada vez que se haga un push a la rama <code>main</code>, se actualice el sitio web de GitHub Pages. Es importante que el codelab esté en la carpeta <code>codelabs</code> del repositorio para que se genere correctamente.</p>
+<p>Una vez que hayas subido tu codelab a GitHub, puedes compartir el enlace con otros para que puedan acceder a él.</p>
+<h2 is-upgraded><strong>Pull request</strong></h2>
+<p>Para poder publicar tu codelab, debes hacer un pull request al repositorio <code>ncarvajalc/codelabs-iau</code> con los cambios que has hecho. Una vez que el pull request sea aprobado y se haya fusionado con la rama `main`, tu codelab estará disponible en la web.</p>
+<aside class="special"><p>El enlace al codelab se generará automáticamente a partir de la url del codelab. Por ejemplo, si la url de tu codelab es <code>nombre-url-codelab</code>, entonces el enlace al codelab será <a href="https://ncarvajalc.github.io/codelabs-iau/codelabs/nombre-url-codelab" target="_blank">https://ncarvajalc.github.io/codelabs-iau/codelabs/nombre-url-codelab</a></p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Felicitaciones" duration="0">
+        <p>¡Has aprendido a crear tu propio codelab!</p>
+<p class="image-container"><img style="width: 542.50px" src="img/7c88bd29a5cd10fa.png"></p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
