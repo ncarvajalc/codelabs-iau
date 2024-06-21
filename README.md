@@ -28,6 +28,7 @@ El proyecto está estructurado de la siguiente manera:
 
 Para el desarrollo de los codelabs se recomienda el uso de las siguientes extensiones de Visual Studio Code:
 
+- [Trigger Task on Save](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.triggertaskonsave)
 - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [Spanish - Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-spanish)
@@ -87,6 +88,30 @@ claat\bin\claat-windows-x86.exe export -o codelabs <ruta_markdown>.md
 ```
 
 Donde `<ruta_markdown>` es la ruta del codelab en formato markdown.
+
+Se recomienda utilizar la extensión `Trigger Task on Save` para que los codelabs se generen automáticamente al guardar los archivos markdown.
+
+La única configuración previa que debe hacer es en el archivo `.vscode/tasks.json`:
+
+```json
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile Markdown",
+      "type": "shell",
+      "command": "claat/bin/claat-mac export -o codelabs ${file}",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
+```
+
+Puede que necesite cambiar el comando `claat/bin/claat-mac export -o codelabs ${file}` por el comando correspondiente a su sistema operativo en caso de usar Linux o Windows.
 
 ## Generación de codelabs con Google Docs
 
