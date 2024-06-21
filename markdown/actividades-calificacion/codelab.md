@@ -1117,6 +1117,13 @@ A continuación se presenta un ejemplo concreto del prompt para el refinamiento 
 
 Hola, soy un profesor de Historia y necesito tu ayuda para refinar una rúbrica ya creada para la siguiente actividad: Los estudiantes deben realizar una presentación sobre un evento histórico relevante del siglo XX.
 
+| Criterio de Evaluación          | Descripción                                                                                              | Puntos |
+|---------------------------------|----------------------------------------------------------------------------------------------------------|--------|
+| Uso correcto de conceptos       | Precisión en el uso de términos históricos relevantes y su relación con las cartas.                      | 40%    |
+| Relación con las cartas         | Coherencia y conexión de las cartas con los contextos socioeconómicos durante la Segunda Guerra Mundial. | 40%    |
+| Ortografía y coherencia textual | Correcta estructura gramatical y ortográfica de las cartas.                                              | 20%    |
+
+
 **2. Problemas Identificados:**
 
 He identificado los siguientes problemas en la rúbrica actual:
