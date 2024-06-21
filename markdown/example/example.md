@@ -23,7 +23,7 @@ En este codelab vamos a usar la segunda opción y crear nuestro codelab usando u
 **Recursos:**
 
 * Este codelab está basado en el siguiente codelab: [Enlace al Codelab](https://www.marcd.dev/codelab-4-codelab)
-* El Markdown para el codelab original está ubicado aquí: [codelab.md](https://github.com/ncarvajalc/codelabs-iau/blob/main/markdown/example/example.md)
+* El Markdown con el código fuente que genera este codelab se puede encontrar aquí: [example.md](https://github.com/ncarvajalc/codelabs-iau/blob/main/markdown/example/example.md)
 * [Google CodeLabs Tools Github](https://github.com/googlecodelabs/tools) - El repositorio que contiene la herramienta claat que se usa para crear codelabs
 * [Google Group for codelab Authors](https://groups.google.com/forum/#!forum/codelab-authors) - foro para hacer preguntas sobre codelabs y discutir funcionalidades futuras
 
