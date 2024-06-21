@@ -342,20 +342,71 @@ Una vez enviado este prompt, se obtuvo el siguiente resultado, la idea es que el
 
 ### **Respuesta del prompt: opciones de actividades**
 
-1. **Actividad: Juego de Memoria de Estructuras de Datos**
-   - **Descripción:** Los estudiantes formarán equipos y jugarán un juego de memoria donde tendrán que emparejar tarjetas con nombres y características de diferentes estructuras de datos.
-   - **Pros:** Fomenta el trabajo en equipo y la memoria visual.
-   - **Contras:** Puede ser menos efectivo para estudiantes que prefieren el aprendizaje individual.
+### **Descripción de la Actividad: Role-Playing sobre la Segunda Guerra Mundial**
 
-2. **Actividad: Debate sobre Eficiencia de Algoritmos**
-   - **Descripción:** Los estudiantes discutirán en grupos sobre la eficiencia de diferentes algoritmos para resolver un problema específico.
-   - **Pros:** Promueve el pensamiento crítico y la capacidad de argumentación.
-   - **Contras:** Algunos estudiantes pueden sentirse incómodos al hablar en público.
+Los estudiantes serán divididos en grupos y se les asignarán diferentes contextos socioeconómicos representativos de diversas naciones durante la Segunda Guerra Mundial. Cada grupo deberá analizar su situación y tomar decisiones estratégicas en base a su contexto específico. La actividad culminará con una presentación donde cada grupo explicará y justificará sus decisiones.
 
-3. **Actividad: Resolución de Problemas en Grupo**
-   - **Descripción:** Los estudiantes trabajarán en grupos para resolver problemas de programación utilizando diferentes estructuras de datos.
-   - **Pros:** Desarrolla habilidades de resolución de problemas y colaboración.
-   - **Contras:** Requiere una preparación previa para comprender completamente las estructuras de datos.
+### Ejemplo Breve:
+Un grupo de estudiantes representa a una nación ocupada por fuerzas extranjeras. Deben decidir si organizan una resistencia activa o colaboran con los ocupantes para reducir el sufrimiento de la población civil. Otro grupo representa una nación neutral y debe negociar acuerdos comerciales para mantener su neutralidad y economía estable.
+
+### Opciones y Alternativas Desglosadas:
+
+#### 1. Potencia Industrial
+**Actividad: Aumento de Producción Militar**
+- **Descripción:** Incrementar la producción de armamento y suministros militares para fortalecer la capacidad de guerra.
+- **Pros:**
+  - Refuerza la capacidad militar y defensiva.
+  - Aumenta las posibilidades de victoria en el conflicto.
+- **Contras:**
+  - Incrementa los costos de producción y posibles problemas de suministro.
+  - Riesgo de agotamiento de recursos naturales y humanos.
+
+#### 2. Nación Ocupada
+**Actividad: Resistencia vs. Colaboración**
+- **Descripción:** Decidir entre organizar una resistencia activa contra los ocupantes o colaborar con ellos para minimizar el daño a la población.
+- **Pros de la Resistencia:**
+  - Mantiene la moral y la identidad nacional.
+  - Puede debilitar al ocupante a largo plazo.
+- **Contras de la Resistencia:**
+  - Riesgo de represalias severas contra la población civil.
+  - Posible aumento de la represión y el sufrimiento.
+- **Pros de la Colaboración:**
+  - Reduce el sufrimiento inmediato de la población.
+  - Puede asegurar recursos y estabilidad a corto plazo.
+- **Contras de la Colaboración:**
+  - Percepción de traición y pérdida de apoyo popular.
+  - Riesgo de represalias posteriores por parte de la resistencia interna.
+
+#### 3. Nación Neutral
+**Actividad: Diplomacia y Comercio**
+- **Descripción:** Negociar acuerdos diplomáticos y comerciales para mantener la neutralidad y obtener beneficios económicos.
+- **Pros:**
+  - Evita el conflicto directo y preserva recursos nacionales.
+  - Puede obtener beneficios económicos y estratégicos de ambos bandos.
+- **Contras:**
+  - Presión constante para tomar partido en el conflicto.
+  - Riesgo de invasión si se percibe como estratégicamente útil por uno de los bandos.
+
+### Tabla de Resumen de Opciones y Alternativas:
+
+| Contexto Socioeconómico | Actividad | Descripción | Pros | Contras |
+|--------------------------|------------|--------------|------|---------|
+| Potencia Industrial | Aumento de Producción Militar | Incrementar la producción de armamento y suministros militares. | - Refuerza la capacidad militar. <br> - Aumenta las posibilidades de victoria. | - Incrementa costos de producción. <br> - Riesgo de agotamiento de recursos. |
+| Nación Ocupada | Resistencia vs Colaboración | Decidir entre resistir activamente a la ocupación o colaborar para minimizar daños. | - Resistencia: Mantiene moral e identidad nacional. <br> - Debilita al ocupante. <br> - Colaboración: Reduce sufrimiento inmediato. <br> - Asegura recursos a corto plazo. | - Resistencia: Riesgo de represalias severas. <br> - Aumento de la represión. <br> - Colaboración: Percepción de traición. <br> - Riesgo de represalias posteriores. |
+| Nación Neutral | Diplomacia y Comercio | Negociar acuerdos diplomáticos o comerciales para mantener la neutralidad y obtener beneficios económicos. | - Evita conflicto directo. <br> - Beneficios económicos de ambos bandos. | - Presión para tomar partido. <br> - Riesgo de invasión. |
+
+### Instrucciones para los Estudiantes:
+1. **Asignación de Roles:** Cada grupo recibirá un contexto socioeconómico específico (potencia industrial, nación ocupada, nación neutral).
+2. **Investigación y Planificación:** Investigarán cómo era la situación de su país durante la Segunda Guerra Mundial y cómo eso afectaría sus decisiones estratégicas.
+3. **Role-playing y Debate:** Discutirán y decidirán en grupo las estrategias que consideren más efectivas, tomando en cuenta los pros y contras de cada decisión.
+4. **Presentación y Discusión:** Cada grupo presentará sus decisiones y justificará sus estrategias basándose en el contexto histórico y socioeconómico asignado.
+
+### Objetivos de Aprendizaje Abordados:
+- **Comprensión Contextual:** Aplicar conocimientos históricos para entender cómo los diferentes contextos socioeconómicos afectaron las decisiones durante la Segunda Guerra Mundial.
+- **Pensamiento Crítico:** Evaluar y seleccionar estrategias basadas en análisis críticos de pros y contras.
+- **Trabajo en Equipo:** Colaborar eficazmente en grupos para llegar a decisiones consensuadas.
+
+Este ejercicio no solo fomentará el aprendizaje activo y la participación, sino que también ayudará a los estudiantes a desarrollar habilidades de análisis histórico, empatía contextual y toma de decisiones estratégicas, elementos fundamentales para el objetivo educativo propuesto.
 
 [Ideación de actividades interactivas](https://www.notion.so/Ideaci-n-de-actividades-interactivas-7542a6c9213246588f1ec788d49390bc?pvs=21)
 
@@ -1695,3 +1746,5 @@ La actividad de escribir cartas desde la perspectiva de diferentes contextos soc
 La actividad fue exitosa en lograr sus objetivos de aprendizaje, con los estudiantes demostrando una comprensión sólida de las diferencias socioeconómicas y cómo estas impactaron a las personas durante la Segunda Guerra Mundial. Las cartas entregadas fueron bien escritas, coherentes y reflejan un esfuerzo significativo por parte de los estudiantes.
 
 Usa este formato para obtener retroalimentaciones claras y detalladas que puedan ayudar a tus estudiantes a mejorar y alcanzar sus objetivos académicos.
+
+[Retroalimentacion de Actividades](https://www.notion.so/Creaci-n-de-actividades-r-bricas-y-retroalimentaci-n-de-actividades-6c2252886bae4c568ccb02b007a05e18?pvs=4#d9df77d859a542869ab3247577d4acf6)
