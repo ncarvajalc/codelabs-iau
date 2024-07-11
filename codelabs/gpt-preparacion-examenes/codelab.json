@@ -1,0 +1,26 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2024-07-11T15:20:01-05:00",
+  "id": "gpt-preparacion-examenes",
+  "duration": 30,
+  "title": "Cómo crear un GPT personalizado para ayudar a los estudiantes a prepararse para evaluaciones",
+  "authors": "Nicolás Carvajal",
+  "summary": "Guía a través del proceso de creación de un GPT personalizado utilizando ChatGPT Plus para ayudar a los estudiantes a prepararse para evaluaciones.",
+  "source": "/Users/nicolascarvajal/dev/andes/iau/codelabs-iau/markdown/gpt-preparacion-examenes/gpt-preparacion-examenes.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "iau",
+    "codelab"
+  ],
+  "tags": [
+    "web"
+  ],
+  "feedback": "https://github.com/ncarvajalc/codelabs-iau/issues",
+  "url": "gpt-preparacion-examenes"
+}
