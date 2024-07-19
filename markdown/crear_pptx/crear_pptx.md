@@ -31,7 +31,7 @@ Nota: Recueda que no necesariamente se van a tener en cuenta toda la informació
 ## Usando el GPT de diapositivas
 Duration: 10:00
 
-Para el caso de uso del GPT de diapositivas, dirígase con este link: [Crear Diapositivas](https://www.marcd.dev/codelab-4-codelab)
+Para el caso de uso del GPT de diapositivas, dirígase con este link: [Crear Diapositivas](https://chatgpt.com/g/g-P3afMY7k1-crear-diapositivas)
 
 ### Pasos
 
