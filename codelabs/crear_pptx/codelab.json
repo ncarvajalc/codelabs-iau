@@ -3,10 +3,10 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2024-06-21T07:44:16-05:00",
-  "id": "example-markdown",
-  "duration": 43,
-  "title": "Codelab de cómo crear un codelab usando Markdown",
+  "updated": "2024-07-18T19:01:08-05:00",
+  "id": "crear_pptx",
+  "duration": 17,
+  "title": "Cómo crear diapositivas con IA",
   "authors": "Nombre(s) autor(es)",
   "summary": "Resumen del codelab",
   "source": ".\\markdown\\crear_pptx\\crear_pptx.md",
@@ -22,5 +22,5 @@
     "web"
   ],
   "feedback": "https://github.com/ncarvajalc/codelabs-iau/issues",
-  "url": "example-markdown"
+  "url": "crear_pptx"
 }
