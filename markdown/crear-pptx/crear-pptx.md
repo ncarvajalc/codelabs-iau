@@ -100,6 +100,8 @@ $$
 $$
 
 This is an inline equation: $E = mc^2$
+
+Only use this types of equations as rawInline equations cannot be rendered.
 ```
 
 Reemplace los parámetros *[TEMA]* y *[OBJETIVO DE LA PRESENTACIÓN]* con los datos del contenido que desea para sus diapositivas. Asegúrese de detallar lo más posible cómo desea desarrollar el contenido de las diapositivas.
