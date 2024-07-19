@@ -4,7 +4,7 @@ categories: IAu,codelab
 environments: Web
 status: Published
 feedback link: https://github.com/ncarvajalc/codelabs-iau/issues
-authors: Nombre(s) autor(es)
+authors: Wyo Hann Chu
 
 # Cómo crear diapositivas con IA
 
@@ -15,7 +15,7 @@ Este tutorial describe cómo crear diapositivas con IA y Pandoc.
 
 Tenemos dos caminos par hacere esto:
 
-1. Usando el GPT para crear diapositivas (se necesita GPT 4)
+1. Usando el GPT para crear diapositivas (se necesita GPT 4 Plus o una suscripción de pago de Open AI)
 1. Usando el prompt en su modelo de preferencia
 
 Vamos a desarrollar ambas opciones en este codelab, sientase libre de elegir la que se ajuste a usted.
@@ -23,10 +23,10 @@ Te recomendamos usar el GPT en caso de que tenga GPT 4
 
 **Recursos:**
 
-* Link al GPT de creacion de diaposiitivas: [Crear Diapositivas](https://www.marcd.dev/codelab-4-codelab)
+* Link al GPT de creacion de diapositivas: [Crear Diapositivas](https://chatgpt.com/g/g-P3afMY7k1-crear-diapositivas)
 * Link a Pandoc online para generar las diapositivas: [Pandoc](https://pandoc.org/try/)
 
-Nota: Recueda que no necesariamente se tengan en cuenta todos los detalles que escribas, y puede que poroponga temas adicionales. La idea es que usted luego refine el contenido que genere el GPT.
+Nota: Recueda que no necesariamente se van a tener en cuenta toda la información que escriba para las diapositivas, y puede que el modelo proponga temas adicionales. La idea es que usted luego refine el contenido que genere el GPT.
 
 ## Usando el GPT de diapositivas
 Duration: 10:00
@@ -96,7 +96,7 @@ This produces a left column with another column with an image at the right
 
 
 ```
-La idea es que reemplaze los parametros *[TEMA]* y *[OBJETIVO DE LA PRESENTACIÓN]* con los datos de los que usted quiere hacer sus diapositivas. Acá la idea es que profundice todo lo posible en como quiera desarrollar el contenido de la diapositiva, tal que tenga se tengan claros los temas que va a abordar.
+La idea es que reemplaze los parametros *[TEMA]* y *[OBJETIVO DE LA PRESENTACIÓN]* con los datos de los que usted quiere hacer sus diapositivas. Acá la idea es que profundice todo lo posible en como quiera desarrollar el contenido de la diapositiva, tal que tenga claros los temas que va a abordar.
 
 ### Pasos
 
@@ -128,15 +128,15 @@ Puede acceder al sitio aquí: [Pandoc](https://pandoc.org/try/)
 
 ### Pasos:
 
-1. Una vez en el sitio [Pandoc](https://pandoc.org/try/), seleccionamos en la opcion *"Choose File"
+1. Una vez en el sitio [Pandoc](https://pandoc.org/try/), seleccionamos en la opcion *"Choose File"*
 
 ![crear](img/pandoc1.png)
 
-2. Buscamos en nuestro directorio el archivo generado anteriormente con el contenido de las diapositivas y lo seleccionamos, en este caso se llama "Condicionales_en_Python.md"
+2. Buscamos en nuestro explorador de archivos el markdown generado anteriormente con el contenido de las diapositivas y lo seleccionamos, en este caso se llama "Condicionales_en_Python.md"
 
 ![crear](img/pandoc2.png)
 
-3. Una vez el archivo cargado, en la parte superior derecha seleccionamos la lista desplegable que dice "to", y elegimos la opción "pptx"
+3. Una vez cargado el archivo, en la parte superior derecha seleccionamos la lista desplegable que dice "to", y elegimos la opción "pptx"
 
 ![crear](img/pandoc3.png)
 
@@ -144,7 +144,7 @@ Puede acceder al sitio aquí: [Pandoc](https://pandoc.org/try/)
 
 ![crear](img/pandoc4.png)
 
-5. Una vez descargado el archivo, ya podemos abrirlo en PowerPoint o su editor de diapositivas favorito.
+5. Una vez descargado el archivo, ya podemos abrirlo en PowerPoint o en un editor online de PowerPoint.
 
 ![crear](img/pptxFinal.png)
 
