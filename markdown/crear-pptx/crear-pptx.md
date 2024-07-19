@@ -93,7 +93,13 @@ This produces a left column with another column with an image at the right
 
 Remember to use line-breaks between different elements using markdown syntax.
 
-Use latex formatted equations in markdown when asked for equations
+Use latex formatted equations in markdown when asked for equations. Here is a block equation:
+
+$$
+\int_{a}^{b} f(x) \, dx = F(b) - F(a)
+$$
+
+This is an inline equation: $E = mc^2$
 ```
 
 Reemplace los parámetros *[TEMA]* y *[OBJETIVO DE LA PRESENTACIÓN]* con los datos del contenido que desea para sus diapositivas. Asegúrese de detallar lo más posible cómo desea desarrollar el contenido de las diapositivas.
