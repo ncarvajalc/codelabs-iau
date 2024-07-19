@@ -90,6 +90,8 @@ Left column:
 ::::::::::::::
 
 This produces a left column with another column with an image at the right
+
+Use latex formatted equations in markdown when asked for equations
 ```
 
 Reemplace los parámetros *[TEMA]* y *[OBJETIVO DE LA PRESENTACIÓN]* con los datos del contenido que desea para sus diapositivas. Asegúrese de detallar lo más posible cómo desea desarrollar el contenido de las diapositivas.
