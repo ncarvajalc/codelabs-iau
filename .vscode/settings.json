@@ -1,6 +1,16 @@
 {
   "cSpell.enabled": true,
-  "cSpell.words": ["claat", "codelab", "codelabs", "Codelabs", "linux"],
+  "cSpell.words": [
+    "claat",
+    "codelab",
+    "codelabs",
+    "Codelabs",
+    "divs",
+    "Hann",
+    "linux",
+    "Pandoc",
+    "péguelo"
+  ],
   "triggerTaskOnSave.tasks": {
     "Compile Markdown": ["markdown/**/*.md"]
   }

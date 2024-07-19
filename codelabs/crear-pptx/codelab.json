@@ -3,13 +3,13 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2024-07-18T19:01:08-05:00",
-  "id": "crear_pptx",
-  "duration": 17,
+  "updated": "2024-07-18T22:03:32-05:00",
+  "id": "crear-pptx",
+  "duration": 27,
   "title": "Cómo crear diapositivas con IA",
-  "authors": "Nombre(s) autor(es)",
+  "authors": "Wyo Hann Chu",
   "summary": "Resumen del codelab",
-  "source": ".\\markdown\\crear_pptx\\crear_pptx.md",
+  "source": "/Users/nicolascarvajal/dev/andes/iau/codelabs-iau/markdown/crear-pptx/crear-pptx.md",
   "theme": "",
   "status": [
     "published"
@@ -22,5 +22,5 @@
     "web"
   ],
   "feedback": "https://github.com/ncarvajalc/codelabs-iau/issues",
-  "url": "crear_pptx"
+  "url": "crear-pptx"
 }

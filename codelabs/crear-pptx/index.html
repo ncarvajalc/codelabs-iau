@@ -1,0 +1,188 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Cómo crear diapositivas con IA</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="crear-pptx"
+                  title="Cómo crear diapositivas con IA"
+                  environment="web"
+                  feedback-link="https://github.com/ncarvajalc/codelabs-iau/issues">
+    
+      <google-codelab-step label="Introducción" duration="1">
+        <p>Este tutorial describe cómo crear diapositivas de PowerPoint utilizando IA generativa y Pandoc. Tenemos dos métodos para lograr esto:</p>
+<ol type="1">
+<li>Usando un GPT para crear diapositivas (se requiere GPT Plus o una suscripción de pago de OpenAI).</li>
+<li>Usando un prompt de creación de diapositivas en el modelo de su preferencia.</li>
+</ol>
+<p>Vamos a desarrollar ambas opciones en este codelab. Siéntase libre de elegir la que mejor se ajuste a sus necesidades. Le recomendamos usar el GPT en caso de que tenga acceso a GPT Plus.</p>
+<p><strong>Recursos:</strong></p>
+<ul>
+<li><a href="https://chatgpt.com/g/g-P3afMY7k1-crear-diapositivas" target="_blank">GPT de creación de diapositivas</a></li>
+<li><a href="https://pandoc.org/try/" target="_blank">Pandoc online para generar las diapositivas</a></li>
+</ul>
+<aside class="warning"><p> Recuerde que no necesariamente se tendrá en cuenta toda la información que escriba para las diapositivas, y puede que el modelo proponga temas adicionales. La idea es que usted refine el contenido generado por el GPT. Tenga en cuenta que estos modelos generativos pueden cometer errores y es posible que requiera ajustes manuales. </p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Usando el GPT de diapositivas" duration="10">
+        <p>Para utilizar el GPT de diapositivas, siga este enlace: <a href="https://chatgpt.com/g/g-P3afMY7k1-crear-diapositivas" target="_blank">GPT de creación de diapositivas</a>.</p>
+<h2 is-upgraded>Pasos</h2>
+<ol type="1">
+<li>Diríjase al enlace del GPT de creación de diapositivas y seleccione la opción &#34;¡Hola! Quiero crear una diapositiva para mi curso&#34;.</li>
+</ol>
+<p class="image-container"><img alt="crear" src="img/ea5713cfcd1155c.png"></p>
+<ol type="1" start="2">
+<li>Se le preguntará por el tema y objetivo de su presentación. La idea es que detalle lo mejor posible cómo desea desarrollar el contenido de la diapositiva. En este ejemplo, se utiliza el tema de condicionales en Python.</li>
+</ol>
+<p class="image-container"><img alt="respuesta" src="img/f88299cf5c304834.png"></p>
+<ol type="1" start="3">
+<li>Posteriormente, se empezará a generar el contenido de las diapositivas.</li>
+</ol>
+<p class="image-container"><img alt="respuesta" src="img/6a4e888e6d0aadc6.png"></p>
+<ol type="1" start="4">
+<li>Una vez generado el contenido, se le preguntará si desea descargar el archivo markdown con el contenido. Responda que sí, y una vez procesado, haga clic en descargar.</li>
+</ol>
+<p class="image-container"><img alt="descarga" src="img/65f1713897ab44c3.png"></p>
+<aside class="special"><p> Una vez descargado el archivo, puede dirigirse directamente al paso 4 de este codelab. </p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Usando el prompt para generar las diapositivas" duration="5">
+        <p>Para empezar, utilice el siguiente prompt:</p>
+<pre>Eres un experto en creación de presentaciones. Tu tarea es crear unas diapositivas sobre [TEMA] con el objetivo de [OBJETIVO DE LA PRESENTACIÓN]. Cada diapositiva debe seguir las siguientes reglas propuestas por David Philips: &#34;Un mensaje por diapositiva, minimizar el texto para evitar la redundancia, usar el tamaño para enfatizar el contenido importante, emplear el contraste para dirigir la atención y limitar el número de objetos a seis por diapositiva&#34;. Cada diapositiva debe tener un encabezado y utilizar viñetas. Opcionalmente debería poder contener imágenes, pero en lugar de colocar una imagen, debes colocar un placeholder que diga &#123;&#123;COLOCA AQUÍ UNA IMAGEN DE...}}, con la descripción de la imagen que debería ir ahí.
+El formato que utilizarás para generar la diapositiva será markdown, utilizando un formato que pueda ser utilizado por Pandoc para convertir de md a pptx. Para ello, te presento las siguientes reglas que se pueden utilizar en Pandoc para crear slides de PowerPoint:
+
+Here is some sample Markdown:
+
+# Section Title
+## Slide Title
+Text on a slide:
+* Bullet
+* Bullet
+* Bullet
+::: notes
+Speaker notes go here
+:::
+
+That fenced div notation lets you create columns using nested divs without writing &lt;div&gt; tags in HTML. Take a look at this example:
+
+:::::::::::::: {.columns}
+::: {.column width=&#34;50%&#34;}
+Left column:
+- Bullet
+- Bullet
+- Bullet
+:::
+::: {.column width=&#34;50%&#34;}
+&#123;&#123;COLOCA AQUÍ UNA IMAGEN DE...}}
+:::
+::::::::::::::
+
+This produces a left column with another column with an image at the right
+</pre>
+<p>Reemplace los parámetros <em>[TEMA]</em> y <em>[OBJETIVO DE LA PRESENTACIÓN]</em> con los datos del contenido que desea para sus diapositivas. Asegúrese de detallar lo más posible cómo desea desarrollar el contenido de las diapositivas.</p>
+<h2 is-upgraded>Pasos</h2>
+<ol type="1">
+<li>Diríjase a su modelo de IA generativa de confianza, en este caso se usará ChatGPT de OpenAI.</li>
+</ol>
+<p class="image-container"><img alt="crear" src="img/d5189074cc19f76d.png"></p>
+<ol type="1" start="2">
+<li>Copie el prompt con los valores ya reemplazados, péguelo en el chat y envíelo. En este ejemplo, vamos a crear unas diapositivas sobre condicionales en Python.</li>
+</ol>
+<p class="image-container"><img alt="respuesta" src="img/639d49fedba3ff10.png"></p>
+<ol type="1" start="3">
+<li>Posteriormente, se empezará a generar el contenido de las diapositivas.</li>
+</ol>
+<p class="image-container"><img alt="respuesta" src="img/6a4e888e6d0aadc6.png"></p>
+<ol type="1" start="4">
+<li>Una vez generado el contenido, solicite la descarga del archivo que contiene las diapositivas.</li>
+</ol>
+<p class="image-container"><img alt="descarga" src="img/8bdcb3b9ea6f404e.png"></p>
+<aside class="warning"><p> En caso de que su modelo no permita la descarga de archivos, puede copiar el contenido generado. Posteriormente podrá pegar este contenido en un cuadro de texto para convertirlo en una presentación en formato PPTX. </p>
+</aside>
+<aside class="special"><p> Una vez descargado el archivo, puede dirigirse al siguiente paso de este codelab. </p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Creación de las diapositivas con Pandoc usando el archivo generado" duration="1">
+        <p>Ahora, diríjase al sitio de Pandoc para convertir el archivo descargado en una presentación en formato PPTX. Puede acceder al sitio aquí: <a href="https://pandoc.org/try/" target="_blank">Pandoc</a>.</p>
+<h2 is-upgraded>Pasos</h2>
+<ol type="1">
+<li>Una vez en el sitio de <a href="https://pandoc.org/try/" target="_blank">Pandoc</a>, seleccione la opción <em>&#34;Choose File&#34;</em>.</li>
+</ol>
+<aside class="warning"><p> En caso de que su modelo no permita la descarga de archivos, puede copiar el contenido generado y pegarlo en la casilla de texto que encuentra en la parte izquierda de la pantalla de Pandoc. Después de pegar el texto puede continuar con el paso 3. </p>
+</aside>
+<p class="image-container"><img alt="crear" src="img/75159a5e68b58575.png"></p>
+<ol type="1" start="2">
+<li>Busque en su explorador de archivos el markdown generado anteriormente con el contenido de las diapositivas y selecciónelo. En este caso, se llama &#34;Condicionales_en_Python.md&#34;.</li>
+</ol>
+<p class="image-container"><img alt="crear" src="img/c13825fc1fc229c5.png"></p>
+<ol type="1" start="3">
+<li>Una vez cargado el archivo, en la parte superior derecha, seleccione la lista desplegable que dice &#34;to&#34; y elija la opción &#34;pptx&#34;.</li>
+</ol>
+<p class="image-container"><img alt="crear" src="img/83d8c6bc8a967d80.png"></p>
+<ol type="1" start="4">
+<li>Una vez seleccionada la opción &#34;pptx&#34;, seleccione la opción descargar pptx que aparece en pantalla.</li>
+</ol>
+<p class="image-container"><img alt="crear" src="img/1cd2661f76f374cb.png"></p>
+<ol type="1" start="5">
+<li>Una vez descargado el archivo, ya puede abrirlo en PowerPoint o en un editor online de PowerPoint.</li>
+</ol>
+<p class="image-container"><img alt="crear" src="img/78bedc39fbb8cec1.png"></p>
+<p><em>Siéntase en la libertad de modificar las diapositivas a su gusto, añadiendo y corrigiendo la información y formato que considere necesario.</em></p>
+<aside class="warning"><p> Las dispositivas generadas no cuentan con imágenes, pero sí con placeholders para que usted pueda añadir las imágenes que considere necesarias. Es su responsabilidad añadir las imágenes que considere pertinentes. </p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Refinar las diapositivas" duration="10">
+        <p>Una vez que haya descargado las diapositivas, puede modificarlas a su gusto. Añada imágenes, cambie el formato, añada más contenido o elimine lo que considere necesario. Las diapositivas se crean con un formato básico, por lo que puede personalizarlas según sus necesidades.</p>
+<p>En la pestaña superior de PowerPoint, diríjase a la opción &#34;Diseño&#34; para cambiar el diseño de las diapositivas. Puede agregar un tema por defecto o seleccionar un tema personalizado. Le sugerimos consultar la <a href="https://create.microsoft.com/en-us/templates/presentations" target="_blank">página de plantillas de presentaciones de PowerPoint</a> para obtener más información sobre cómo personalizar sus diapositivas.</p>
+<p>Un ejemplo de cómo cambiar el diseño de las diapositivas se muestra a continuación:</p>
+<p class="image-container"><img alt="Opciones de diseño" src="img/f498e5058d743b27.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Felicitaciones" duration="0">
+        <p>¡Felicidades! Ha aprendido cómo crear diapositivas con IA generativa y Pandoc de manera fácil y rápida.</p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
