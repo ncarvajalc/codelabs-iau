@@ -1,12 +1,12 @@
-summary: Resumen del codelab
+summary: Crear diapositivas de PowerPoint utilizando IA generativa y Pandoc.
 id: crear-pptx
 categories: IAu,codelab
 environments: Web
 status: Published
 feedback link: https://github.com/ncarvajalc/codelabs-iau/issues
-authors: Wyo Hann Chu
+authors: Wyo Hann Chu, Nicolás Carvajal
 
-# Cómo crear diapositivas con IA
+# Cómo crear diapositivas con IA Generativa y Pandoc
 
 ## Introducción
 Duration: 01:00
@@ -34,15 +34,15 @@ Para utilizar el GPT de diapositivas, siga este enlace: [GPT de creación de dia
 
 ### Pasos
 
-1. Diríjase al enlace del GPT de creación de diapositivas y seleccione la opción "¡Hola! Quiero crear una diapositiva para mi curso".
+1. Diríjase al enlace del GPT de creación de diapositivas y seleccione la opción "¡Hola! Quiero crear una presentación para mi curso".
 
-![crear](img/crear.png)
+![Crear](img/crear.png)
 
 2. Se le preguntará por el tema y objetivo de su presentación. La idea es que detalle lo mejor posible cómo desea desarrollar el contenido de la diapositiva. En este ejemplo, se utiliza el tema de condicionales en Python.
 
 ![respuesta](img/respuestatema.png)
 
-3. Posteriormente, se empezará a generar el contenido de las diapositivas.
+1. Posteriormente, se empezará a generar el contenido de las diapositivas.
 
 ![respuesta](img/condicionalesPython.png)
 
