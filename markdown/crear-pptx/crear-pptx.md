@@ -91,6 +91,8 @@ Left column:
 
 This produces a left column with another column with an image at the right
 
+Remember to use line-breaks between different elements using markdown syntax.
+
 Use latex formatted equations in markdown when asked for equations
 ```
 
