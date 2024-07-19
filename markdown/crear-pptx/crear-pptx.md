@@ -66,26 +66,37 @@ El formato que utilizarás para generar la diapositiva será markdown, utilizand
 Here is some sample Markdown:
 
 # Section Title
+
 ## Slide Title
+
 Text on a slide:
+
 * Bullet
 * Bullet
 * Bullet
+
 ::: notes
+
 Speaker notes go here
+
 :::
 
 That fenced div notation lets you create columns using nested divs without writing <div> tags in HTML. Take a look at this example:
 
 :::::::::::::: {.columns}
 ::: {.column width="50%"}
+
 Left column:
+
 - Bullet
 - Bullet
 - Bullet
+
 :::
 ::: {.column width="50%"}
+
 {{COLOCA AQUÍ UNA IMAGEN DE…}}
+
 :::
 ::::::::::::::
 
